@@ -1,0 +1,40 @@
+$default: #1a1a1a;
+$accent: #243f4d;
+$header-nav: #436372;
+
+%DMSans-700 {
+  font-family: 'DMSans-bold', sans-serif;
+  font-weight: 700;
+}
+
+%DMSans-500 {
+  font-family: 'DMSans-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%DMSans-400 {
+  font-family: 'DMSans-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%Rubik-700 {
+  font-family: 'Rubik-bold', sans-serif;
+  font-weight: 700;
+}
+
+%Rubik-500 {
+  font-family: 'Rubik-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%Rubik-400 {
+  font-family: 'Rubik-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
