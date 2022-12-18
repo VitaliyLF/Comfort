@@ -23,7 +23,7 @@
     font-size: 15px;
     line-height: 12px;
     @extend %Rubik-700;
-    color: $header-nav;
+    color: $accent;
   }
 }
 
@@ -43,8 +43,18 @@
     width: 90px;
     border-radius: 50px 0px 0px 50px;
     @extend %flex-column-center;
-    border-right: 1px solid #fff;
     position: relative;
+  }
+
+  &__link--heart::before {
+    content: '';
+    width: 1px;
+    height: 30px;
+    background-color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 2;
   }
 
   &__link--cart {
@@ -70,7 +80,7 @@
     text-align: center;
   }
 
-  &__link--btn {
+  &__link--login {
     background-color: #a3bbc8;
     width: 50px;
     height: 50px;
@@ -78,6 +88,103 @@
     @extend %flex-column-center;
     margin-left: 20px;
   }
+}
+
+.footer-top {
+  padding: 75px 0 55px;
+  border-bottom: 1px solid #dae4e9;
+  display: flex;
+  justify-content: space-between;
+
+  &__contact {
+    width: 211px;
+    margin-right: 100px;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  &__adress,
+  &__phone,
+  &__email {
+    display: block;
+    margin-bottom: 20px;
+    color: $footer-color-text;
+  }
+
+  &__social-list {
+    display: flex;
+  }
+
+  &__social-item + &__social-item {
+    margin-left: 30px;
+  }
+
+  &__social-link {
+    transition: all 0.3s ease-in;
+    path {
+      fill: $footer-color-btn;
+    }
+    &:hover {
+      path {
+        fill: $default;
+      }
+    }
+  }
+
+  &__nav {
+    width: 175px;
+  }
+
+  &__title {
+    @extend %DMSans-700;
+    font-size: 16px;
+    line-height: 21px;
+    color: $title;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  &__link,
+  &__text {
+    color: $footer-color-text;
+  }
+
+  &__form {
+    max-width: 408px;
+    @extend %DMSans-400;
+  }
+
+  &__form-input {
+    margin-top: 40px;
+    background-color: $bg-default;
+    max-width: 238px;
+    width: 100%;
+    padding: 15px 16px;
+    border: none;
+    &::placeholder {
+      color: #234969;
+      font-size: 12px;
+    }
+  }
+
+  &__form-btn {
+    border: none;
+    background-color: $footer-color-btn;
+    color: #fff;
+    padding: 14px 17px;
+    cursor: pointer;
+  }
+}
+
+.footer-copy {
+  text-align: center;
 }
 
 @import 'media';
