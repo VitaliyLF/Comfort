@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header__top {
@@ -22,7 +23,7 @@
   &__item-link {
     font-size: 15px;
     line-height: 12px;
-    @extend %Rubik-700;
+    @extend %Rubik-500;
     color: $accent;
   }
 }
@@ -39,7 +40,7 @@
   }
 
   &__link--heart {
-    background-color: #fcd7b6;
+    background-color: $header;
     width: 90px;
     border-radius: 50px 0px 0px 50px;
     @extend %flex-column-center;
@@ -58,7 +59,7 @@
   }
 
   &__link--cart {
-    background-color: #fcd7b6;
+    background-color: $header;
     width: 90px;
     border-radius: 0px 50px 50px 0px;
     @extend %flex-column-center;
@@ -81,12 +82,139 @@
   }
 
   &__link--login {
-    background-color: #a3bbc8;
+    background-color: $btn;
     width: 50px;
     height: 50px;
     border-radius: 50%;
     @extend %flex-column-center;
     margin-left: 20px;
+  }
+}
+
+.main {
+  padding: 0 75px;
+}
+
+.top-slider {
+  background-color: $header;
+  padding-top: 90px;
+
+  &__item-inner {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__item-box {
+    max-width: 415px;
+  }
+
+  &__item-title {
+    padding-top: 130px;
+    font-size: 72px;
+    line-height: 70px;
+    margin-bottom: 40px;
+  }
+
+  &__item-text {
+    max-width: 345px;
+    margin-bottom: 45px;
+  }
+
+  &__item-link {
+    display: block;
+    background-color: $btn;
+    color: #fff;
+    padding: 21px 30px;
+    font-size: 15px;
+    max-width: 200px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url(../images/icon/arrow-top-slider.png);
+      width: 22px;
+      height: 10px;
+      top: 32px;
+      right: 20px;
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 45px;
+    li {
+      padding-right: 10px;
+      button {
+        padding: 0;
+        font-size: 11px;
+        line-height: 9px;
+        background-color: #fde3cc;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: none;
+      }
+      &.slick-active {
+        button {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}
+
+.top-info {
+  background-color: $bg-default;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item {
+    width: 600px;
+    padding: 50px 0 50px 150px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 55px;
+      left: 75px;
+      height: 55px;
+      width: 55px;
+    }
+  }
+
+  &__item--support,
+  &__item--delivery {
+    border-right: 1px solid #e8e4df;
+  }
+
+  &__item--support::before {
+    background-image: url(../images/icon/support.png);
+    background-repeat: no-repeat;
+  }
+
+  &__item--delivery::before {
+    background-image: url(../images/icon/delivery.png);
+    background-repeat: no-repeat;
+  }
+
+  &__item--payment::before {
+    background-image: url(../images/icon/pay.png);
+    background-repeat: no-repeat;
+  }
+
+  &__title {
+    @extend %DMSans-700;
+    font-size: 18px;
+    color: $title;
+  }
+
+  &__text {
+    @extend %DMSans-400;
+    color: $subtitle;
   }
 }
 
@@ -111,7 +239,7 @@
   &__email {
     display: block;
     margin-bottom: 20px;
-    color: $footer-color-text;
+    color: $subtitle;
   }
 
   &__social-list {
@@ -125,7 +253,7 @@
   &__social-link {
     transition: all 0.3s ease-in;
     path {
-      fill: $footer-color-btn;
+      fill: $btn;
     }
     &:hover {
       path {
@@ -153,7 +281,7 @@
 
   &__link,
   &__text {
-    color: $footer-color-text;
+    color: $subtitle;
   }
 
   &__form {
@@ -176,7 +304,7 @@
 
   &__form-btn {
     border: none;
-    background-color: $footer-color-btn;
+    background-color: $btn;
     color: #fff;
     padding: 14px 17px;
     cursor: pointer;
