@@ -23,8 +23,12 @@
   &__item-link {
     font-size: 15px;
     line-height: 12px;
+    padding: 0 5px 5px ;
     @extend %Rubik-500;
     color: $accent;
+    &:hover {
+      border-bottom: 2px solid $header;
+    }
   }
 }
 
