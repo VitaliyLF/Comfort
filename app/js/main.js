@@ -10,8 +10,10 @@ $(function () {
 
 var mixer = mixitup('.products__content', {
   animation: {
+    queueLimit: 5,
+    easing: 'ease-in-out',
     duration: 500,
-    nudge: true,
-    effects: 'fade translateZ(-100px)',
+    effects: 'rotateY(-50deg) fade',
+    perspectiveDistance: '2000px',
   },
 })
