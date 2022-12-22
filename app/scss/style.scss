@@ -302,20 +302,15 @@
       opacity: 1;
     }
 
-    &__search,
-    &__cart,
-    &__heart {
-      padding: 10px;
-      background-color: $btn;
-      border-radius: 50%;
-      &:hover {
-        background-color: #fff;
+    &__box {
+      img {
+        background-color: $btn;
+        border-radius: 40%;
+        padding: 10px;
+        &:hover {
+          background-color: #fff;
+        }
       }
-    }
-
-    img {
-      width: 45px;
-      height: 40px;
     }
 
     img + img {
