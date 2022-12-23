@@ -42,3 +42,23 @@ $header: #fcd7b6;
   justify-content: center;
   align-items: center;
 }
+
+%btn {
+  display: block;
+  background-color: $btn;
+  color: #fff;
+  padding: 21px 30px;
+  font-size: 15px;
+  max-width: 200px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/icon/arrow-top-slider.svg);
+    background-repeat: no-repeat;
+    width: 23px;
+    height: 20px;
+    top: 32px;
+    right: 30px;
+  }
+}
