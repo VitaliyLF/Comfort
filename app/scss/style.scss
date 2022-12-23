@@ -134,22 +134,7 @@
   }
 
   &__item-link {
-    display: block;
-    background-color: $btn;
-    color: #fff;
-    padding: 21px 30px;
-    font-size: 15px;
-    max-width: 200px;
-    position: relative;
-    &::before {
-      content: '';
-      position: absolute;
-      background-image: url(../images/icon/arrow-top-slider.png);
-      width: 22px;
-      height: 10px;
-      top: 32px;
-      right: 20px;
-    }
+    @extend %btn;
   }
 
   .slick-dots {
@@ -179,7 +164,6 @@
 
 .top-info {
   background-color: $bg-default;
-
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -207,17 +191,17 @@
   }
 
   &__item--support::before {
-    background-image: url(../images/icon/support.png);
+    background-image: url(../images/icon/support.svg);
     background-repeat: no-repeat;
   }
 
   &__item--delivery::before {
-    background-image: url(../images/icon/delivery.png);
+    background-image: url(../images/icon/delivery.svg);
     background-repeat: no-repeat;
   }
 
   &__item--payment::before {
-    background-image: url(../images/icon/pay.png);
+    background-image: url(../images/icon/pay.svg);
     background-repeat: no-repeat;
   }
 
@@ -234,7 +218,6 @@
 }
 
 .products {
-  margin-bottom: 185px;
   &__filter-btn {
     margin: 40px 0 80px;
     text-align: center;
@@ -259,6 +242,7 @@
     grid-template-rows: repeat(2, auto);
     grid-auto-flow: dense;
     gap: 40px 30px;
+    padding-bottom: 190px;
   }
 
   &__item {
@@ -323,6 +307,64 @@
   }
 }
 
+.benefits {
+  padding-bottom: 100px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__item {
+    background-color: #feefe2;
+    width: 870px;
+    height: 390px;
+    display: flex;
+  }
+
+  &__content-img {
+    padding: 0 70px;
+    transform: translateY(-100px);
+  }
+
+  &__title {
+    padding-top: 100px;
+    font-size: 26px;
+    line-height: 32px;
+    @extend %DMSans-700;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    width: 335px;
+    margin-bottom: 35px;
+  }
+
+  &__link {
+    display: block;
+    padding: 24px 20px;
+    width: 200px;
+    background-color: transparent;
+    border: 1px solid $default;
+    border-radius: 10px;
+    color: $default;
+    @extend %Rubik-500;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url(../images/icon/arrow-benefits.svg);
+      width: 20px;
+      height: 20px;
+      top: 30px;
+      right: 30px;
+    }
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}
+
 .footer-top {
   padding: 75px 0 55px;
   border-bottom: 1px solid #dae4e9;
@@ -384,7 +426,10 @@
     margin-bottom: 20px;
   }
 
-  &__link {
+  &__link,
+  &__adress,
+  &__phone,
+  &__email {
     &:hover {
       color: $default;
     }
@@ -419,6 +464,10 @@
     color: #fff;
     padding: 14px 17px;
     cursor: pointer;
+    transition: all 0.5s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }
 
