@@ -4,6 +4,31 @@
 @import 'libs';
 @import 'global';
 
+.header {
+  .snow {
+    position: relative;
+    display: flex;
+    span {
+      position: relative;
+      min-width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border-radius: 50%;
+      margin: 0 auto;
+      animation: animationSnow 10s linear infinite;
+      animation-duration: calc(75s / var(--snow));
+      @keyframes animationSnow {
+        0% {
+          transform: translateY(-10vh);
+        }
+        100% {
+          transform: translateY(100vh);
+        }
+      }
+    }
+  }
+}
+
 .header__top {
   padding: 50px 75px;
   &-inner {
@@ -110,37 +135,50 @@
 
 .top-slider {
   background-color: $header;
-  padding-top: 90px;
+  background-image: url(../images/slider/slider-bg.png);
+  background-repeat: no-repeat;
+  background-position: 90% 40%;
+  padding: 100px 0 50px;
 
-  &__item-inner {
+  &__item {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
   }
 
-  &__item-box {
-    max-width: 415px;
+  &__content {
+    display: inline-block;
+    max-width: 405px;
+    margin-right: 120px;
   }
 
-  &__item-title {
+  &__title {
     padding-top: 130px;
     font-size: 72px;
     line-height: 70px;
     margin-bottom: 40px;
+    text-transform: uppercase;
   }
 
-  &__item-text {
+  &__text {
     max-width: 345px;
     margin-bottom: 45px;
   }
 
-  &__item-link {
+  &__link {
     @extend %btn;
+  }
+
+  &__images {
+    display: inline-block;
+    max-width: 640px;
+    object-fit: cover;
   }
 
   .slick-dots {
     display: flex;
     justify-content: center;
-    padding: 10px 0 45px;
+    padding-top: 150px;
     li {
       padding-right: 10px;
       button {
@@ -240,7 +278,6 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     grid-template-rows: repeat(2, auto);
-    grid-auto-flow: dense;
     gap: 40px 30px;
     padding-bottom: 190px;
   }
@@ -257,8 +294,7 @@
     transition: all 0.3s ease;
     position: relative;
     &:hover {
-      transform: scale(1.1);
-      opacity: 1;
+      transform: scale(1.1)
     }
   }
 
@@ -267,7 +303,7 @@
     color: $accent;
     font-size: 16px;
     line-height: 40px;
-    padding-top: 40px;
+
   }
 
   &__item-price {
@@ -281,7 +317,7 @@
     position: absolute;
     top: 40%;
     opacity: 0;
-
+    transition: all 0.5s ease;
     &:hover {
       opacity: 1;
     }
@@ -305,6 +341,11 @@
   .mixitup-control-active {
     color: $title;
   }
+
+  .star {
+    padding-top: 40px;
+    margin: 0 auto;
+  }
 }
 
 .benefits {
@@ -322,7 +363,7 @@
     display: flex;
   }
 
-  &__content-img {
+  &__img {
     padding: 0 70px;
     transform: translateY(-100px);
   }
@@ -353,7 +394,7 @@
     &::before {
       content: '';
       position: absolute;
-      background-image: url(../images/icon/arrow-benefits.svg);
+      background-image: url(../images/icon/arrow-btn.svg);
       width: 20px;
       height: 20px;
       top: 30px;

@@ -1,5 +1,5 @@
 $(function () {
-  $('.top-slider__content').slick({
+  $('.top-slider__items').slick({
     dots: true,
     arrows: false,
     fade: true,
@@ -16,4 +16,13 @@ var mixer = mixitup('.products__content', {
     effects: 'rotateY(-50deg) fade',
     perspectiveDistance: '2000px',
   },
+})
+
+$(function () {
+  $('.star').rateYo({
+    starWidth: '15px',
+    normalFill: '#ccccce',
+    ratedFill: '#ffc35b',
+    fullStar: true,
+  })
 })
