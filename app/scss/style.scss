@@ -4,6 +4,31 @@
 @import 'libs';
 @import 'global';
 
+.header {
+  .snow {
+    position: relative;
+    display: flex;
+    span {
+      position: relative;
+      min-width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border-radius: 50%;
+      margin: 0 auto;
+      animation: animationSnow 10s linear infinite;
+      animation-duration: calc(75s / var(--snow));
+      @keyframes animationSnow {
+        0% {
+          transform: translateY(-10vh);
+        }
+        100% {
+          transform: translateY(100vh);
+        }
+      }
+    }
+  }
+}
+
 .header__top {
   padding: 50px 75px;
   &-inner {
@@ -20,6 +45,7 @@
   &__list-item + &__list-item {
     padding-left: 33px;
   }
+
   &__item-link {
     font-size: 15px;
     line-height: 12px;
@@ -29,6 +55,11 @@
     &:hover {
       border-bottom: 2px solid $header;
     }
+  }
+
+  &__item-link--active {
+    @extend %Rubik-700;
+    color: $header;
   }
 }
 
@@ -104,43 +135,53 @@
   }
 }
 
-.main {
-  padding: 0 75px;
-}
-
 .top-slider {
+  margin: 0 75px;
   background-color: $header;
-  padding-top: 90px;
+  background-image: url(../images/slider/slider-bg.png);
+  background-repeat: no-repeat;
+  background-position: 90% 40%;
+  padding: 100px 0 50px;
 
-  &__item-inner {
+  &__item {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
   }
 
-  &__item-box {
-    max-width: 415px;
+  &__content {
+    display: inline-block;
+    max-width: 405px;
+    margin-right: 120px;
   }
 
-  &__item-title {
+  &__title {
     padding-top: 130px;
     font-size: 72px;
     line-height: 70px;
     margin-bottom: 40px;
+    text-transform: uppercase;
   }
 
-  &__item-text {
+  &__text {
     max-width: 345px;
     margin-bottom: 45px;
   }
 
-  &__item-link {
+  &__link {
     @extend %btn;
+  }
+
+  &__images {
+    display: inline-block;
+    max-width: 640px;
+    object-fit: cover;
   }
 
   .slick-dots {
     display: flex;
     justify-content: center;
-    padding: 10px 0 45px;
+    padding-top: 150px;
     li {
       padding-right: 10px;
       button {
@@ -163,18 +204,19 @@
 }
 
 .top-info {
+  margin: 0 75px;
   background-color: $bg-default;
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 75px;
   }
 
   &__item {
     width: 600px;
     padding: 50px 0 50px 150px;
     position: relative;
+    transition: all 0.5s ease;
     &::before {
       content: '';
       position: absolute;
@@ -218,6 +260,7 @@
 }
 
 .products {
+  padding: 75px 0 190px;
   &__filter-btn {
     margin: 40px 0 80px;
     text-align: center;
@@ -240,9 +283,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     grid-template-rows: repeat(2, auto);
-    grid-auto-flow: dense;
     gap: 40px 30px;
-    padding-bottom: 190px;
   }
 
   &__item {
@@ -254,12 +295,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    transition: all 0.3s ease;
     position: relative;
-    &:hover {
-      transform: scale(1.1);
-      opacity: 1;
-    }
   }
 
   &__item-title {
@@ -267,7 +303,6 @@
     color: $accent;
     font-size: 16px;
     line-height: 40px;
-    padding-top: 40px;
   }
 
   &__item-price {
@@ -281,7 +316,7 @@
     position: absolute;
     top: 40%;
     opacity: 0;
-
+    transition: all 0.5s ease;
     &:hover {
       opacity: 1;
     }
@@ -305,10 +340,15 @@
   .mixitup-control-active {
     color: $title;
   }
+
+  .star {
+    padding-top: 40px;
+    margin: 0 auto;
+  }
 }
 
 .benefits {
-  padding-bottom: 100px;
+  margin: 0 75px;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -322,7 +362,7 @@
     display: flex;
   }
 
-  &__content-img {
+  &__img {
     padding: 0 70px;
     transform: translateY(-100px);
   }
@@ -353,7 +393,7 @@
     &::before {
       content: '';
       position: absolute;
-      background-image: url(../images/icon/arrow-benefits.svg);
+      background-image: url(../images/icon/arrow-btn.svg);
       width: 20px;
       height: 20px;
       top: 30px;
@@ -362,6 +402,123 @@
     &:hover {
       background-color: #fff;
     }
+  }
+}
+
+.design {
+  padding: 100px 0 125px;
+  &__filter-btn {
+    margin: 40px 0 80px;
+    text-align: center;
+    @extend %DMSans-500;
+  }
+
+  &__btn {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    color: $subtitle;
+    cursor: pointer;
+  }
+
+  &__btn + &__btn {
+    margin-left: 30px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    grid-template-rows: repeat(2, auto);
+    gap: 35px 30px;
+  }
+
+  &__item {
+    height: 246px;
+    background-color: #f8f8f8;
+    overflow: hidden;
+    padding: 40px 0 40px 40px;
+    &:nth-child(3) img {
+      transform: translate(140%, -50%);
+    }
+    &:nth-child(5) img {
+      transform: translate(110%, -50%);
+    }
+  }
+
+  &__item-title {
+    max-width: 175px;
+    color: $title;
+    font-size: 20px;
+    @extend %DMSans-700;
+  }
+
+  &__item-subtitle {
+    display: inline-block;
+    color: #a3bbc8;
+    @extend %DMSans-700;
+  }
+
+  &__item-img {
+    transform: translate(30%, -30%);
+    object-fit: cover;
+  }
+
+  .mixitup-control-active {
+    color: $title;
+  }
+}
+
+.sale {
+  background-image: url(../images/sale-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 0;
+  margin-bottom: 100px;
+
+  &__content {
+    max-width: 800px;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  &__subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #a3bbc8;
+    @extend %DMSans-700;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  &__timer {
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  &__timer-item {
+    width: 100px;
+    height: 100px;
+    background-color: $header;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    span {
+      font-size: 30px;
+      @extend %DMSans-700;
+    }
+  }
+
+  &__link {
+    @extend %btn;
+    margin: 0 auto;
   }
 }
 

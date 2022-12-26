@@ -9,6 +9,25 @@
     </head>
     <body>
       <header class="header">
+        <div class="snow">
+          <span style="--snow: 19"></span>
+          <span style="--snow: 25"></span>
+          <span style="--snow: 27"></span>
+          <span style="--snow: 10"></span>
+          <span style="--snow: 23"></span>
+          <span style="--snow: 22"></span>
+          <span style="--snow: 12"></span>
+          <span style="--snow: 24"></span>
+          <span style="--snow: 42"></span>
+          <span style="--snow: 34"></span>
+          <span style="--snow: 57"></span>
+          <span style="--snow: 21"></span>
+          <span style="--snow: 28"></span>
+          <span style="--snow: 32"></span>
+          <span style="--snow: 33"></span>
+          <span style="--snow: 42"></span>
+          <span style="--snow: 52"></span>
+        </div>
         <div class="header__top">
           <div class="header__top-inner">
             <a class="logo" href="#">
@@ -17,7 +36,7 @@
             <nav class="menu">
               <ul class="menu__list">
                 <li class="menu__list-item">
-                  <a class="menu__item-link" href="#">Home +</a>
+                  <a class="menu__item-link menu__item-link--active " href="#">Home +</a>
                 </li>
                 <li class="menu__list-item">
                   <a class="menu__item-link" href="#">About</a>
@@ -50,7 +69,7 @@
                   src="images/icon/heart.svg"
                   alt="heart btn"
                 />
-                <span class="user-nav__num">0</span>
+                <span class="user-nav__num">2</span>
               </a>
               <a class="user-nav__link user-nav__link--cart" href="#">
                 <img
@@ -58,7 +77,7 @@
                   src="images/icon/cart.svg"
                   alt="cart btn"
                 />
-                <span class="user-nav__num">0</span>
+                <span class="user-nav__num">3</span>
               </a>
               <a class="user-nav__link user-nav__link--login" href="#">
                 <img
@@ -75,58 +94,46 @@
       <main class="main">
         <section class="top-slider">
           <div class="container">
-            <div class="top-slider__content">
+            <div class="top-slider__items">
               <div class="top-slider__item">
-                <div class="top-slider__item-inner">
-                  <div class="top-slider__item-box">
-                    <h1 class="top-slider__item-title">SMART AND TRENDY</h1>
-                    <p class="top-slider__item-text">
+                  <div class="top-slider__content">
+                    <h1 class="top-slider__title">christmas sale</h1>
+                    <p class="top-slider__text">
                       Dolor sit amet, consectetur adipisicing elit, sed do
                       eiusmod tempor incididunt
                     </p>
-                    <a class="top-slider__item-link" href="#0">Shop Now</a>
+                    <a class="top-slider__link" href="#0">Shop Now</a>
                   </div>
-                  <img
-                    class="top-slider__item-img"
-                    src="images/slider/1.png"
-                    alt=""
-                  />
-                </div>
+                  <div class="top-slider__images">
+                    <img class="top-slider__img" src="images/slider/slider-item-1.png" alt="slider item">
+                  </div>
               </div>
               <div class="top-slider__item">
-                <div class="top-slider__item-inner">
-                  <div class="top-slider__item-box">
-                    <h1 class="top-slider__item-title">SMART AND TRENDY</h1>
-                    <p class="top-slider__item-text">
-                      Dolor sit amet, consectetur adipisicing elit, sed do
-                      eiusmod tempor incididunt
-                    </p>
-                    <a class="top-slider__item-link" href="#0">Shop Now</a>
-                  </div>
-                  <img
-                    class="top-slider__item-img"
-                    src="images/slider/1.png"
-                    alt=""
-                  />
+                <div class="top-slider__content">
+                  <h1 class="top-slider__title">Exclusive Brands</h1>
+                  <p class="top-slider__text">
+                    Dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt
+                  </p>
+                  <a class="top-slider__link" href="#0">Shop Now</a>
                 </div>
-              </div>
-              <div class="top-slider__item">
-                <div class="top-slider__item-inner">
-                  <div class="top-slider__item-box">
-                    <h1 class="top-slider__item-title">SMART AND TRENDY</h1>
-                    <p class="top-slider__item-text">
-                      Dolor sit amet, consectetur adipisicing elit, sed do
-                      eiusmod tempor incididunt
-                    </p>
-                    <a class="top-slider__item-link" href="#0">Shop Now</a>
-                  </div>
-                  <img
-                    class="top-slider__item-img"
-                    src="images/slider/1.png"
-                    alt=""
-                  />
+                <div class="top-slider__images">
+                  <img class="top-slider__img" src="images/slider/slider-item-2.png" alt="slider item">
                 </div>
+            </div>
+            <div class="top-slider__item"> 
+              <div class="top-slider__content">
+                <h1 class="top-slider__title">SMART AND TRENDY</h1>
+                <p class="top-slider__text">
+                  Dolor sit amet, consectetur adipisicing elit, sed do
+                  eiusmod tempor incididunt
+                </p>
+                <a class="top-slider__link" href="#0">Shop Now</a>
               </div>
+              <div class="top-slider__images">
+                <img class="top-slider__img" src="images/slider/slider-item-3.png" alt="slider item">
+              </div>
+          </div>
             </div>
           </div>
         </section>
@@ -173,6 +180,7 @@
                   src="images/products/item-1.jpg"
                   alt="assortment"
                 />
+                <div class="star" data-rateyo-rating="5"></div>
                 <h5 class="products__item-title">Wooden radio</h5>
                 <a class="products__item-price" href="#"> $29.00</a>
                 <a class="products__item-link products__item-link__box" href="#">
@@ -187,6 +195,7 @@
                   src="images/products/item-2.jpg"
                   alt="assortment"
                 />
+                <div class="star" data-rateyo-rating="4"></div>
                 <h5 class="products__item-title">Wooden chair</h5>
                 <a class="products__item-price" href="#">$45.00</a>
                 <a class="products__item-link products__item-link__box" href="#">
@@ -201,6 +210,7 @@
                   src="images/products/item-3.jpg"
                   alt="assortment"
                 />
+                <div class="star" data-rateyo-rating="3"></div>
                 <h5 class="products__item-title">White chair</h5>
                 <a class="products__item-price" href="#">$60.00</a>
                 <a class="products__item-link products__item-link__box" href="#">
@@ -215,6 +225,7 @@
                   src="images/products/item-4.jpg"
                   alt="assortment"
                 />
+                <div class="star" data-rateyo-rating="5"></div>
                 <h5 class="products__item-title">Retro table</h5>
                 <a class="products__item-price" href="#">$120.00</a>
                 <a class="products__item-link products__item-link__box" href="#">
@@ -229,6 +240,7 @@
                   src="images/products/item-5.jpg"
                   alt="assortment"
                 />
+                <div class="star" data-rateyo-rating="4"></div>
                 <h5 class="products__item-title">Wooden radio</h5>
                 <a class="products__item-price" href="#">$45.00</a>
                 <a class="products__item-link products__item-link__box" href="#">
@@ -243,6 +255,7 @@
                   src="images/products/item-6.jpg"
                   alt="assortment"
                 />
+                <div class="star" data-rateyo-rating="3"></div>
                 <h5 class="products__item-title">Wooden chair</h5>
                 <a class="products__item-price" href="#">$99.00</a>
                 <a class="products__item-link products__item-link__box" href="#">
@@ -257,6 +270,7 @@
                   src="images/products/item-7.jpg"
                   alt="assortment"
                 />
+                <div class="star" data-rateyo-rating="2"></div>
                 <h5 class="products__item-title">White chair</h5>
                 <a class="products__item-price" href="#">$50.00</a>
                 <a class="products__item-link products__item-link__box" href="#">
@@ -271,6 +285,7 @@
                   src="images/products/item-8.jpg"
                   alt="assortment"
                 />
+                <div class="star" data-rateyo-rating="4"></div>
                 <h5 class="products__item-title">Retro table</h5>
                 <a class="products__item-price" href="#">$79.00</a>
                 <a class="products__item-link products__item-link__box" href="#">
@@ -285,9 +300,7 @@
         <section class="benefits">
           <div class="benefits__inner">
             <div class="benefits__item">
-              <div class="benefits__content">
-                <img class="benefits__content-img" src="images/products/benefits/benefits-img-1.png" alt="benefits products">
-              </div>
+              <img class="benefits__img" src="images/products/benefits/benefits-img-1.png" alt="benefits products">
               <div class="benefits__descr">
                 <h2 class="benefits__title">Mirum Notare Tellus</h2>
                 <p class="benefits__text">LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight</p>
@@ -295,9 +308,7 @@
               </div>
             </div>
             <div class="benefits__item">
-              <div class="benefits__content">
-                <img class="benefits__content-img" src="images/products/benefits/benefits-img-2.png" alt="benefits products">
-              </div>
+              <img class="benefits__img" src="images/products/benefits/benefits-img-2.png" alt="benefits products">
               <div class="benefits__descr">
                 <h2 class="benefits__title">Malesuada Tempor 
                   Euismod</h2>
@@ -307,6 +318,93 @@
             </div>
           </div>
         </section>
+        <section class="design">
+          <div class="container">
+            <h2 class="title">New Design</h2>
+            <div class="design__filter-btn">
+              <button class="design__btn" data-filter="all">All</button>
+              <button class="design__btn" data-filter=".category-a">Furnitures</button>
+              <button class="design__btn" data-filter=".category-b">Chairs</button>
+              <button class="design__btn" data-filter=".category-c">Lighting</button>
+              <button class="design__btn" data-filter=".category-d">Decor</button>
+            </div>
+            <div class="design__content">
+              <a class="design__item mix category-a" href="#">
+                <h5 class="design__item-title">Beat Flat Pendant Black</h5>
+                <p class="design__item-subtitle">Classic</p>
+                <img
+                class="design__item-img"
+                src="images/design/design-item-1.png"
+                alt="design item"/>
+              </a>
+              <a class="design__item mix category-a" href="#">
+                <h5 class="design__item-title">Lampe Sur Pieds Bamboo</h5>
+                <p class="design__item-subtitle">Classic</p>
+                <img
+                class="design__item-img"
+                src="images/design/design-item-2.png"
+                alt="design item"/>
+              </a>
+              <a class="design__item mix category-b" href="#">
+                <h5 class="design__item-title">Rattan Rocking Chair</h5>
+                <p class="design__item-subtitle">Classic</p>
+                <img
+                class="design__item-img"
+                src="images/design/design-item-3.png"
+                alt="design item"/>
+              </a>
+              <a class="design__item mix category-c" href="#">
+                <h5 class="design__item-title">Rattan Rocking Chair</h5>
+                <p class="design__item-subtitle">Classic</p>
+                <img
+                class="design__item-img"
+                src="images/design/design-item-4.png"
+                alt="design item"/>
+              </a>
+              <a class="design__item mix category-d" href="#">
+                <h5 class="design__item-title">Rattan Rocking Chair</h5>
+                <p class="design__item-subtitle">Classic</p>
+                <img
+                class="design__item-img"
+                src="images/design/design-item-5.png"
+                alt="design item"/>
+              </a>
+              <a class="design__item mix category-d" href="#">
+                <h5 class="design__item-title">Lampe Sur Pieds Bamboo</h5>
+                <p class="design__item-subtitle">Classic</p>
+                <img
+                class="design__item-img"
+                src="images/design/design-item-6.png"
+                alt="design item"/>
+              </a>
+            </div>
+          </div>
+        </section>
+        <div class="sale">
+            <div class="sale__content" >
+              <p class="sale__subtitle">our comfort</p>
+              <h2 class="title">DEAL OF THE DAY</h2>
+              <div class="sale__timer" data-time="'2023-05-25'">
+                <div class="sale__timer-item">
+                  <span class="sale__days"></span>
+                  <div class="sale__text">Days</div>
+                </div>
+                <div class="sale__timer-item">
+                  <span class="sale__hours"></span>
+                  <div class="sale__text">Hours</div>
+                </div>
+                <div class="sale__timer-item">
+                  <span class="sale__minutes"></span>
+                  <div class="sale__text">Minutes</div>
+                </div>
+                <div class="sale__timer-item">
+                  <span class="sale__seconds"></span>
+                  <div class="sale__text">Seconds</div>
+                </div>
+              </div>
+              <a class="sale__link" href="#">Shop now</a>
+            </div>
+        </div>
       </main>
 
       <footer class="footer">

@@ -54,11 +54,12 @@ $header: #fcd7b6;
   &::before {
     content: '';
     position: absolute;
-    background-image: url(../images/icon/arrow-top-slider.svg);
+    mask-image: url(../images/icon/arrow-btn.svg);
+    background-color: #fff;
     background-repeat: no-repeat;
-    width: 23px;
+    width: 20px;
     height: 20px;
-    top: 32px;
+    top: 27px;
     right: 30px;
   }
 }
