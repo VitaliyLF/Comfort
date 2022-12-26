@@ -135,11 +135,8 @@
   }
 }
 
-.main {
-  padding: 0 75px;
-}
-
 .top-slider {
+  margin: 0 75px;
   background-color: $header;
   background-image: url(../images/slider/slider-bg.png);
   background-repeat: no-repeat;
@@ -207,18 +204,19 @@
 }
 
 .top-info {
+  margin: 0 75px;
   background-color: $bg-default;
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 75px;
   }
 
   &__item {
     width: 600px;
     padding: 50px 0 50px 150px;
     position: relative;
+    transition: all 0.5s ease;
     &::before {
       content: '';
       position: absolute;
@@ -262,6 +260,7 @@
 }
 
 .products {
+  padding: 75px 0 190px;
   &__filter-btn {
     margin: 40px 0 80px;
     text-align: center;
@@ -285,7 +284,6 @@
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     grid-template-rows: repeat(2, auto);
     gap: 40px 30px;
-    padding-bottom: 190px;
   }
 
   &__item {
@@ -350,7 +348,7 @@
 }
 
 .benefits {
-  padding-bottom: 100px;
+  margin: 0 75px;
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -408,7 +406,7 @@
 }
 
 .design {
-  padding-bottom: 125px;
+  padding: 100px 0 125px;
   &__filter-btn {
     margin: 40px 0 80px;
     text-align: center;
@@ -467,6 +465,60 @@
 
   .mixitup-control-active {
     color: $title;
+  }
+}
+
+.sale {
+  background-image: url(../images/sale-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 100px 0;
+  margin-bottom: 100px;
+
+  &__content {
+    max-width: 800px;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  &__subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #a3bbc8;
+    @extend %DMSans-700;
+  }
+
+  .title {
+    margin-bottom: 20px;
+  }
+
+  &__timer {
+    margin: 40px 0;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  &__timer-item {
+    width: 100px;
+    height: 100px;
+    background-color: $header;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    span {
+      font-size: 30px;
+      @extend %DMSans-700;
+    }
+  }
+
+  &__link {
+    @extend %btn;
+    margin: 0 auto;
   }
 }
 
