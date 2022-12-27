@@ -1,474 +1,604 @@
 <!DOCTYPE html>
-  <html lang="eu">
-    <head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Document</title>
-      <link rel="stylesheet" href="css/style.min.css" />
-    </head>
-    <body>
-      <header class="header">
-        <div class="snow">
-          <span style="--snow: 19"></span>
-          <span style="--snow: 25"></span>
-          <span style="--snow: 27"></span>
-          <span style="--snow: 10"></span>
-          <span style="--snow: 23"></span>
-          <span style="--snow: 22"></span>
-          <span style="--snow: 12"></span>
-          <span style="--snow: 24"></span>
-          <span style="--snow: 42"></span>
-          <span style="--snow: 34"></span>
-          <span style="--snow: 57"></span>
-          <span style="--snow: 21"></span>
-          <span style="--snow: 28"></span>
-          <span style="--snow: 32"></span>
-          <span style="--snow: 33"></span>
-          <span style="--snow: 42"></span>
-          <span style="--snow: 52"></span>
-        </div>
-        <div class="header__top">
-          <div class="header__top-inner">
-            <a class="logo" href="#">
-              <img class="logo__img" src="images/logo.svg" alt="header-logo" />
+<html lang="eu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comfort.</title>
+    <link
+      rel="shortcut icon"
+      href="images/icon/icon-web.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__snow">
+        <span style="--snow: 19"></span>
+        <span style="--snow: 25"></span>
+        <span style="--snow: 27"></span>
+        <span style="--snow: 10"></span>
+        <span style="--snow: 23"></span>
+        <span style="--snow: 22"></span>
+        <span style="--snow: 12"></span>
+        <span style="--snow: 24"></span>
+        <span style="--snow: 42"></span>
+        <span style="--snow: 34"></span>
+        <span style="--snow: 57"></span>
+        <span style="--snow: 21"></span>
+        <span style="--snow: 28"></span>
+        <span style="--snow: 32"></span>
+        <span style="--snow: 33"></span>
+        <span style="--snow: 42"></span>
+        <span style="--snow: 52"></span>
+      </div>
+      <div class="header__top">
+        <div class="header__top-inner">
+          <a class="logo" href="#">
+            <img class="logo__img" src="images/logo.svg" alt="header-logo" />
+          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__item-link menu__item-link--active" href="#"
+                  >Home +</a
+                >
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__item-link" href="#">About</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__item-link" href="#">Services</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__item-link" href="#">Pages +</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__item-link" href="#">News</a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__item-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="user-nav">
+            <a class="user-nav__link user-nav__link--search" href="#">
+              <img
+                class="user-nav__link-img"
+                src="images/icon/search.svg"
+                alt="search btn"
+              />
             </a>
-            <nav class="menu">
-              <ul class="menu__list">
-                <li class="menu__list-item">
-                  <a class="menu__item-link menu__item-link--active " href="#">Home +</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__item-link" href="#">About</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__item-link" href="#">Services</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__item-link" href="#">Pages +</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__item-link" href="#">News</a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__item-link" href="#">Contact</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="user-nav">
-              <a class="user-nav__link user-nav__link--search" href="#">
-                <img
-                  class="user-nav__link-img"
-                  src="images/icon/search.svg"
-                  alt="search btn"
-                />
-              </a>
-              <a class="user-nav__link user-nav__link--heart" href="#">
-                <img
-                  class="user-nav__link-img"
-                  src="images/icon/heart.svg"
-                  alt="heart btn"
-                />
-                <span class="user-nav__num">2</span>
-              </a>
-              <a class="user-nav__link user-nav__link--cart" href="#">
-                <img
-                  class="user-nav__link-img"
-                  src="images/icon/cart.svg"
-                  alt="cart btn"
-                />
-                <span class="user-nav__num">3</span>
-              </a>
-              <a class="user-nav__link user-nav__link--login" href="#">
-                <img
-                  class="user-nav__link-img"
-                  src="images/icon/login.svg"
-                  alt="login btn"
-                />
-              </a>
-            </div>
+            <a class="user-nav__link user-nav__link--heart" href="#">
+              <img
+                class="user-nav__link-img"
+                src="images/icon/heart.svg"
+                alt="heart btn"
+              />
+              <span class="user-nav__num">0</span>
+            </a>
+            <a class="user-nav__link user-nav__link--cart" href="#">
+              <img
+                class="user-nav__link-img"
+                src="images/icon/cart.svg"
+                alt="cart btn"
+              />
+              <span class="user-nav__num">0</span>
+            </a>
+            <a class="user-nav__link user-nav__link--login" href="#">
+              <img
+                class="user-nav__link-img"
+                src="images/icon/login.svg"
+                alt="login btn"
+              />
+            </a>
           </div>
         </div>
-      </header>
-
-      <main class="main">
-        <section class="top-slider">
-          <div class="container">
-            <div class="top-slider__items">
-              <div class="top-slider__item">
-                  <div class="top-slider__content">
-                    <h1 class="top-slider__title">christmas sale</h1>
-                    <p class="top-slider__text">
-                      Dolor sit amet, consectetur adipisicing elit, sed do
-                      eiusmod tempor incididunt
-                    </p>
-                    <a class="top-slider__link" href="#0">Shop Now</a>
-                  </div>
-                  <div class="top-slider__images">
-                    <img class="top-slider__img" src="images/slider/slider-item-1.png" alt="slider item">
-                  </div>
-              </div>
-              <div class="top-slider__item">
-                <div class="top-slider__content">
-                  <h1 class="top-slider__title">Exclusive Brands</h1>
-                  <p class="top-slider__text">
-                    Dolor sit amet, consectetur adipisicing elit, sed do
-                    eiusmod tempor incididunt
-                  </p>
-                  <a class="top-slider__link" href="#0">Shop Now</a>
-                </div>
-                <div class="top-slider__images">
-                  <img class="top-slider__img" src="images/slider/slider-item-2.png" alt="slider item">
-                </div>
-            </div>
-            <div class="top-slider__item"> 
+      </div>
+    </header>
+    <main class="main">
+      <section class="top-slider">
+        <div class="container">
+          <div class="top-slider__items">
+            <div class="top-slider__item">
               <div class="top-slider__content">
-                <h1 class="top-slider__title">SMART AND TRENDY</h1>
+                <h1 class="top-slider__title">christmas sale</h1>
                 <p class="top-slider__text">
-                  Dolor sit amet, consectetur adipisicing elit, sed do
-                  eiusmod tempor incididunt
+                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt
                 </p>
                 <a class="top-slider__link" href="#0">Shop Now</a>
               </div>
               <div class="top-slider__images">
-                <img class="top-slider__img" src="images/slider/slider-item-3.png" alt="slider item">
+                <img
+                  class="top-slider__img"
+                  src="images/slider/slider-item-1.png"
+                  alt="slider item"
+                />
               </div>
-          </div>
             </div>
-          </div>
-        </section>
-        <section class="top-info">
-          <div class="top-info__inner">
-            <div class="top-info__item top-info__item--support">
-              <h4 class="top-info__title">Support 24/7.</h4>
-              <p class="top-info__text">
-                Contact us 24 hours a day, 7 days a week.
-              </p>
+            <div class="top-slider__item">
+              <div class="top-slider__content">
+                <h1 class="top-slider__title">Exclusive Brands</h1>
+                <p class="top-slider__text">
+                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt
+                </p>
+                <a class="top-slider__link" href="#0">Shop Now</a>
+              </div>
+              <div class="top-slider__images">
+                <img
+                  class="top-slider__img"
+                  src="images/slider/slider-item-2.png"
+                  alt="slider item"
+                />
+              </div>
             </div>
-            <div class="top-info__item top-info__item--delivery">
-              <h4 class="top-info__title">Delivery.</h4>
-              <p class="top-info__text">Free shipping on all US order.</p>
-            </div>
-            <div class="top-info__item top-info__item--payment">
-              <h4 class="top-info__title">100% Payment secure.</h4>
-              <p class="top-info__text">We ensure secure payment with PEV.</p>
-            </div>
-          </div>
-        </section>
-        <section class="products">
-          <div class="container">
-            <h2 class="title">Products of the week</h2>
-            <div class="products__filter-btn">
-              <button class="products__btn" data-filter="all">All</button>
-              <button class="products__btn" data-filter=".category-a">
-                Furnitures
-              </button>
-              <button class="products__btn" data-filter=".category-b">
-                Chairs
-              </button>
-              <button class="products__btn" data-filter=".category-c">
-                Lighting
-              </button>
-              <button class="products__btn" data-filter=".category-d">
-                Decor
-              </button>
-            </div>
-            <div class="products__content">
-              <div class="products__item mix category-a">
-                <img
-                  class="products__item-img"
-                  src="images/products/item-1.jpg"
-                  alt="assortment"
-                />
-                <div class="star" data-rateyo-rating="5"></div>
-                <h5 class="products__item-title">Wooden radio</h5>
-                <a class="products__item-price" href="#"> $29.00</a>
-                <a class="products__item-link products__item-link__box" href="#">
-                  <img  src="images/icon/search.svg" alt="products search">
-                  <img  src="images/icon/cart.svg" alt="products cart">
-                  <img  src="images/icon/heart.svg" alt="products heart">
-                </a>
+            <div class="top-slider__item">
+              <div class="top-slider__content">
+                <h1 class="top-slider__title">SMART AND TRENDY</h1>
+                <p class="top-slider__text">
+                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt
+                </p>
+                <a class="top-slider__link" href="#0">Shop Now</a>
               </div>
-              <div class="products__item mix category-a">
+              <div class="top-slider__images">
                 <img
-                  class="products__item-img"
-                  src="images/products/item-2.jpg"
-                  alt="assortment"
+                  class="top-slider__img"
+                  src="images/slider/slider-item-3.png"
+                  alt="slider item"
                 />
-                <div class="star" data-rateyo-rating="4"></div>
-                <h5 class="products__item-title">Wooden chair</h5>
-                <a class="products__item-price" href="#">$45.00</a>
-                <a class="products__item-link products__item-link__box" href="#">
-                  <img  src="images/icon/search.svg" alt="products search">
-                  <img  src="images/icon/cart.svg" alt="products cart">
-                  <img  src="images/icon/heart.svg" alt="products heart">
-                </a>
-              </div>
-              <div class="products__item mix category-b">
-                <img
-                  class="products__item-img"
-                  src="images/products/item-3.jpg"
-                  alt="assortment"
-                />
-                <div class="star" data-rateyo-rating="3"></div>
-                <h5 class="products__item-title">White chair</h5>
-                <a class="products__item-price" href="#">$60.00</a>
-                <a class="products__item-link products__item-link__box" href="#">
-                  <img  src="images/icon/search.svg" alt="products search">
-                  <img  src="images/icon/cart.svg" alt="products cart">
-                  <img  src="images/icon/heart.svg" alt="products heart">
-                </a>
-              </div>
-              <div class="products__item mix category-b">
-                <img
-                  class="products__item-img"
-                  src="images/products/item-4.jpg"
-                  alt="assortment"
-                />
-                <div class="star" data-rateyo-rating="5"></div>
-                <h5 class="products__item-title">Retro table</h5>
-                <a class="products__item-price" href="#">$120.00</a>
-                <a class="products__item-link products__item-link__box" href="#">
-                  <img  src="images/icon/search.svg" alt="products search">
-                  <img  src="images/icon/cart.svg" alt="products cart">
-                  <img  src="images/icon/heart.svg" alt="products heart">
-                </a>
-              </div>
-              <div class="products__item mix category-c">
-                <img
-                  class="products__item-img"
-                  src="images/products/item-5.jpg"
-                  alt="assortment"
-                />
-                <div class="star" data-rateyo-rating="4"></div>
-                <h5 class="products__item-title">Wooden radio</h5>
-                <a class="products__item-price" href="#">$45.00</a>
-                <a class="products__item-link products__item-link__box" href="#">
-                  <img  src="images/icon/search.svg" alt="products search">
-                  <img  src="images/icon/cart.svg" alt="products cart">
-                  <img  src="images/icon/heart.svg" alt="products heart">
-                </a>
-              </div>
-              <div class="products__item mix category-c">
-                <img
-                  class="products__item-img"
-                  src="images/products/item-6.jpg"
-                  alt="assortment"
-                />
-                <div class="star" data-rateyo-rating="3"></div>
-                <h5 class="products__item-title">Wooden chair</h5>
-                <a class="products__item-price" href="#">$99.00</a>
-                <a class="products__item-link products__item-link__box" href="#">
-                  <img  src="images/icon/search.svg" alt="products search">
-                  <img  src="images/icon/cart.svg" alt="products cart">
-                  <img  src="images/icon/heart.svg" alt="products heart">
-                </a>
-              </div>
-              <div class="products__item mix category-d">
-                <img
-                  class="products__item-img"
-                  src="images/products/item-7.jpg"
-                  alt="assortment"
-                />
-                <div class="star" data-rateyo-rating="2"></div>
-                <h5 class="products__item-title">White chair</h5>
-                <a class="products__item-price" href="#">$50.00</a>
-                <a class="products__item-link products__item-link__box" href="#">
-                  <img  src="images/icon/search.svg" alt="products search">
-                  <img  src="images/icon/cart.svg" alt="products cart">
-                  <img  src="images/icon/heart.svg" alt="products heart">
-                </a>
-              </div>
-              <div class="products__item mix category-d">
-                <img
-                  class="products__item-img"
-                  src="images/products/item-8.jpg"
-                  alt="assortment"
-                />
-                <div class="star" data-rateyo-rating="4"></div>
-                <h5 class="products__item-title">Retro table</h5>
-                <a class="products__item-price" href="#">$79.00</a>
-                <a class="products__item-link products__item-link__box" href="#">
-                  <img  src="images/icon/search.svg" alt="products search">
-                  <img  src="images/icon/cart.svg" alt="products cart">
-                  <img  src="images/icon/heart.svg" alt="products heart">
-                </a>
               </div>
             </div>
           </div>
-        </section>
-        <section class="benefits">
-          <div class="benefits__inner">
-            <div class="benefits__item">
-              <img class="benefits__img" src="images/products/benefits/benefits-img-1.png" alt="benefits products">
-              <div class="benefits__descr">
-                <h2 class="benefits__title">Mirum Notare Tellus</h2>
-                <p class="benefits__text">LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight</p>
-                <a class="benefits__link" href="#">View More</a>
-              </div>
-            </div>
-            <div class="benefits__item">
-              <img class="benefits__img" src="images/products/benefits/benefits-img-2.png" alt="benefits products">
-              <div class="benefits__descr">
-                <h2 class="benefits__title">Malesuada Tempor 
-                  Euismod</h2>
-                <p class="benefits__text">50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight</p>
-                <a class="benefits__link" href="#">View More</a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="design">
-          <div class="container">
-            <h2 class="title">New Design</h2>
-            <div class="design__filter-btn">
-              <button class="design__btn" data-filter="all">All</button>
-              <button class="design__btn" data-filter=".category-a">Furnitures</button>
-              <button class="design__btn" data-filter=".category-b">Chairs</button>
-              <button class="design__btn" data-filter=".category-c">Lighting</button>
-              <button class="design__btn" data-filter=".category-d">Decor</button>
-            </div>
-            <div class="design__content">
-              <a class="design__item mix category-a" href="#">
-                <h5 class="design__item-title">Beat Flat Pendant Black</h5>
-                <p class="design__item-subtitle">Classic</p>
-                <img
-                class="design__item-img"
-                src="images/design/design-item-1.png"
-                alt="design item"/>
-              </a>
-              <a class="design__item mix category-a" href="#">
-                <h5 class="design__item-title">Lampe Sur Pieds Bamboo</h5>
-                <p class="design__item-subtitle">Classic</p>
-                <img
-                class="design__item-img"
-                src="images/design/design-item-2.png"
-                alt="design item"/>
-              </a>
-              <a class="design__item mix category-b" href="#">
-                <h5 class="design__item-title">Rattan Rocking Chair</h5>
-                <p class="design__item-subtitle">Classic</p>
-                <img
-                class="design__item-img"
-                src="images/design/design-item-3.png"
-                alt="design item"/>
-              </a>
-              <a class="design__item mix category-c" href="#">
-                <h5 class="design__item-title">Rattan Rocking Chair</h5>
-                <p class="design__item-subtitle">Classic</p>
-                <img
-                class="design__item-img"
-                src="images/design/design-item-4.png"
-                alt="design item"/>
-              </a>
-              <a class="design__item mix category-d" href="#">
-                <h5 class="design__item-title">Rattan Rocking Chair</h5>
-                <p class="design__item-subtitle">Classic</p>
-                <img
-                class="design__item-img"
-                src="images/design/design-item-5.png"
-                alt="design item"/>
-              </a>
-              <a class="design__item mix category-d" href="#">
-                <h5 class="design__item-title">Lampe Sur Pieds Bamboo</h5>
-                <p class="design__item-subtitle">Classic</p>
-                <img
-                class="design__item-img"
-                src="images/design/design-item-6.png"
-                alt="design item"/>
-              </a>
-            </div>
-          </div>
-        </section>
-        <div class="sale">
-            <div class="sale__content" >
-              <p class="sale__subtitle">our comfort</p>
-              <h2 class="title">DEAL OF THE DAY</h2>
-              <div class="sale__timer" data-time="'2023-05-25'">
-                <div class="sale__timer-item">
-                  <span class="sale__days"></span>
-                  <div class="sale__text">Days</div>
-                </div>
-                <div class="sale__timer-item">
-                  <span class="sale__hours"></span>
-                  <div class="sale__text">Hours</div>
-                </div>
-                <div class="sale__timer-item">
-                  <span class="sale__minutes"></span>
-                  <div class="sale__text">Minutes</div>
-                </div>
-                <div class="sale__timer-item">
-                  <span class="sale__seconds"></span>
-                  <div class="sale__text">Seconds</div>
-                </div>
-              </div>
-              <a class="sale__link" href="#">Shop now</a>
-            </div>
         </div>
-      </main>
-
-      <footer class="footer">
+      </section>
+      <div class="top-info">
+        <div class="top-info__items">
+          <div class="top-info__item top-info__item--support">
+            <h4 class="top-info__title">Support 24/7.</h4>
+            <p class="top-info__text">
+              Contact us 24 hours a day, 7 days a week.
+            </p>
+          </div>
+          <div class="top-info__item top-info__item--delivery">
+            <h4 class="top-info__title">Delivery.</h4>
+            <p class="top-info__text">Free shipping on all US order.</p>
+          </div>
+          <div class="top-info__item top-info__item--payment">
+            <h4 class="top-info__title">100% Payment secure.</h4>
+            <p class="top-info__text">We ensure secure payment with PEV.</p>
+          </div>
+        </div>
+      </div>
+      <section class="products">
         <div class="container">
-          <div class="footer-top">
-            <div class="footer-top__item footer-top__contact">
-              <a class="logo footer-top__logo" href="#">
-                <img
-                  class="logo__img"
-                  src="images/logo.svg"
-                  alt="footer-logo"
-                />
+          <h2 class="title">Products of the week</h2>
+          <div class="products__filter-btn">
+            <button class="products__btn" data-filter="all">All</button>
+            <button class="products__btn" data-filter=".category-a">
+              Furnitures
+            </button>
+            <button class="products__btn" data-filter=".category-b">
+              Chairs
+            </button>
+            <button class="products__btn" data-filter=".category-c">
+              Lighting
+            </button>
+            <button class="products__btn" data-filter=".category-d">
+              Decor
+            </button>
+          </div>
+          <div class="products__content">
+            <div class="products__item mix category-a">
+              <img
+                class="products__item-img"
+                src="images/products/item-1.jpg"
+                alt="products assortment"
+              />
+              <div class="star" data-rateyo-rating="5"></div>
+              <h5 class="products__item-title">Wooden radio</h5>
+              <a class="products__item-price" href="#"> $29.00</a>
+              <a class="products__item-link products__item-link__box" href="#">
+                <img src="images/icon/search.svg" alt="products search" />
+                <img src="images/icon/cart.svg" alt="products cart" />
+                <img src="images/icon/heart.svg" alt="products heart" />
               </a>
-              <a class="footer-top__adress" href="#">
-                ADDRESS: 4772 Wines Lane Houston, TX 77032
+            </div>
+            <div class="products__item mix category-a">
+              <img
+                class="products__item-img"
+                src="images/products/item-2.jpg"
+                alt="products assortment"
+              />
+              <div class="star" data-rateyo-rating="4"></div>
+              <h5 class="products__item-title">Wooden chair</h5>
+              <a class="products__item-price" href="#">$45.00</a>
+              <a class="products__item-link products__item-link__box" href="#">
+                <img src="images/icon/search.svg" alt="products search" />
+                <img src="images/icon/cart.svg" alt="products cart" />
+                <img src="images/icon/heart.svg" alt="products heart" />
               </a>
-              <a class="footer-top__phone" href="tel:+832-347-5843">
-                Telephone: +832-347-5843
+            </div>
+            <div class="products__item mix category-b">
+              <img
+                class="products__item-img"
+                src="images/products/item-3.jpg"
+                alt="products assortment"
+              />
+              <div class="star" data-rateyo-rating="3"></div>
+              <h5 class="products__item-title">White chair</h5>
+              <a class="products__item-price" href="#">$60.00</a>
+              <a class="products__item-link products__item-link__box" href="#">
+                <img src="images/icon/search.svg" alt="products search" />
+                <img src="images/icon/cart.svg" alt="products cart" />
+                <img src="images/icon/heart.svg" alt="products heart" />
               </a>
-              <a class="footer-top__email" href="mailto:contact@Glee.com"
-                >Email: contact@Glee.com</a
-              >
-              <div class="footer-top__social">
-                <ul class="footer-top__social-list">
-                  <li class="footer-top__social-item">
-                    <a class="footer-top__social-link" href="#">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="20px"
-                        height="20px"
-                        viewBox="0 0 20 20"
-                      >
-                        <g>
-                          <path fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 19.6875
-                          10 C 19.6875 4.648438 15.351562 0.3125 10 0.3125 C
-                          4.648438 0.3125 0.3125 4.648438 0.3125 10 C 0.3125
-                          14.835938 3.855469 18.84375 8.484375 19.570312 L
-                          8.484375 12.800781 L 6.023438 12.800781 L 6.023438 10
-                          L 8.484375 10 L 8.484375 7.867188 C 8.484375 5.4375
-                          9.929688 4.097656 12.144531 4.097656 C 13.207031
-                          4.097656 14.3125 4.285156 14.3125 4.285156 L 14.3125
-                          6.667969 L 13.09375 6.667969 C 11.890625 6.667969
-                          11.515625 7.414062 11.515625 8.183594 L 11.515625 10 L
-                          14.199219 10 L 13.769531 12.800781 L 11.515625
-                          12.800781 L 11.515625 19.570312 C 16.144531 18.84375
-                          19.6875 14.835938 19.6875 10 Z M 19.6875 10 "/>
-                        </g>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="footer-top__social-item">
-                    <a class="footer-top__social-link" href="#">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="20px"
-                        height="20px"
-                        viewBox="0 0 20 22"
-                      >
-                        <g>
-                          <path
-                            fill:rgb(0%,0%,0%);fill-opacity:1;
-                            d="M 10.003906
+            </div>
+            <div class="products__item mix category-b">
+              <img
+                class="products__item-img"
+                src="images/products/item-4.jpg"
+                alt="products assortment"
+              />
+              <div class="star" data-rateyo-rating="5"></div>
+              <h5 class="products__item-title">Retro table</h5>
+              <a class="products__item-price" href="#">$120.00</a>
+              <a class="products__item-link products__item-link__box" href="#">
+                <img src="images/icon/search.svg" alt="products search" />
+                <img src="images/icon/cart.svg" alt="products cart" />
+                <img src="images/icon/heart.svg" alt="products heart" />
+              </a>
+            </div>
+            <div class="products__item mix category-c">
+              <img
+                class="products__item-img"
+                src="images/products/item-5.jpg"
+                alt="products assortment"
+              />
+              <div class="star" data-rateyo-rating="4"></div>
+              <h5 class="products__item-title">Wooden radio</h5>
+              <a class="products__item-price" href="#">$45.00</a>
+              <a class="products__item-link products__item-link__box" href="#">
+                <img src="images/icon/search.svg" alt="products search" />
+                <img src="images/icon/cart.svg" alt="products cart" />
+                <img src="images/icon/heart.svg" alt="products heart" />
+              </a>
+            </div>
+            <div class="products__item mix category-c">
+              <img
+                class="products__item-img"
+                src="images/products/item-6.jpg"
+                alt="products assortment"
+              />
+              <div class="star" data-rateyo-rating="3"></div>
+              <h5 class="products__item-title">Wooden chair</h5>
+              <a class="products__item-price" href="#">$99.00</a>
+              <a class="products__item-link products__item-link__box" href="#">
+                <img src="images/icon/search.svg" alt="products search" />
+                <img src="images/icon/cart.svg" alt="products cart" />
+                <img src="images/icon/heart.svg" alt="products heart" />
+              </a>
+            </div>
+            <div class="products__item mix category-d">
+              <img
+                class="products__item-img"
+                src="images/products/item-7.jpg"
+                alt="products assortment"
+              />
+              <div class="star" data-rateyo-rating="2"></div>
+              <h5 class="products__item-title">White chair</h5>
+              <a class="products__item-price" href="#">$50.00</a>
+              <a class="products__item-link products__item-link__box" href="#">
+                <img src="images/icon/search.svg" alt="products search" />
+                <img src="images/icon/cart.svg" alt="products cart" />
+                <img src="images/icon/heart.svg" alt="products heart" />
+              </a>
+            </div>
+            <div class="products__item mix category-d">
+              <img
+                class="products__item-img"
+                src="images/products/item-8.jpg"
+                alt="products assortment"
+              />
+              <div class="star" data-rateyo-rating="4"></div>
+              <h5 class="products__item-title">Retro table</h5>
+              <a class="products__item-price" href="#">$79.00</a>
+              <a class="products__item-link products__item-link__box" href="#">
+                <img src="images/icon/search.svg" alt="products search" />
+                <img src="images/icon/cart.svg" alt="products cart" />
+                <img src="images/icon/heart.svg" alt="products heart" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="sale">
+        <div class="sale__content">
+          <p class="sale__subtitle">our comfort</p>
+          <h2 class="title">DEAL OF THE DAY</h2>
+          <div class="sale__timer" data-time="'2023-05-25'">
+            <div class="sale__timer-item">
+              <span class="sale__days"></span>
+              <div class="sale__text">Days</div>
+            </div>
+            <div class="sale__timer-item">
+              <span class="sale__hours"></span>
+              <div class="sale__text">Hours</div>
+            </div>
+            <div class="sale__timer-item">
+              <span class="sale__minutes"></span>
+              <div class="sale__text">Minutes</div>
+            </div>
+            <div class="sale__timer-item">
+              <span class="sale__seconds"></span>
+              <div class="sale__text">Seconds</div>
+            </div>
+          </div>
+          <a class="sale__link" href="#">Shop now</a>
+        </div>
+      </div>
+      <div class="benefits">
+        <div class="benefits__inner">
+          <div class="benefits__item">
+            <img
+              class="benefits__img"
+              src="images/benefits/benefits-img-1.png"
+              alt="benefits products"
+            />
+            <div class="benefits__descr">
+              <h2 class="benefits__title">Mirum Notare Tellus</h2>
+              <p class="benefits__text">
+                LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight
+              </p>
+              <a class="benefits__link" href="#">View More</a>
+            </div>
+          </div>
+          <div class="benefits__item">
+            <img
+              class="benefits__img"
+              src="images/benefits/benefits-img-2.png"
+              alt="benefits products"
+            />
+            <div class="benefits__descr">
+              <h2 class="benefits__title">Malesuada Tempor Euismod</h2>
+              <p class="benefits__text">
+                50W 8000lm Compact Size for HID
+                StreetLightReplacementLEDCornLight
+              </p>
+              <a class="benefits__link" href="#">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="design">
+        <div class="container">
+          <h2 class="title">New Design</h2>
+          <div class="design__filter-btn">
+            <button class="design__btn" data-filter="all">All</button>
+            <button class="design__btn" data-filter=".category-a">
+              Furnitures
+            </button>
+            <button class="design__btn" data-filter=".category-b">
+              Chairs
+            </button>
+            <button class="design__btn" data-filter=".category-c">
+              Lighting
+            </button>
+            <button class="design__btn" data-filter=".category-d">Decor</button>
+          </div>
+          <div class="design__content">
+            <a
+              class="design__item mix category-a"
+              href="#"
+              style="background-image: url(images/design/design-item-1.jpg)"
+            >
+              <h5 class="design__item-title">Beat Flat Pendant Black</h5>
+              <p class="design__item-subtitle">Classic</p>
+            </a>
+            <a
+              class="design__item mix category-a"
+              href="#"
+              style="background-image: url(images/design/design-item-2.jpg)"
+            >
+              <h5 class="design__item-title">Lampe Sur Pieds Bamboo</h5>
+              <p class="design__item-subtitle">Classic</p>
+            </a>
+            <a
+              class="design__item mix category-b"
+              href="#"
+              style="background-image: url(images/design/design-item-3.jpg)"
+            >
+              <h5 class="design__item-title">Rattan Rocking Chair</h5>
+              <p class="design__item-subtitle">Classic</p>
+            </a>
+            <a
+              class="design__item mix category-c"
+              href="#"
+              style="background-image: url(images/design/design-item-4.jpg)"
+            >
+              <h5 class="design__item-title">Rattan Rocking Chair</h5>
+              <p class="design__item-subtitle">Classic</p>
+            </a>
+            <a
+              class="design__item mix category-d"
+              href="#"
+              style="background-image: url(images/design/design-item-5.jpg)"
+            >
+              <h5 class="design__item-title">Rattan Rocking Chair</h5>
+              <p class="design__item-subtitle">Classic</p>
+            </a>
+            <a
+              class="design__item mix category-d"
+              href="#"
+              style="background-image: url(images/design/design-item-6.jpg)"
+            >
+              <h5 class="design__item-title">Lampe Sur Pieds Bamboo</h5>
+              <p class="design__item-subtitle">Classic</p>
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="video">
+        <a
+          class="video__link"
+          data-fancybox
+          data-width="1400"
+          data-height="800"
+          href="https://youtu.be/tvPnrfQCiCo"
+        >
+          <img
+            class="video__img"
+            src="images/icon/video-play.svg"
+            alt="video img button"
+          />
+        </a>
+      </div>
+      <section class="blog">
+        <div class="container">
+          <div class="blog__heading">
+            <h2 class="title">Our Insights & Articles</h2>
+            <p class="blog__text">View All</p>
+          </div>
+          <div class="blog__items">
+            <div class="blog__item">
+              <a class="blog__item-link" href="#">
+                <img src="images/blog/blog-item-1.jpg" alt="blog-images" />
+              </a>
+              <div class="blog__item-info">
+                <h5 class="blog__item-subtitle">News</h5>
+                <a class="blog__item-text" href="#">
+                  Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                  enim ad minim veniam
+                </a>
+                <div class="blog__box">
+                  <div class="blog__date">28 JANUARY, 2023</div>
+                  <a class="blog__author" href="#">BY ADMIN</a>
+                </div>
+              </div>
+            </div>
+            <div class="blog__item">
+              <a class="blog__item-link" href="#">
+                <img src="images/blog/blog-item-2.jpg" alt="blog-images" />
+              </a>
+              <div class="blog__item-info">
+                <h5 class="blog__item-subtitle">News</h5>
+                <a class="blog__item-text" href="#">
+                  Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore
+                </a>
+                <div class="blog__box">
+                  <div class="blog__date">28 JANUARY, 2023</div>
+                  <a class="blog__author" href="#">BY ADMIN</a>
+                </div>
+              </div>
+            </div>
+            <div class="blog__item">
+              <a class="blog__item-link" href="#">
+                <img src="images/blog/blog-item-3.jpg" alt="blog-images" />
+              </a>
+              <div class="blog__item-info">
+                <h5 class="blog__item-subtitle">News</h5>
+                <a class="blog__item-text" href="#">
+                  Rncididunt ut labore et dolore magna aliqua. Ut enim
+                </a>
+                <div class="blog__box">
+                  <div class="blog__date">28 JANUARY, 2023</div>
+                  <a class="blog__author" href="#">BY ADMIN</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="parthers">
+        <img
+          class="parhers-item"
+          src="images/parthers/1.png.svg"
+          alt="parthers logo"
+        />
+        <img
+          class="parhers-item"
+          src="images/parthers/2.png.svg"
+          alt="parthers logo"
+        />
+        <img
+          class="parhers-item"
+          src="images/parthers/3.png.svg"
+          alt="parthers logo"
+        />
+        <img
+          class="parhers-item"
+          src="images/parthers/4.png.svg"
+          alt="parthers logo"
+        />
+        <img
+          class="parhers-item"
+          src="images/parthers/5.png.svg"
+          alt="parthers logo"
+        />
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-top__item footer-top__contact">
+            <a class="logo footer-top__logo" href="#">
+              <img class="logo__img" src="images/logo.svg" alt="footer-logo" />
+            </a>
+            <a class="footer-top__adress" href="#">
+              ADDRESS: 4772 Wines Lane Houston, TX 77032
+            </a>
+            <a class="footer-top__phone" href="tel:+832-347-5843">
+              Telephone: +832-347-5843
+            </a>
+            <a class="footer-top__email" href="mailto:contact@Glee.com"
+              >Email: contact@Glee.com</a
+            >
+            <div class="footer-top__social">
+              <ul class="footer-top__social-list">
+                <li class="footer-top__social-item">
+                  <a class="footer-top__social-link" href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="20px"
+                      height="20px"
+                      viewBox="0 0 20 20"
+                    >
+                      <g>
+                        <path fill:rgb(0%,0%,0%);fill-opacity:1;" d="M 19.6875
+                        10 C 19.6875 4.648438 15.351562 0.3125 10 0.3125 C
+                        4.648438 0.3125 0.3125 4.648438 0.3125 10 C 0.3125
+                        14.835938 3.855469 18.84375 8.484375 19.570312 L
+                        8.484375 12.800781 L 6.023438 12.800781 L 6.023438 10 L
+                        8.484375 10 L 8.484375 7.867188 C 8.484375 5.4375
+                        9.929688 4.097656 12.144531 4.097656 C 13.207031
+                        4.097656 14.3125 4.285156 14.3125 4.285156 L 14.3125
+                        6.667969 L 13.09375 6.667969 C 11.890625 6.667969
+                        11.515625 7.414062 11.515625 8.183594 L 11.515625 10 L
+                        14.199219 10 L 13.769531 12.800781 L 11.515625 12.800781
+                        L 11.515625 19.570312 C 16.144531 18.84375 19.6875
+                        14.835938 19.6875 10 Z M 19.6875 10 "/>
+                      </g>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer-top__social-item">
+                  <a class="footer-top__social-link" href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="20px"
+                      height="20px"
+                      viewBox="0 0 20 22"
+                    >
+                      <g>
+                        <path
+                          fill:rgb(0%,0%,0%);fill-opacity:1;
+                          d="M 10.003906
                         6.058594 C 7.164062 6.058594 4.875 8.261719 4.875
                         10.996094 C 4.875 13.726562 7.164062 15.933594 10.003906
                         15.933594 C 12.84375 15.933594 15.132812 13.726562
@@ -509,116 +639,113 @@
                         6.585938 18.207031 9.59375 18.207031 10.996094 C 18.207031
                         12.398438 18.324219 15.410156 17.804688 16.671875 Z M
                         17.804688 16.671875 "
-                          />
-                        </g>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="footer-top__social-item">
-                    <a class="footer-top__social-link" href="#">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="20px"
-                        height="20px"
-                        viewBox="0 0 20 20"
-                      >
-                        <g>
-                          <path
-                            fill:rgb(0%,0%,0%);fill-opacity:1;
-                            d="M 10 0.3125 C 4.476562 0.3125 0 4.648438 0 10 C 0 15.351562 4.476562 19.6875 10 19.6875 C 15.523438 19.6875 20 15.351562 20 10 C 20 4.648438 15.523438 0.3125 10 0.3125 Z M 14.636719 6.902344 C 14.484375 8.433594 13.832031 12.148438 13.503906 13.867188 C 13.363281 14.589844 13.085938 14.835938 12.820312 14.859375 C 12.238281 14.910156 11.796875 14.488281 11.234375 14.128906 C 10.355469 13.570312 9.855469 13.222656 9.003906 12.675781 C 8.015625 12.046875 8.65625 11.699219 9.21875 11.132812 C 9.367188 10.988281 11.925781 8.730469 11.972656 8.527344 C 11.980469 8.5 11.984375 8.40625 11.925781 8.355469 C 11.867188 8.304688 11.78125 8.324219 11.71875 8.335938 C 11.632812 8.355469 10.226562 9.257812 7.503906 11.039062 C 7.101562 11.304688 6.742188 11.433594 6.417969 11.425781 C 6.0625 11.417969 5.375 11.230469 4.863281 11.070312 C 4.238281 10.871094 3.738281 10.769531 3.78125 10.433594 C 3.804688 10.257812 4.054688 10.078125 4.527344 9.898438 C 7.441406 8.667969 9.386719 7.855469 10.359375 7.464844 C 13.136719 6.34375 13.710938 6.152344 14.089844 6.144531 C 14.171875 6.144531 14.355469 6.164062 14.476562 6.257812 C 14.554688 6.324219 14.605469 6.417969 14.617188 6.519531 C 14.636719 6.644531 14.644531 6.773438 14.636719 6.902344 Z M 14.636719 6.902344 "
-                          />
-                        </g>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="footer-top__social-item">
-                    <a class="footer-top__social-link" href="#">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        width="20px"
-                        height="20px"
-                        viewBox="0 0 20 20"
-                      >
-                        <g>
-                          <path
-                            fill:rgb(0%,0%,0%);fill-opacity:1;
-                            d="M 17.945312 5.925781 C 17.957031 6.105469 17.957031 6.28125 17.957031 6.460938 C 17.957031 11.878906 13.832031 18.121094 6.292969 18.121094 C 3.972656 18.121094 1.816406 17.449219 0 16.28125 C 0.328125 16.320312 0.648438 16.332031 0.988281 16.332031 C 2.90625 16.332031 4.671875 15.683594 6.078125 14.582031 C 4.277344 14.542969 2.765625 13.363281 2.246094 11.738281 C 2.5 11.777344 2.753906 11.800781 3.019531 11.800781 C 3.386719 11.800781 3.757812 11.75 4.097656 11.664062 C 2.222656 11.28125 0.8125 9.632812 0.8125 7.640625 L 0.8125 7.589844 C 1.359375 7.894531 1.992188 8.082031 2.664062 8.109375 C 1.5625 7.375 0.835938 6.117188 0.835938 4.695312 C 0.835938 3.933594 1.039062 3.234375 1.394531 2.625 C 3.414062 5.113281 6.445312 6.738281 9.847656 6.917969 C 9.785156 6.613281 9.746094 6.292969 9.746094 5.976562 C 9.746094 3.71875 11.574219 1.878906 13.84375 1.878906 C 15.023438 1.878906 16.089844 2.375 16.839844 3.171875 C 17.765625 2.996094 18.65625 2.652344 19.441406 2.183594 C 19.136719 3.132812 18.488281 3.933594 17.640625 4.441406 C 18.464844 4.351562 19.265625 4.125 20 3.808594 C 19.441406 4.621094 18.742188 5.34375 17.945312 5.925781 Z M 17.945312 5.925781 "
-                          />
-                        </g>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="footer-top__item footer-top__nav">
-              <h5 class="footer-top__title">Services</h5>
-              <ul class="footer-top__list">
-                <li class="footer-top__item">
-                  <a class="footer-top__link" href="#">About us</a>
+                        />
+                      </g>
+                    </svg>
+                  </a>
                 </li>
-                <li class="footer-top__item">
-                  <a class="footer-top__link" href="#">Return Policy</a>
+                <li class="footer-top__social-item">
+                  <a class="footer-top__social-link" href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="20px"
+                      height="20px"
+                      viewBox="0 0 20 20"
+                    >
+                      <g>
+                        <path
+                          fill:rgb(0%,0%,0%);fill-opacity:1;
+                          d="M 10 0.3125 C 4.476562 0.3125 0 4.648438 0 10 C 0 15.351562 4.476562 19.6875 10 19.6875 C 15.523438 19.6875 20 15.351562 20 10 C 20 4.648438 15.523438 0.3125 10 0.3125 Z M 14.636719 6.902344 C 14.484375 8.433594 13.832031 12.148438 13.503906 13.867188 C 13.363281 14.589844 13.085938 14.835938 12.820312 14.859375 C 12.238281 14.910156 11.796875 14.488281 11.234375 14.128906 C 10.355469 13.570312 9.855469 13.222656 9.003906 12.675781 C 8.015625 12.046875 8.65625 11.699219 9.21875 11.132812 C 9.367188 10.988281 11.925781 8.730469 11.972656 8.527344 C 11.980469 8.5 11.984375 8.40625 11.925781 8.355469 C 11.867188 8.304688 11.78125 8.324219 11.71875 8.335938 C 11.632812 8.355469 10.226562 9.257812 7.503906 11.039062 C 7.101562 11.304688 6.742188 11.433594 6.417969 11.425781 C 6.0625 11.417969 5.375 11.230469 4.863281 11.070312 C 4.238281 10.871094 3.738281 10.769531 3.78125 10.433594 C 3.804688 10.257812 4.054688 10.078125 4.527344 9.898438 C 7.441406 8.667969 9.386719 7.855469 10.359375 7.464844 C 13.136719 6.34375 13.710938 6.152344 14.089844 6.144531 C 14.171875 6.144531 14.355469 6.164062 14.476562 6.257812 C 14.554688 6.324219 14.605469 6.417969 14.617188 6.519531 C 14.636719 6.644531 14.644531 6.773438 14.636719 6.902344 Z M 14.636719 6.902344 "
+                        />
+                      </g>
+                    </svg>
+                  </a>
                 </li>
-                <li class="footer-top__item">
-                  <a class="footer-top__link" href="#">Our Blog</a>
-                </li>
-                <li class="footer-top__item">
-                  <a class="footer-top__link" href="#">Contact Us</a>
-                </li>
-                <li class="footer-top__item">
-                  <a class="footer-top__link" href="#">Terms & Condition</a>
+                <li class="footer-top__social-item">
+                  <a class="footer-top__social-link" href="#">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="20px"
+                      height="20px"
+                      viewBox="0 0 20 20"
+                    >
+                      <g>
+                        <path
+                          fill:rgb(0%,0%,0%);fill-opacity:1;
+                          d="M 17.945312 5.925781 C 17.957031 6.105469 17.957031 6.28125 17.957031 6.460938 C 17.957031 11.878906 13.832031 18.121094 6.292969 18.121094 C 3.972656 18.121094 1.816406 17.449219 0 16.28125 C 0.328125 16.320312 0.648438 16.332031 0.988281 16.332031 C 2.90625 16.332031 4.671875 15.683594 6.078125 14.582031 C 4.277344 14.542969 2.765625 13.363281 2.246094 11.738281 C 2.5 11.777344 2.753906 11.800781 3.019531 11.800781 C 3.386719 11.800781 3.757812 11.75 4.097656 11.664062 C 2.222656 11.28125 0.8125 9.632812 0.8125 7.640625 L 0.8125 7.589844 C 1.359375 7.894531 1.992188 8.082031 2.664062 8.109375 C 1.5625 7.375 0.835938 6.117188 0.835938 4.695312 C 0.835938 3.933594 1.039062 3.234375 1.394531 2.625 C 3.414062 5.113281 6.445312 6.738281 9.847656 6.917969 C 9.785156 6.613281 9.746094 6.292969 9.746094 5.976562 C 9.746094 3.71875 11.574219 1.878906 13.84375 1.878906 C 15.023438 1.878906 16.089844 2.375 16.839844 3.171875 C 17.765625 2.996094 18.65625 2.652344 19.441406 2.183594 C 19.136719 3.132812 18.488281 3.933594 17.640625 4.441406 C 18.464844 4.351562 19.265625 4.125 20 3.808594 C 19.441406 4.621094 18.742188 5.34375 17.945312 5.925781 Z M 17.945312 5.925781 "
+                        />
+                      </g>
+                    </svg>
+                  </a>
                 </li>
               </ul>
-            </div>
-            <div class="footer-top__item footer-top__nav">
-              <h5 class="footer-top__title">Account</h5>
-              <ul class="footer-top__list">
-                <li class="footer-top__item">
-                  <a class="footer-top__link" href="#">Your Account</a>
-                </li>
-                <li class="footer-top__item">
-                  <a class="footer-top__link" href="#">Checkout</a>
-                </li>
-                <li class="footer-top__item">
-                  <a class="footer-top__link" href="#">Login</a>
-                </li>
-                <li class="footer-top__item">
-                  <a class="footer-top__link" href="#">Register</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-top__item footer-top__form">
-              <h5 class="footer-top__title">Newsletter</h5>
-              <p class="footer-top__text">
-                Subscribe by our newsletter and get update protidin.
-              </p>
-              <form class="footer-top__form-footer" action="#">
-                <input
-                  class="footer-top__form-input"
-                  type="email"
-                  placeholder="Email address"
-                  required
-                />
-                <button class="footer-top__form-btn" type="submit">
-                  Subscribe
-                </button>
-              </form>
             </div>
           </div>
-          <div class="footer-copy">
-            <p class="footer-copy__text">
-              ©2023 CopyRight Example. All rights reserved.
+          <div class="footer-top__item footer-top__nav">
+            <h5 class="footer-top__title">Services</h5>
+            <ul class="footer-top__list">
+              <li class="footer-top__item">
+                <a class="footer-top__link" href="#">About us</a>
+              </li>
+              <li class="footer-top__item">
+                <a class="footer-top__link" href="#">Return Policy</a>
+              </li>
+              <li class="footer-top__item">
+                <a class="footer-top__link" href="#">Our Blog</a>
+              </li>
+              <li class="footer-top__item">
+                <a class="footer-top__link" href="#">Contact Us</a>
+              </li>
+              <li class="footer-top__item">
+                <a class="footer-top__link" href="#">Terms & Condition</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-top__item footer-top__nav">
+            <h5 class="footer-top__title">Account</h5>
+            <ul class="footer-top__list">
+              <li class="footer-top__item">
+                <a class="footer-top__link" href="#">Your Account</a>
+              </li>
+              <li class="footer-top__item">
+                <a class="footer-top__link" href="#">Checkout</a>
+              </li>
+              <li class="footer-top__item">
+                <a class="footer-top__link" href="#">Login</a>
+              </li>
+              <li class="footer-top__item">
+                <a class="footer-top__link" href="#">Register</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-top__item footer-top__form">
+            <h5 class="footer-top__title">Newsletter</h5>
+            <p class="footer-top__text">
+              Subscribe by our newsletter and get update protidin.
             </p>
+            <form class="footer-top__form-footer" action="#">
+              <input
+                class="footer-top__form-input"
+                type="email"
+                placeholder="Email address"
+                required
+              />
+              <button class="footer-top__form-btn" type="submit">
+                Subscribe
+              </button>
+            </form>
           </div>
         </div>
-      </footer>
+        <div class="footer-copy">
+          <p class="footer-copy__text">
+            ©2023 CopyRight Example. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
 
-      <script src="js/main.min.js"></script>
-    </body>
-  </html>
-</!DOCTYPE>
-
-
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
