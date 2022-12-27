@@ -206,7 +206,7 @@
 .top-info {
   margin: 0 75px;
   background-color: $bg-default;
-  &__inner {
+  &__items {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -352,10 +352,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 100px 0;
+  padding: 150px 160px;
 
   &__content {
-    max-width: 800px;
+    max-width: 600px;
     width: 100%;
     margin-left: auto;
   }
@@ -504,10 +504,20 @@
     @extend %DMSans-700;
   }
 
-
   .mixitup-control-active {
     color: $title;
   }
+}
+
+.video {
+  background-image: url(../images/video-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-top {
