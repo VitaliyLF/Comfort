@@ -4,6 +4,8 @@
 @import 'libs';
 @import 'global';
 
+// start main page
+
 .header {
   &__snow {
     position: relative;
@@ -51,15 +53,15 @@
     line-height: 12px;
     padding: 0 5px 5px;
     @extend %Rubik-500;
-    color: $accent;
+    color: #436372;
     &:hover {
-      border-bottom: 2px solid $header;
+      border-bottom: 2px solid $accent;
     }
   }
 
   &__item-link--active {
     @extend %Rubik-700;
-    color: $header;
+    color: $accent;
   }
 }
 
@@ -76,7 +78,7 @@
   }
 
   &__link--heart {
-    background-color: $header;
+    background-color: $accent;
     width: 90px;
     border-radius: 50px 0px 0px 50px;
     @extend %flex-column-center;
@@ -95,7 +97,7 @@
   }
 
   &__link--cart {
-    background-color: $header;
+    background-color: $accent;
     width: 90px;
     border-radius: 0px 50px 50px 0px;
     @extend %flex-column-center;
@@ -137,7 +139,7 @@
 
 .top-slider {
   margin: 0 75px;
-  background-color: $header;
+  background-color: $accent;
   background-image: url(../images/slider/slider-bg.png);
   background-repeat: no-repeat;
   background-position: 90% 40%;
@@ -300,7 +302,7 @@
 
   &__item-title {
     @extend %DMSans-700;
-    color: $accent;
+    color: #436372;
     font-size: 16px;
     line-height: 40px;
   }
@@ -382,7 +384,7 @@
   &__timer-item {
     width: 100px;
     height: 100px;
-    background-color: $header;
+    background-color: $accent;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -529,7 +531,7 @@
     margin-bottom: 55px;
   }
 
-  &__text {
+  &__heading-link {
     @extend %DMSans-700;
     color: $title;
     padding-right: 30px;
@@ -743,6 +745,29 @@
 
 .footer-copy {
   text-align: center;
+}
+
+// end main page
+
+// stat login page
+.top {
+  &__container {
+    padding: 155px 0;
+    margin: 0 auto;
+    background-color: #edf1f4;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    color: $title;
+  }
+
+  &__title {
+    font-size: 64px;
+    text-transform: uppercase;
+    @extend %Rubik-300;
+    margin-bottom: 20px;
+  }
 }
 
 @import 'media';
