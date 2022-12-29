@@ -54,6 +54,7 @@ a {
   &__item {
     @extend %Rubik-300;
     color: $title;
+    text-transform: capitalize;
     font-size: 18px;
     padding-right: 40px;
     position: relative;
@@ -72,6 +73,15 @@ a {
       &::after {
         display: none;
       }
+    }
+  }
+}
+
+.main--login,
+.main--register {
+  .parthers {
+    &::after {
+      display: none;
     }
   }
 }
