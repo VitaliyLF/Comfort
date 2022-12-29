@@ -749,7 +749,7 @@
 
 // end main page
 
-// stat login page
+// stat login and register page
 
 .top {
   &__container {
@@ -831,9 +831,44 @@
     @extend %Rubik-500;
     font-size: 18px;
     color: $default;
+    &:hover {
+      background-color: $btn;
+      color: #fff;
+    }
   }
 }
 
-// end login page
+// end login and register page
+
+// start 404 page
+
+.page-404 {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__content {
+    max-width: 650px;
+  }
+
+  &__title {
+    font-size: 36px;
+    @extend %Rubik-700;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    max-width: 400px;
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    @extend %btn;
+  }
+}
+
+// end 404 page
 
 @import 'media';
