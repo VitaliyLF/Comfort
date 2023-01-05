@@ -50,10 +50,12 @@ $shop: #edf1f4;
 
 %btn {
   display: block;
+  border: none;
   background-color: $btn;
   color: #fff;
   padding: 21px 30px;
   font-size: 15px;
+  cursor: pointer;
   max-width: 200px;
   position: relative;
   &::before {
@@ -67,4 +69,12 @@ $shop: #edf1f4;
     top: 27px;
     right: 30px;
   }
+}
+
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
 }
