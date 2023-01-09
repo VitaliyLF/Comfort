@@ -32,3 +32,88 @@ body {
 a {
   color: inherit;
 }
+
+.breadcrumbs {
+  display: inline-flex;
+  padding-left: 30px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/icon/house.svg);
+    width: 20px;
+    height: 20px;
+    top: 4px;
+    left: 6px;
+  }
+
+  &__list {
+    display: inline-flex;
+  }
+
+  &__item {
+    @extend %Rubik-300;
+    color: $title;
+    text-transform: capitalize;
+    font-size: 18px;
+    padding-right: 40px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url(../images/icon/arrows.svg);
+      width: 20px;
+      height: 20px;
+      top: 5px;
+      right: 10px;
+    }
+    &:last-child {
+      color: $btn;
+      padding-right: 0;
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.main--login,
+.main--register,
+.main--shop {
+  .parthers {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  padding: 35px 0;
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    line-height: 1;
+  }
+
+  &__link {
+    padding: 19px 22px;
+    border: 1px solid $btn;
+    background-color: #fff;
+    &:hover {
+      background-color: $btn;
+      color: #fff;
+    }
+  }
+
+  &__link--active {
+    background-color: $btn;
+    color: #fff;
+  }
+
+  &__item + &__item {
+    margin-left: 15px;
+  }
+}

@@ -1,10 +1,64 @@
 $(function () {
+  $('.shop-content__filter-btn').on('click', function () {
+    $('.shop-content__filter-btn').removeClass(
+      'shop-content__filter-btn--active'
+    )
+    $(this).addClass('shop-content__filter-btn--active')
+  })
+
+  $('.button-list').on('click', function () {
+    $('.products-item').addClass('products-item--list')
+  })
+
+  $('.button-grid').on('click', function () {
+    $('.products-item').removeClass('products-item--list')
+  })
+
+  $('.select-style').styler({
+    locale: 'en',
+  })
+
+  $('.star').rateYo({
+    starWidth: '15px',
+    normalFill: '#ccccce',
+    ratedFill: '#ffc35b',
+    fullStar: true,
+  })
+
+  $('.star-shop').rateYo({
+    starWidth: '18px',
+    spacing: '13px',
+    normalFill: '#ccccce',
+    ratedFill: '#ffcc00',
+    fullStar: true,
+  })
+
+  $('.shop-recent__star').rateYo({
+    starWidth: '10px',
+    spacing: '3px',
+    normalFill: '#ccccce',
+    ratedFill: '#ffcc00',
+    fullStar: true,
+  })
+
+  $('.filter-price__input').ionRangeSlider({
+    type: 'double',
+    onStart: function (data) {
+      $('.filter-price__from').text(data.from)
+      $('.filter-price__to').text(data.to)
+    },
+    onChange: function (data) {
+      $('.filter-price__from').text(data.from)
+      $('.filter-price__to').text(data.to)
+    },
+  })
+
   $('.top-slider__items').slick({
     dots: true,
     arrows: false,
     fade: true,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 750,
   })
 
   var mixer = mixitup('.products__content', {
@@ -19,15 +73,6 @@ $(function () {
       duration: 500,
       effects: 'fade rotateY(-100deg)',
     },
-  })
-
-  $(function () {
-    $('.star').rateYo({
-      starWidth: '15px',
-      normalFill: '#ccccce',
-      ratedFill: '#ffc35b',
-      fullStar: true,
-    })
   })
 
   function getTimeRemaining(endtime) {
