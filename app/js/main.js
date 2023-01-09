@@ -1,12 +1,44 @@
 $(function () {
-  $(function () {
-    $('.shop-recent__star').rateYo({
-      starWidth: '10px',
-      spacing: '3px',
-      normalFill: '#ccccce',
-      ratedFill: '#ffcc00',
-      fullStar: true,
-    })
+  $('.shop-content__filter-btn').on('click', function () {
+    $('.shop-content__filter-btn').removeClass(
+      'shop-content__filter-btn--active'
+    )
+    $(this).addClass('shop-content__filter-btn--active')
+  })
+
+  $('.button-list').on('click', function () {
+    $('.products-item').addClass('products-item--list')
+  })
+
+  $('.button-grid').on('click', function () {
+    $('.products-item').removeClass('products-item--list')
+  })
+
+  $('.select-style').styler({
+    locale: 'en',
+  })
+
+  $('.star').rateYo({
+    starWidth: '15px',
+    normalFill: '#ccccce',
+    ratedFill: '#ffc35b',
+    fullStar: true,
+  })
+
+  $('.star-shop').rateYo({
+    starWidth: '18px',
+    spacing: '13px',
+    normalFill: '#ccccce',
+    ratedFill: '#ffcc00',
+    fullStar: true,
+  })
+
+  $('.shop-recent__star').rateYo({
+    starWidth: '10px',
+    spacing: '3px',
+    normalFill: '#ccccce',
+    ratedFill: '#ffcc00',
+    fullStar: true,
   })
 
   $('.filter-price__input').ionRangeSlider({
@@ -41,15 +73,6 @@ $(function () {
       duration: 500,
       effects: 'fade rotateY(-100deg)',
     },
-  })
-
-  $(function () {
-    $('.star').rateYo({
-      starWidth: '15px',
-      normalFill: '#ccccce',
-      ratedFill: '#ffc35b',
-      fullStar: true,
-    })
   })
 
   function getTimeRemaining(endtime) {

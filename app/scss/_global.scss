@@ -78,10 +78,42 @@ a {
 }
 
 .main--login,
-.main--register {
+.main--register,
+.main--shop {
   .parthers {
     &::after {
       display: none;
     }
+  }
+}
+
+.pagination {
+  display: flex;
+  padding: 35px 0;
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    line-height: 1;
+  }
+
+  &__link {
+    padding: 19px 22px;
+    border: 1px solid $btn;
+    background-color: #fff;
+    &:hover {
+      background-color: $btn;
+      color: #fff;
+    }
+  }
+
+  &__link--active {
+    background-color: $btn;
+    color: #fff;
+  }
+
+  &__item + &__item {
+    margin-left: 15px;
   }
 }
