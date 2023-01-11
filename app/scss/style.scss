@@ -295,9 +295,8 @@
 }
 
 .products-item {
-  max-width: 270px;
+  width: 270px;
   min-height: 380px;
-  padding: 40px;
   background-color: #fff;
   text-align: center;
   box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
@@ -309,7 +308,6 @@
 
   &.products-item--list {
     min-width: 100%;
-    padding: 0;
     box-shadow: none;
     display: flex;
     flex-direction: row;
@@ -322,15 +320,14 @@
       height: 500px;
       min-width: 370px;
       border: 3px solid $shop;
-      padding: 80px 40px;
     }
 
     .products-item__img {
+      min-height: 400px;
+      max-width: 400px;
+      margin: 50px auto;
       img {
-        min-height: 300px;
-        max-width: 300px;
         object-fit: cover;
-        margin: 0 auto;
       }
     }
 
@@ -879,7 +876,7 @@
   }
 
   &__title {
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-size: 64px;
     @extend %Rubik-300;
     margin-bottom: 30px;
@@ -904,9 +901,35 @@
     }
   }
 
-  &__label-box a {
-    color: $btn;
-    text-decoration: none;
+  .box-label {
+    padding-left: 25px;
+    &__input {
+      @extend %checkbox-hidden;
+      &:checked + .box-label__checkbox {
+        background-image: url(../images/icon/checkon.svg);
+        background-position: center;
+        background-size: cover;
+      }
+    }
+
+    &__checkbox {
+      width: 16px;
+      height: 16px;
+      position: absolute;
+      margin-left: -25px;
+      margin-top: 6px;
+      background-color: $btn;
+    }
+
+    &__link {
+      text-decoration: underline;
+    }
+
+    &__terms {
+      a {
+        color: $btn;
+      }
+    }
   }
 
   &__input {
@@ -932,7 +955,7 @@
     cursor: pointer;
   }
 
-  &__link {
+  &__tagline {
     display: block;
     text-align: center;
     margin-bottom: 25px;
