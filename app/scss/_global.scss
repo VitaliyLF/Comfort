@@ -103,14 +103,17 @@ a {
     border: 1px solid $btn;
     background-color: #fff;
     &:hover {
-      background-color: $btn;
-      color: #fff;
+      background-color: $accent;
     }
   }
 
   &__link--active {
     background-color: $btn;
     color: #fff;
+    &:hover {
+      background: $btn;
+      color: #fff;
+    }
   }
 
   &__item + &__item {

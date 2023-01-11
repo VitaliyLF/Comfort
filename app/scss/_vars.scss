@@ -71,7 +71,8 @@ $shop: #edf1f4;
   }
 }
 
-%checkbox-hidden {
+%checkbox-hidden,
+%checkbox-radio {
   width: 1px;
   height: 1px;
   overflow: hidden;

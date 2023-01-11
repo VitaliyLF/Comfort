@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="eu">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
+    <title>Product</title>
     <link
       rel="shortcut icon"
       href="images/icon/icon-web.svg"
@@ -79,76 +79,187 @@
       </div>
     </header>
 
-    <main class="main main--register">
+    <main class="main">
       <secton class="top">
         <div
           class="top__container"
-          style="background-image: url(images/top-bg-register.jpg)"
+          style="background-image: url(images/top-bg-login.jpg)"
         >
           <div class="container">
-            <h2 class="top__title">register</h2>
+            <h2 class="top__title">Product Page</h2>
             <div class="breadcrumbs">
               <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__item">
                   <a class="breadcrumbs__link" href="#">Home</a>
                 </li>
                 <li class="breadcrumbs__item">
-                  <a class="breadcrumbs__link" href="#">register</a>
+                  <a class="breadcrumbs__link" href="#">Product page</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </secton>
-      <section class="modal">
+      <section class="product-page">
         <div class="container">
-          <form class="modal__form" action="#">
-            <label class="modal__label">
-              Username or email address *
-              <input class="modal__input" type="text" required />
-            </label>
-            <label class="modal__label">
-              Password *
-              <input class="modal__input" type="password" required />
-            </label>
-            <label class="modal__label">
-              <div class="modal__label-box">
-                <input class="" type="checkbox" />
-                I agree to the <a href="#">terms</a> of the user agreement and
-                <a href="#">privacy policy.</a>
+          <div class="product-info">
+            <div class="product-info__inner">
+              <div class="product-info__slide product-slide">
+                <div class="product-slide__thumb">
+                  <div class="product-slide__thumb-item">
+                    <img
+                      src="images/products/item/1.jpg"
+                      alt="product images"
+                    />
+                  </div>
+                  <div class="product-slide__thumb-item">
+                    <img
+                      src="images/products/item/2.jpg"
+                      alt="product images"
+                    />
+                  </div>
+                  <div class="product-slide__thumb-item">
+                    <img
+                      src="images/products/item/3.jpg"
+                      alt="product images"
+                    />
+                  </div>
+                  <div class="product-slide__thumb-item">
+                    <img
+                      src="images/products/item/4.jpg"
+                      alt="product images"
+                    />
+                  </div>
+                </div>
+                <div class="product-slide__big">
+                  <div class="product-slide__big-item">
+                    <img
+                      src="images/products/item/1.jpg"
+                      alt="product images"
+                    />
+                  </div>
+                  <div class="product-slide__big-item">
+                    <img
+                      src="images/products/item/2.jpg"
+                      alt="product images"
+                    />
+                  </div>
+                  <div class="product-slide__big-item">
+                    <img
+                      src="images/products/item/3.jpg"
+                      alt="product images"
+                    />
+                  </div>
+                  <div class="product-slide__big-item">
+                    <img
+                      src="images/products/item/4.jpg"
+                      alt="product images"
+                    />
+                  </div>
+                </div>
               </div>
-            </label>
-            <button class="modal__btn" type="submit">Register</button>
-          </form>
+              <div class="product-info__content">
+                <h2 class="product-info__title">Vintage Сhair</h2>
+                <div class="product-info__star">
+                  <div class="star-shop" data-rateyo-rating="4"></div>
+                </div>
+                <a class="product-info__price" href="#">23$</a>
+                <p class="product-info__text">
+                  Consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                  ea commodo
+                </p>
+                <form class="product-info__form" action="#">
+                  <div class="product-info__form-title">Color:</div>
+                  <label class="product-info__label">
+                    <input
+                      class="product-info__input"
+                      type="radio"
+                      name="color"
+                    />
+                    <span class="product-info__radio">
+                      <span style="background-color: #541b21"></span>
+                    </span>
+                  </label>
+                  <label class="product-info__label">
+                    <input
+                      class="product-info__input"
+                      type="radio"
+                      name="color"
+                      checked
+                    />
+                    <span class="product-info__radio">
+                      <span style="background-color: #deb887"></span>
+                    </span>
+                  </label>
+                  <label class="product-info__label">
+                    <input
+                      class="product-info__input"
+                      type="radio"
+                      name="color"
+                    />
+                    <span class="product-info__radio">
+                      <span style="background-color: #b02e61"></span>
+                    </span>
+                  </label>
+                  <label class="product-info__label">
+                    <input
+                      class="product-info__input"
+                      type="radio"
+                      name="color"
+                    />
+                    <span class="product-info__radio">
+                      <span style="background-color: #4b5320"></span>
+                    </span>
+                  </label>
+                  <div class="product-info__buttons">
+                    <input
+                      class="product-info__num"
+                      type="number"
+                      value="1"
+                      min="1"
+                    />
+                    <button class="product-info__btn" type="submit">
+                      Add to cart
+                    </button>
+                  </div>
+                  <div class="product-info__descr product-descr">
+                    <ul class="product-descr__list">
+                      <li class="product-descr__item">
+                        <div class="product-descr__title">SKU:</div>
+                        <div class="product-descr__text">014</div>
+                      </li>
+                      <li class="product-descr__item">
+                        <div class="product-descr__title">Category:</div>
+                        <div class="product-descr__text">Сhair</div>
+                      </li>
+                      <li class="product-descr__item">
+                        <div class="product-descr__title">Tag:</div>
+                        <div class="product-descr__text">Vintage style</div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="product-info__warranty product-warranty">
+                    <img
+                      class="product-warranty__img"
+                      src="images/icon/shield.svg"
+                      alt="warranty images"
+                    />
+                    <p class="product-warranty__text">
+                      6 month warranty on this product
+                      <a class="product-warranty__link" href="#">Know More</a>
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="product-tabs"></div>
+          <div class="product-reviews"></div>
+          <div class="product-related"></div>
         </div>
       </section>
-      <div class="parthers">
-        <img
-          class="parhers-item"
-          src="images/parthers/1.png.svg"
-          alt="parthers logo"
-        />
-        <img
-          class="parhers-item"
-          src="images/parthers/2.png.svg"
-          alt="parthers logo"
-        />
-        <img
-          class="parhers-item"
-          src="images/parthers/3.png.svg"
-          alt="parthers logo"
-        />
-        <img
-          class="parhers-item"
-          src="images/parthers/4.png.svg"
-          alt="parthers logo"
-        />
-        <img
-          class="parhers-item"
-          src="images/parthers/5.png.svg"
-          alt="parthers logo"
-        />
-      </div>
     </main>
 
     <footer class="footer">
