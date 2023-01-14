@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Comfort.</title>
+    <title>Product</title>
     <link
       rel="shortcut icon"
       href="images/icon/icon-web.svg"
@@ -14,25 +14,6 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__snow">
-        <span style="--snow: 19"></span>
-        <span style="--snow: 25"></span>
-        <span style="--snow: 27"></span>
-        <span style="--snow: 10"></span>
-        <span style="--snow: 23"></span>
-        <span style="--snow: 22"></span>
-        <span style="--snow: 12"></span>
-        <span style="--snow: 24"></span>
-        <span style="--snow: 42"></span>
-        <span style="--snow: 34"></span>
-        <span style="--snow: 57"></span>
-        <span style="--snow: 21"></span>
-        <span style="--snow: 28"></span>
-        <span style="--snow: 32"></span>
-        <span style="--snow: 33"></span>
-        <span style="--snow: 42"></span>
-        <span style="--snow: 52"></span>
-      </div>
       <div class="header__top">
         <div class="header__top-inner">
           <a class="logo" href="#">
@@ -97,162 +78,418 @@
         </div>
       </div>
     </header>
+
     <main class="main">
-      <section class="top-slider">
+      <secton class="top">
+        <div
+          class="top__container"
+          style="background-image: url(images/top-bg-login.jpg)"
+        >
+          <div class="container">
+            <h2 class="top__title">Product Page</h2>
+            <div class="breadcrumbs">
+              <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">Home</a>
+                </li>
+                <li class="breadcrumbs__item">
+                  <a class="breadcrumbs__link" href="#">Product page</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </secton>
+      <section class="product-page">
         <div class="container">
-          <div class="top-slider__items">
-            <div class="top-slider__item">
-              <div class="top-slider__content">
-                <h1 class="top-slider__title">christmas sale</h1>
-                <p class="top-slider__text">
-                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt
-                </p>
-                <a class="top-slider__link" href="#0">Shop Now</a>
+          <div class="product-info">
+            <div class="product-info__inner">
+              <div class="product-info__slide product-slide">
+                <div class="product-slide__thumb">
+                  <div class="product-slide__thumb-item">
+                    <img
+                      src="images/products/item/1.jpg"
+                      alt="product images"
+                    />
+                  </div>
+                  <div class="product-slide__thumb-item">
+                    <img
+                      src="images/products/item/2.jpg"
+                      alt="product images"
+                    />
+                  </div>
+                  <div class="product-slide__thumb-item">
+                    <img
+                      src="images/products/item/3.jpg"
+                      alt="product images"
+                    />
+                  </div>
+                  <div class="product-slide__thumb-item">
+                    <img
+                      src="images/products/item/4.jpg"
+                      alt="product images"
+                    />
+                  </div>
+                </div>
+                <div class="product-slide__big">
+                  <div class="product-slide__big-item">
+                    <img
+                      src="images/products/item/1.jpg"
+                      alt="product images"
+                    />
+                  </div>
+                  <div class="product-slide__big-item">
+                    <img
+                      src="images/products/item/2.jpg"
+                      alt="product images"
+                    />
+                  </div>
+                  <div class="product-slide__big-item">
+                    <img
+                      src="images/products/item/3.jpg"
+                      alt="product images"
+                    />
+                  </div>
+                  <div class="product-slide__big-item">
+                    <img
+                      src="images/products/item/4.jpg"
+                      alt="product images"
+                    />
+                  </div>
+                </div>
               </div>
-              <div class="top-slider__images">
-                <img
-                  class="top-slider__img"
-                  src="images/slider/slider-item-1.png"
-                  alt="slider item"
-                />
+              <div class="product-info__content">
+                <h2 class="product-info__title">Vintage Сhair</h2>
+                <div class="product-info__star">
+                  <div class="star-shop" data-rateyo-rating="4"></div>
+                </div>
+                <a class="product-info__price" href="#">23$</a>
+                <p class="product-info__text">
+                  Consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                  ea commodo
+                </p>
+                <form class="product-info__form" action="#">
+                  <div class="product-info__form-title">Color:</div>
+                  <label class="product-info__label">
+                    <input
+                      class="product-info__input"
+                      type="radio"
+                      name="color"
+                    />
+                    <span class="product-info__radio">
+                      <span style="background-color: #541b21"></span>
+                    </span>
+                  </label>
+                  <label class="product-info__label">
+                    <input
+                      class="product-info__input"
+                      type="radio"
+                      name="color"
+                      checked
+                    />
+                    <span class="product-info__radio">
+                      <span style="background-color: #deb887"></span>
+                    </span>
+                  </label>
+                  <label class="product-info__label">
+                    <input
+                      class="product-info__input"
+                      type="radio"
+                      name="color"
+                    />
+                    <span class="product-info__radio">
+                      <span style="background-color: #b02e61"></span>
+                    </span>
+                  </label>
+                  <label class="product-info__label">
+                    <input
+                      class="product-info__input"
+                      type="radio"
+                      name="color"
+                    />
+                    <span class="product-info__radio">
+                      <span style="background-color: #4b5320"></span>
+                    </span>
+                  </label>
+                  <div class="product-info__buttons">
+                    <input
+                      class="product-info__num"
+                      type="number"
+                      value="1"
+                      min="1"
+                    />
+                    <button class="product-info__btn" type="submit">
+                      Add to cart
+                    </button>
+                  </div>
+                  <div class="product-info__description product-description">
+                    <ul class="product-description__list">
+                      <li class="product-description__item">
+                        <div class="product-description__title">SKU:</div>
+                        <div class="product-description__text">014</div>
+                      </li>
+                      <li class="product-description__item">
+                        <div class="product-description__title">Category:</div>
+                        <div class="product-description__text">Сhair</div>
+                      </li>
+                      <li class="product-description__item">
+                        <div class="product-description__title">Tag:</div>
+                        <div class="product-description__text">
+                          Vintage style
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="product-info__warranty product-warranty">
+                    <img
+                      class="product-warranty__img"
+                      src="images/icon/shield.svg"
+                      alt="warranty images"
+                    />
+                    <p class="product-warranty__text">
+                      6 month warranty on this product
+                      <a class="product-warranty__link" href="#">Know More</a>
+                    </p>
+                  </div>
+                </form>
               </div>
             </div>
-            <div class="top-slider__item">
-              <div class="top-slider__content">
-                <h1 class="top-slider__title">Exclusive Brands</h1>
-                <p class="top-slider__text">
-                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt
-                </p>
-                <a class="top-slider__link" href="#0">Shop Now</a>
-              </div>
-              <div class="top-slider__images">
-                <img
-                  class="top-slider__img"
-                  src="images/slider/slider-item-2.png"
-                  alt="slider item"
-                />
-              </div>
+          </div>
+          <div class="product-tabs">
+            <div class="product-tabs__top">
+              <a
+                class="product-tabs__top-item product-tabs__top-item--active"
+                href="#tab-1"
+                >Product Information</a
+              >
+              <a class="product-tabs__top-item" href="#tab-2"
+                >Size and Features</a
+              >
+              <a class="product-tabs__top-item" href="#tab-3">Reviews (3)</a>
             </div>
-            <div class="top-slider__item">
-              <div class="top-slider__content">
-                <h1 class="top-slider__title">SMART AND TRENDY</h1>
-                <p class="top-slider__text">
-                  Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                  tempor incididunt
-                </p>
-                <a class="top-slider__link" href="#0">Shop Now</a>
+            <div class="product-tabs__content">
+              <div
+                class="product-tabs__content-item product-tabs__content-item--active"
+                id="tab-1"
+              >
+                <div class="product-info">
+                  <p class="product-info__text">
+                    Vintage style Batik armchair. A note of elegance in the
+                    retro style in your living space, a successful combination
+                    of materials, real comfort every day and fashionable Berber
+                    style!
+                  </p>
+                  <ul class="product-info__list">
+                    <li class="product-info__item">
+                      <div class="product-info__name">Product Details</div>
+                      <div class="product-info__caption">
+                        Upholstery 100% linen in Berber style (removable cover,
+                        dry cleaning)
+                      </div>
+                      <div class="product-info__caption">
+                        Solid oak frame with NC lacquering
+                      </div>
+                      <div class="product-info__caption">
+                        Seat and backrest made of PU filler (density 30 kg/m3
+                        and 25 kg/m3) and polyester fibers
+                      </div>
+                      <div class="product-info__caption">
+                        Crossed strap suspension
+                      </div>
+                    </li>
+                    <li class="product-info__item">
+                      <div class="product-info__name">Dimensions</div>
+                      <div class="product-info__caption">Width : 65 cm</div>
+                      <div class="product-info__caption">Height: 78 cm</div>
+                      <div class="product-info__caption">Depth: 81 cm</div>
+                    </li>
+                    <li class="product-info__item">
+                      <div class="product-info__name">Characteristics</div>
+                      <div class="product-info__caption">
+                        Solid oak frame with NC lacquering
+                      </div>
+                      <div class="product-info__caption">
+                        Crossed Strap Pendant
+                      </div>
+                      <div class="product-info__caption">
+                        Sold as assembled.
+                      </div>
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div class="top-slider__images">
-                <img
-                  class="top-slider__img"
-                  src="images/slider/slider-item-3.png"
-                  alt="slider item"
-                />
+              <div class="product-tabs__content-item" id="tab-2">
+                <div class="product-size">
+                  <div class="product-size__box">
+                    <img
+                      class="product-size__img"
+                      src="images/icon/product-size.svg"
+                      alt="product size"
+                    />
+                    <img
+                      class="product-size__img"
+                      src="images/icon/product-size.svg"
+                      alt="product size"
+                    />
+                  </div>
+                  <ul class="product-size__list">
+                    <li class="product-size__item">
+                      <div class="product-size__title">Title:</div>
+                      <div class="product-size__caption">
+                        Vintage style chair with Berber print Batik in beige
+                      </div>
+                    </li>
+                    <li class="product-size__item">
+                      <div class="product-size__title">Availability:</div>
+                      <div class="product-size__caption">On order</div>
+                    </li>
+                    <li class="product-size__item">
+                      <div class="product-size__title">Materials:</div>
+                      <div class="product-size__caption">
+                        Fabric, Wood, Solid Wood
+                      </div>
+                    </li>
+                    <li class="product-size__item">
+                      <div class="product-size__title">Delivery:</div>
+                      <div class="product-size__caption">All US</div>
+                    </li>
+                    <li class="product-size__item">
+                      <div class="product-size__title">Armrests:</div>
+                      <div class="product-size__caption">
+                        With armrests, with wooden armrests
+                      </div>
+                    </li>
+                    <li class="product-size__item">
+                      <div class="product-size__title">Style:</div>
+                      <div class="product-size__caption">
+                        Provence and Country, Scandinavian, Modern
+                      </div>
+                    </li>
+                    <li class="product-size__item">
+                      <div class="product-size__title">Feet or castors:</div>
+                      <div class="product-size__caption">
+                        On legs, On wooden legs
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="product-tabs__content-item" id="tab-3">
+                <div class="product-comments">
+                  <img
+                    class="product-comments__img"
+                    src="images/avatar/1.jpg"
+                    alt="avatar"
+                  />
+                  <div class="product-comments__content">
+                    <div class="product-comments__content-top">
+                      <p class="product-comments__content-name">
+                        Alice Williams
+                      </p>
+                      <p class="product-comments__content-date">2 days ago</p>
+                      <div
+                        class="star product-comments__content-star"
+                        data-rateyo-rating="4"
+                      ></div>
+                    </div>
+                    <p class="product-comments__content-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Qus ipsum speissei ultrices gravida. Risus commodo
+                      viverra maeenas accumsan lacus vel facilisis.
+                    </p>
+                    <a class="product-comments__content-reply" href="#"
+                      >Reply</a
+                    >
+                  </div>
+                </div>
+                <div class="product-comments">
+                  <img
+                    class="product-comments__img"
+                    src="images/avatar/2.jpg"
+                    alt="avatar"
+                  />
+                  <div class="product-comments__content">
+                    <div class="product-comments__content-top">
+                      <p class="product-comments__content-name">
+                        Jessica Miller
+                      </p>
+                      <p class="product-comments__content-date">2 days ago</p>
+                      <div
+                        class="star product-comments__content-star"
+                        data-rateyo-rating="4"
+                      ></div>
+                    </div>
+                    <p class="product-comments__content-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Qus ipsum speissei ultrices gravida. Risus commodo
+                      viverra maeenas accumsan lacus vel facilisis.
+                    </p>
+                    <a class="product-comments__content-reply" href="#"
+                      >Reply</a
+                    >
+                  </div>
+                </div>
+                <div class="product-comments">
+                  <img
+                    class="product-comments__img"
+                    src="images/avatar/3.jpg"
+                    alt="avatar"
+                  />
+                  <div class="product-comments__content">
+                    <div class="product-comments__content-top">
+                      <p class="product-comments__content-name">Emily Wilson</p>
+                      <p class="product-comments__content-date">2 days ago</p>
+                      <div
+                        class="star product-comments__content-star"
+                        data-rateyo-rating="4"
+                      ></div>
+                    </div>
+                    <p class="product-comments__content-text">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor incididunt ut labore et dolore magna
+                      aliqua. Qus ipsum speissei ultrices gravida. Risus commodo
+                      viverra maeenas accumsan lacus vel facilisis.
+                    </p>
+                    <a class="product-comments__content-reply" href="#"
+                      >Reply</a
+                    >
+                  </div>
+                </div>
+                <form class="product-comments__form comments-form" action="#">
+                  <div class="comments-form__box-input">
+                    <input
+                      class="comments-form__text-input"
+                      type="text"
+                      placeholder="Your name..."
+                    />
+                    <input
+                      class="comments-form__text-input"
+                      type="text"
+                      placeholder="E-mail address..."
+                    />
+                  </div>
+                  <textarea
+                    class="comments-form__textarea"
+                    placeholder="Your text here..."
+                  ></textarea>
+                  <button class="comments-form__btn" type="submit">
+                    Leave Review
+                  </button>
+                </form>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <div class="top-info">
-        <div class="top-info__items">
-          <div class="top-info__item top-info__item--support">
-            <h4 class="top-info__title">Support 24/7.</h4>
-            <p class="top-info__text">
-              Contact us 24 hours a day, 7 days a week.
-            </p>
-          </div>
-          <div class="top-info__item top-info__item--delivery">
-            <h4 class="top-info__title">Delivery.</h4>
-            <p class="top-info__text">Free shipping on all US order.</p>
-          </div>
-          <div class="top-info__item top-info__item--payment">
-            <h4 class="top-info__title">100% Payment secure.</h4>
-            <p class="top-info__text">We ensure secure payment with PEV.</p>
-          </div>
-        </div>
-      </div>
-      <section class="products">
+      <section class="related">
         <div class="container">
-          <h2 class="title">Products of the week</h2>
-          <div class="products__filter-btn">
-            <button class="products__btn" data-filter="all">All</button>
-            <button class="products__btn" data-filter=".category-a">
-              Furnitures
-            </button>
-            <button class="products__btn" data-filter=".category-b">
-              Chairs
-            </button>
-            <button class="products__btn" data-filter=".category-c">
-              Lighting
-            </button>
-            <button class="products__btn" data-filter=".category-d">
-              Decor
-            </button>
-          </div>
-          <div class="products__content">
-            <div class="products-item mix category-b">
-              <a class="products-item__images" href="product.html">
-                <img
-                  class="products-item__img"
-                  src="images/products/item/1.jpg"
-                  alt="products assortment"
-                />
-              </a>
-              <div class="products-item__wrapper-box">
-                <div class="products-item__box">
-                  <div class="star" data-rateyo-rating="4"></div>
-                  <div class="star-shop" data-rateyo-rating="4"></div>
-                  <h5 class="products-item__title">Vintage Сhair</h5>
-                  <a class="products-item__price" href="#">23</a>
-                </div>
-                <div class="products-item__content-box">
-                  <p class="products-item__text">
-                    consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation
-                  </p>
-                  <button class="products-item__btn">Add to cart</button>
-                </div>
-              </div>
-              <a class="products-item__link products-item__link-box" href="#0">
-                <img src="images/icon/search.svg" alt="products search" />
-                <img src="images/icon/cart.svg" alt="products cart" />
-                <img src="images/icon/heart.svg" alt="products heart" />
-              </a>
-            </div>
-            <div class="products-item mix category-a">
-              <a class="products-item__images" href="#">
-                <img
-                  class="products-item__img"
-                  src="images/products/1.jpg"
-                  alt="products assortment"
-                />
-              </a>
-              <div class="products-item__wrapper-box">
-                <div class="products-item__box">
-                  <div class="star" data-rateyo-rating="4"></div>
-                  <div class="star-shop" data-rateyo-rating="4"></div>
-                  <h5 class="products-item__title">Wooden radio</h5>
-                  <a class="products-item__price" href="#">54</a>
-                </div>
-                <div class="products-item__content-box">
-                  <p class="products-item__text">
-                    consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation
-                  </p>
-                  <button class="products-item__btn">Add to cart</button>
-                </div>
-              </div>
-              <a class="products-item__link products-item__link-box" href="#">
-                <img src="images/icon/search.svg" alt="products search" />
-                <img src="images/icon/cart.svg" alt="products cart" />
-                <img src="images/icon/heart.svg" alt="products heart" />
-              </a>
-            </div>
-            <div class="products-item mix category-c">
+          <h3 class="related__title">RELATED PRODUCTS</h3>
+          <div class="related__items">
+            <div class="products-item">
               <a class="products-item__images" href="#">
                 <img
                   class="products-item__img"
@@ -262,27 +499,18 @@
               </a>
               <div class="products-item__wrapper-box">
                 <div class="products-item__box">
-                  <div class="star" data-rateyo-rating="4"></div>
-                  <div class="star-shop" data-rateyo-rating="4"></div>
-                  <h5 class="products-item__title">Wooden radio</h5>
-                  <a class="products-item__price" href="#">54</a>
-                </div>
-                <div class="products-item__content-box">
-                  <p class="products-item__text">
-                    consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation
-                  </p>
-                  <button class="products-item__btn">Add to cart</button>
+                  <div class="related__star" data-rateyo-rating="4"></div>
+                  <h5 class="products-item__title">Vintage Сhair</h5>
+                  <a class="products-item__price" href="#">23</a>
                 </div>
               </div>
-              <a class="products-item__link products-item__link-box" href="#">
+              <a class="products-item__link products-item__link-box" href="#0">
                 <img src="images/icon/search.svg" alt="products search" />
                 <img src="images/icon/cart.svg" alt="products cart" />
                 <img src="images/icon/heart.svg" alt="products heart" />
               </a>
             </div>
-            <div class="products-item mix category-a">
+            <div class="products-item">
               <a class="products-item__images" href="#">
                 <img
                   class="products-item__img"
@@ -292,27 +520,18 @@
               </a>
               <div class="products-item__wrapper-box">
                 <div class="products-item__box">
-                  <div class="star" data-rateyo-rating="4"></div>
-                  <div class="star-shop" data-rateyo-rating="4"></div>
-                  <h5 class="products-item__title">Wooden radio</h5>
-                  <a class="products-item__price" href="#">54</a>
-                </div>
-                <div class="products-item__content-box">
-                  <p class="products-item__text">
-                    consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation
-                  </p>
-                  <button class="products-item__btn">Add to cart</button>
+                  <div class="related__star" data-rateyo-rating="4"></div>
+                  <h5 class="products-item__title">Vintage Сhair</h5>
+                  <a class="products-item__price" href="#">23</a>
                 </div>
               </div>
-              <a class="products-item__link products-item__link-box" href="#">
+              <a class="products-item__link products-item__link-box" href="#0">
                 <img src="images/icon/search.svg" alt="products search" />
                 <img src="images/icon/cart.svg" alt="products cart" />
                 <img src="images/icon/heart.svg" alt="products heart" />
               </a>
             </div>
-            <div class="products-item mix category-d">
+            <div class="products-item">
               <a class="products-item__images" href="#">
                 <img
                   class="products-item__img"
@@ -322,27 +541,18 @@
               </a>
               <div class="products-item__wrapper-box">
                 <div class="products-item__box">
-                  <div class="star" data-rateyo-rating="4"></div>
-                  <div class="star-shop" data-rateyo-rating="4"></div>
-                  <h5 class="products-item__title">Wooden radio</h5>
-                  <a class="products-item__price" href="#">54</a>
-                </div>
-                <div class="products-item__content-box">
-                  <p class="products-item__text">
-                    consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation
-                  </p>
-                  <button class="products-item__btn">Add to cart</button>
+                  <div class="related__star" data-rateyo-rating="4"></div>
+                  <h5 class="products-item__title">Vintage Сhair</h5>
+                  <a class="products-item__price" href="#">23</a>
                 </div>
               </div>
-              <a class="products-item__link products-item__link-box" href="#">
+              <a class="products-item__link products-item__link-box" href="#0">
                 <img src="images/icon/search.svg" alt="products search" />
                 <img src="images/icon/cart.svg" alt="products cart" />
                 <img src="images/icon/heart.svg" alt="products heart" />
               </a>
             </div>
-            <div class="products-item mix category-c">
+            <div class="products-item">
               <a class="products-item__images" href="#">
                 <img
                   class="products-item__img"
@@ -352,81 +562,12 @@
               </a>
               <div class="products-item__wrapper-box">
                 <div class="products-item__box">
-                  <div class="star" data-rateyo-rating="4"></div>
-                  <div class="star-shop" data-rateyo-rating="4"></div>
-                  <h5 class="products-item__title">Wooden radio</h5>
-                  <a class="products-item__price" href="#">54</a>
-                </div>
-                <div class="products-item__content-box">
-                  <p class="products-item__text">
-                    consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation
-                  </p>
-                  <button class="products-item__btn">Add to cart</button>
+                  <div class="related__star" data-rateyo-rating="4"></div>
+                  <h5 class="products-item__title">Vintage Сhair</h5>
+                  <a class="products-item__price" href="#">23</a>
                 </div>
               </div>
-              <a class="products-item__link products-item__link-box" href="#">
-                <img src="images/icon/search.svg" alt="products search" />
-                <img src="images/icon/cart.svg" alt="products cart" />
-                <img src="images/icon/heart.svg" alt="products heart" />
-              </a>
-            </div>
-            <div class="products-item mix category-c">
-              <a class="products-item__images" href="#">
-                <img
-                  class="products-item__img"
-                  src="images/products/6.jpg"
-                  alt="products assortment"
-                />
-              </a>
-              <div class="products-item__wrapper-box">
-                <div class="products-item__box">
-                  <div class="star" data-rateyo-rating="4"></div>
-                  <div class="star-shop" data-rateyo-rating="4"></div>
-                  <h5 class="products-item__title">Wooden radio</h5>
-                  <a class="products-item__price" href="#">54</a>
-                </div>
-                <div class="products-item__content-box">
-                  <p class="products-item__text">
-                    consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation
-                  </p>
-                  <button class="products-item__btn">Add to cart</button>
-                </div>
-              </div>
-              <a class="products-item__link products-item__link-box" href="#">
-                <img src="images/icon/search.svg" alt="products search" />
-                <img src="images/icon/cart.svg" alt="products cart" />
-                <img src="images/icon/heart.svg" alt="products heart" />
-              </a>
-            </div>
-            <div class="products-item mix category-a">
-              <a class="products-item__images" href="#">
-                <img
-                  class="products-item__img"
-                  src="images/products/7.jpg"
-                  alt="products assortment"
-                />
-              </a>
-              <div class="products-item__wrapper-box">
-                <div class="products-item__box">
-                  <div class="star" data-rateyo-rating="4"></div>
-                  <div class="star-shop" data-rateyo-rating="4"></div>
-                  <h5 class="products-item__title">Wooden radio</h5>
-                  <a class="products-item__price" href="#">54</a>
-                </div>
-                <div class="products-item__content-box">
-                  <p class="products-item__text">
-                    consectetur adipisicing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation
-                  </p>
-                  <button class="products-item__btn">Add to cart</button>
-                </div>
-              </div>
-              <a class="products-item__link products-item__link-box" href="#">
+              <a class="products-item__link products-item__link-box" href="#0">
                 <img src="images/icon/search.svg" alt="products search" />
                 <img src="images/icon/cart.svg" alt="products cart" />
                 <img src="images/icon/heart.svg" alt="products heart" />
@@ -435,147 +576,6 @@
           </div>
         </div>
       </section>
-      <div class="sale">
-        <div class="sale__content">
-          <p class="sale__subtitle">our comfort</p>
-          <h2 class="title">DEAL OF THE DAY</h2>
-          <div class="sale__timer" data-time="'2023-05-25'">
-            <div class="sale__timer-item">
-              <span class="sale__days"></span>
-              <div class="sale__text">Days</div>
-            </div>
-            <div class="sale__timer-item">
-              <span class="sale__hours"></span>
-              <div class="sale__text">Hours</div>
-            </div>
-            <div class="sale__timer-item">
-              <span class="sale__minutes"></span>
-              <div class="sale__text">Minutes</div>
-            </div>
-            <div class="sale__timer-item">
-              <span class="sale__seconds"></span>
-              <div class="sale__text">Seconds</div>
-            </div>
-          </div>
-          <a class="sale__link" href="#">Shop now</a>
-        </div>
-      </div>
-      <div class="benefits">
-        <div class="benefits__inner">
-          <div class="benefits__item">
-            <img
-              class="benefits__img"
-              src="images/benefits/benefits-img-1.png"
-              alt="benefits products"
-            />
-            <div class="benefits__descr">
-              <h2 class="benefits__title">Mirum Notare Tellus</h2>
-              <p class="benefits__text">
-                LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight
-              </p>
-              <a class="benefits__link" href="#">View More</a>
-            </div>
-          </div>
-          <div class="benefits__item">
-            <img
-              class="benefits__img"
-              src="images/benefits/benefits-img-2.png"
-              alt="benefits products"
-            />
-            <div class="benefits__descr">
-              <h2 class="benefits__title">Malesuada Tempor Euismod</h2>
-              <p class="benefits__text">
-                50W 8000lm Compact Size for HID
-                StreetLightReplacementLEDCornLight
-              </p>
-              <a class="benefits__link" href="#">View More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section class="design">
-        <div class="container">
-          <h2 class="title">New Design</h2>
-          <div class="design__filter-btn">
-            <button class="design__btn" data-filter="all">All</button>
-            <button class="design__btn" data-filter=".category-a">
-              Furnitures
-            </button>
-            <button class="design__btn" data-filter=".category-b">
-              Chairs
-            </button>
-            <button class="design__btn" data-filter=".category-c">
-              Lighting
-            </button>
-            <button class="design__btn" data-filter=".category-d">Decor</button>
-          </div>
-          <div class="design__content">
-            <a
-              class="design__item mix category-a"
-              href="#"
-              style="background-image: url(images/design/design-item-1.jpg)"
-            >
-              <h5 class="design__item-title">Beat Flat Pendant Black</h5>
-              <p class="design__item-subtitle">Classic</p>
-            </a>
-            <a
-              class="design__item mix category-a"
-              href="#"
-              style="background-image: url(images/design/design-item-2.jpg)"
-            >
-              <h5 class="design__item-title">Lampe Sur Pieds Bamboo</h5>
-              <p class="design__item-subtitle">Classic</p>
-            </a>
-            <a
-              class="design__item mix category-b"
-              href="#"
-              style="background-image: url(images/design/design-item-3.jpg)"
-            >
-              <h5 class="design__item-title">Rattan Rocking Chair</h5>
-              <p class="design__item-subtitle">Classic</p>
-            </a>
-            <a
-              class="design__item mix category-c"
-              href="#"
-              style="background-image: url(images/design/design-item-4.jpg)"
-            >
-              <h5 class="design__item-title">Rattan Rocking Chair</h5>
-              <p class="design__item-subtitle">Classic</p>
-            </a>
-            <a
-              class="design__item mix category-d"
-              href="#"
-              style="background-image: url(images/design/design-item-5.jpg)"
-            >
-              <h5 class="design__item-title">Rattan Rocking Chair</h5>
-              <p class="design__item-subtitle">Classic</p>
-            </a>
-            <a
-              class="design__item mix category-d"
-              href="#"
-              style="background-image: url(images/design/design-item-6.jpg)"
-            >
-              <h5 class="design__item-title">Lampe Sur Pieds Bamboo</h5>
-              <p class="design__item-subtitle">Classic</p>
-            </a>
-          </div>
-        </div>
-      </section>
-      <div class="video">
-        <a
-          class="video__link"
-          data-fancybox
-          data-width="1400"
-          data-height="800"
-          href="https://youtu.be/tvPnrfQCiCo"
-        >
-          <img
-            class="video__img"
-            src="images/icon/video-play.svg"
-            alt="video img button"
-          />
-        </a>
-      </div>
       <section class="blog">
         <div class="container">
           <div class="blog__heading">
@@ -661,6 +661,7 @@
         />
       </div>
     </main>
+
     <footer class="footer">
       <div class="container">
         <div class="footer-top">
@@ -674,7 +675,7 @@
             <a class="footer-top__phone" href="tel:+832-347-5843">
               Telephone: +832-347-5843
             </a>
-            <a class="footer-top__email" href="mailto:contact@Comfort.com"
+            <a class="footer-top__email" href="mailto:contact@comfort.com"
               >Email:contact@Comfort.com</a
             >
             <div class="footer-top__social">
@@ -804,7 +805,7 @@
             </div>
           </div>
           <div class="footer-top__item footer-top__nav">
-            <h5 class="footer-top__title">Services</h5>
+            <h6 class="footer-top__title">Services</h6>
             <ul class="footer-top__list">
               <li class="footer-top__item">
                 <a class="footer-top__link" href="#">About us</a>
@@ -824,7 +825,7 @@
             </ul>
           </div>
           <div class="footer-top__item footer-top__nav">
-            <h5 class="footer-top__title">Account</h5>
+            <h6 class="footer-top__title">Account</h6>
             <ul class="footer-top__list">
               <li class="footer-top__item">
                 <a class="footer-top__link" href="#">Your Account</a>
@@ -841,7 +842,7 @@
             </ul>
           </div>
           <div class="footer-top__item footer-top__form">
-            <h5 class="footer-top__title">Newsletter</h5>
+            <h6 class="footer-top__title">Newsletter</h6>
             <p class="footer-top__text">
               Subscribe by our newsletter and get update protidin.
             </p>
