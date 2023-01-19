@@ -2358,7 +2358,7 @@
   &__input {
     width: 400px;
     height: 50px;
-    padding: 20px;
+    padding: 20px 40px 20px 20px;
     border: 1px solid #ebebeb;
     color: $title;
     margin-bottom: 20px;
@@ -2403,7 +2403,7 @@
     height: 120px;
     border: 1px solid #ebebeb;
     outline-color: $btn;
-    padding: 20px;
+    padding: 20px 40px 20px 20px;
     margin-bottom: 40px;
     resize: none;
   }
@@ -2440,5 +2440,97 @@
   }
 }
 // end blog one page
+
+// start contacts page
+.contacts {
+  padding: 120px 0;
+  text-align: center;
+  &__subtitle {
+    font-size: 16px;
+    color: $btn;
+    @extend %DMSans-700;
+  }
+
+  &__title {
+    font-size: 35px;
+    color: #436372;
+    line-height: 57px;
+    @extend %DMSans-700;
+    margin-bottom: 75px;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    width: 370px;
+    height: 380px;
+    background-color: #fbfbfb;
+    &:hover {
+      border: 2px solid $btn;
+      path {
+        fill: #fff;
+      }
+      .contacts__item-box {
+        background-color: $btn;
+      }
+    }
+  }
+
+  &__item-box {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px auto;
+  }
+
+  &__item-info {
+    margin: 0 auto;
+    max-width: 260px;
+    span,
+    a {
+      color: #565872;
+    }
+  }
+
+  &__item-subtitle {
+    @extend %DMSans-700;
+    font-size: 20px;
+    color: $title;
+    margin-bottom: 10px;
+  }
+}
+
+.map {
+  margin-bottom: 135px;
+  &__inner {
+    display: flex;
+  }
+
+  &__form {
+    max-width: 620px;
+    margin-right: 50px;
+  }
+
+  .blog-form__input {
+    width: 295px;
+  }
+
+  .blog-form__textarea {
+    height: 175px;
+    margin-bottom: 30px;
+  }
+
+  #map {
+    width: 500px;
+    height: 355px;
+  }
+}
 
 @import 'media';
