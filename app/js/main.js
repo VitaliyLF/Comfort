@@ -1,4 +1,9 @@
 $(function () {
+  $('.blog-page__slider').slick({
+    infinite: false,
+    draggable: false,
+  })
+
   $('.related__items').slick({
     infinite: true,
     draggable: false,
@@ -11,9 +16,7 @@ $(function () {
     $('.product-tabs__top-item').removeClass('product-tabs__top-item--active')
     $(this).addClass('product-tabs__top-item--active')
 
-    $('.product-tabs__content-item').removeClass(
-      'product-tabs__content-item--active'
-    )
+    $('.product-tabs__content-item').removeClass('product-tabs__content-item--active')
     $($(this).attr('href')).addClass('product-tabs__content-item--active')
   })
 
@@ -33,9 +36,7 @@ $(function () {
   })
 
   $('.shop-content__filter-btn').on('click', function () {
-    $('.shop-content__filter-btn').removeClass(
-      'shop-content__filter-btn--active'
-    )
+    $('.shop-content__filter-btn').removeClass('shop-content__filter-btn--active')
     $(this).addClass('shop-content__filter-btn--active')
   })
 
@@ -98,19 +99,19 @@ $(function () {
     autoplaySpeed: 750,
   })
 
-  var mixer = mixitup('.products__content', {
+  var containerEl = document.querySelector('.products')
+  var containerEl2 = document.querySelector('.design')
+  let config = {
+    controls: {
+      scope: 'local',
+    },
     animation: {
       duration: 500,
       effects: 'fade rotateY(-100deg)',
     },
-  })
-
-  var mixer = mixitup('.design__content', {
-    animation: {
-      duration: 500,
-      effects: 'fade rotateY(-100deg)',
-    },
-  })
+  }
+  var mixer1 = mixitup(containerEl, config)
+  var mixer2 = mixitup(containerEl2, config)
 
   function getTimeRemaining(endtime) {
     var t = Date.parse(endtime) - Date.parse(new Date())

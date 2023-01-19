@@ -61,8 +61,8 @@ $shop: #edf1f4;
   &::before {
     content: '';
     position: absolute;
-    mask-image: url(../images/icon/arrow-btn.svg);
-    background-color: #fff;
+    background-image: url(../images/icon/arrow-btn-white.svg);
+    background-color: transparent;
     background-repeat: no-repeat;
     width: 20px;
     height: 20px;
