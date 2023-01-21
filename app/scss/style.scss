@@ -984,6 +984,7 @@
     }
 
     &__link {
+      margin-left: auto;
       text-decoration: underline;
     }
 
@@ -2584,7 +2585,7 @@
 // start about page
 
 .about {
-  padding: 120px 0;
+  padding-top: 120px;
 }
 
 .experience {
