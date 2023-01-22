@@ -1,0 +1,42 @@
+.person {
+  padding: 40px 30px;
+  border: 1px solid $shop;
+  margin-bottom: 50px;
+  text-align: center;
+
+  &__img {
+    margin: 0 auto 20px;
+    max-width: 160px;
+    height: 160px;
+    object-fit: cover;
+  }
+
+  &__name {
+    font-size: 18px;
+    @extend %Rubik-700;
+    margin-bottom: 10px;
+  }
+
+  &__position {
+    color: $btn;
+    @extend %DMSans-500;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+
+  &__social {
+    display: inline-block;
+    margin: 0 8px;
+    path {
+      fill: $subtitle;
+    }
+    &:hover {
+      path {
+        fill: $btn;
+      }
+    }
+  }
+}

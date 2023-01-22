@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop page</title>
-    <link rel="shortcut icon" href="images/icon/icon-web.svg" type="image/x-icon" />
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link
+      rel="shortcut icon"
+      href="images/icon/icon-web.svg"
+      type="image/x-icon" />
+    <link rel="stylesheet" href="css/shop.min.css" />
   </head>
   <body>
     <header class="header">
@@ -18,42 +21,59 @@
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__list-item">
-                <a class="menu__item-link menu__item-link--active" href="#">Home +</a>
+                <a class="menu__item-link" href="index.html">Home + </a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__item-link" href="#">About</a>
+                <a class="menu__item-link" href="about.html">About</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__item-link" href="#">Services</a>
+                <a class="menu__item-link menu__item-link--active" href="#0"
+                  >Shop</a
+                >
               </li>
               <li class="menu__list-item">
-                <a class="menu__item-link" href="#">Pages +</a>
+                <a class="menu__item-link" href="terms.html">Terms</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__item-link" href="#">News</a>
+                <a class="menu__item-link" href="blog-page.html">News</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__item-link" href="#">Contact</a>
+                <a class="menu__item-link" href="contacts.html">Contact</a>
               </li>
             </ul>
           </nav>
           <div class="user-nav">
             <div class="seacrh-box">
-              <input class="seacrh-box__input" type="text" placeholder="Search..." />
+              <input
+                class="seacrh-box__input"
+                type="text"
+                placeholder="Search..." />
               <a class="seacrh-box__link" href="#">
-                <img class="seacrh-box__img" src="images/icon/search.svg" alt="seacrh images" />
+                <img
+                  class="seacrh-box__img"
+                  src="images/icon/search.svg"
+                  alt="seacrh images" />
               </a>
             </div>
             <a class="user-nav__link user-nav__link--heart" href="#">
-              <img class="user-nav__link-img" src="images/icon/heart.svg" alt="heart btn" />
+              <img
+                class="user-nav__link-img"
+                src="images/icon/heart.svg"
+                alt="heart btn" />
               <span class="user-nav__num">0</span>
             </a>
             <a class="user-nav__link user-nav__link--cart" href="#">
-              <img class="user-nav__link-img" src="images/icon/cart.svg" alt="cart btn" />
+              <img
+                class="user-nav__link-img"
+                src="images/icon/cart.svg"
+                alt="cart btn" />
               <span class="user-nav__num">0</span>
             </a>
             <a class="user-nav__link user-nav__link--login" href="#">
-              <img class="user-nav__link-img" src="images/icon/login.svg" alt="login btn" />
+              <img
+                class="user-nav__link-img"
+                src="images/icon/login.svg"
+                alt="login btn" />
             </a>
           </div>
         </div>
@@ -61,7 +81,9 @@
     </header>
     <main class="main--shop">
       <div class="top">
-        <div class="top__container" style="background-image: url(images/top-bg-login.jpg)">
+        <div
+          class="top__container"
+          style="background-image: url(images/top-bg-login.jpg)">
           <div class="container">
             <h2 class="top__title">Shop page</h2>
             <div class="breadcrumbs">
@@ -84,7 +106,10 @@
               <div class="filter-search filter__item">
                 <h3 class="filter__title">Search</h3>
                 <form class="filter-search__form" action="#" autocomplete="on">
-                  <input class="filter-search__input" type="search" placeholder="Search your keyword...." />
+                  <input
+                    class="filter-search__input"
+                    type="search"
+                    placeholder="Search your keyword...." />
                   <button class="filter-search__btn" type="submit">
                     <img src="images/icon/search-white.svg" alt="search shop" />
                   </button>
@@ -94,38 +119,56 @@
                 <h3 class="filter__title">CATEGORY</h3>
                 <form class="filter-category__form" action="#">
                   <label class="filter-category__label">
-                    <input class="filter-category__input" type="checkbox" checked />
+                    <input
+                      class="filter-category__input"
+                      type="checkbox"
+                      checked />
                     <span class="filter-category__checkbox">
                       <span class="filter-category__text">Chair</span>
-                      <img class="filter-category__img" src="images/icon/arrow.svg" alt="arrow category" />
+                      <img
+                        class="filter-category__img"
+                        src="images/icon/arrow.svg"
+                        alt="arrow category" />
                     </span>
                   </label>
                   <label class="filter-category__label">
                     <input class="filter-category__input" type="checkbox" />
                     <span class="filter-category__checkbox">
                       <span class="filter-category__text">Table</span>
-                      <img class="filter-category__img" src="images/icon/arrow.svg" alt="arrow category" />
+                      <img
+                        class="filter-category__img"
+                        src="images/icon/arrow.svg"
+                        alt="arrow category" />
                     </span>
                   </label>
                   <label class="filter-category__label">
                     <input class="filter-category__input" type="checkbox" />
                     <span class="filter-category__checkbox">
                       <span class="filter-category__text">Lamp</span>
-                      <img class="filter-category__img" src="images/icon/arrow.svg" alt="arrow category" />
+                      <img
+                        class="filter-category__img"
+                        src="images/icon/arrow.svg"
+                        alt="arrow category" />
                     </span>
                   </label>
                   <label class="filter-category__label">
                     <input class="filter-category__input" type="checkbox" />
                     <span class="filter-category__checkbox">
                       <span class="filter-category__text">Watch</span>
-                      <img class="filter-category__img" src="images/icon/arrow.svg" alt="arrow category" />
+                      <img
+                        class="filter-category__img"
+                        src="images/icon/arrow.svg"
+                        alt="arrow category" />
                     </span>
                   </label>
                   <label class="filter-category__label">
                     <input class="filter-category__input" type="checkbox" />
                     <span class="filter-category__checkbox">
                       <span class="filter-category__text">Clock</span>
-                      <img class="filter-category__img" src="images/icon/arrow.svg" alt="arrow category" />
+                      <img
+                        class="filter-category__img"
+                        src="images/icon/arrow.svg"
+                        alt="arrow category" />
                     </span>
                   </label>
                 </form>
@@ -133,11 +176,19 @@
               <div class="filter-price filter__item">
                 <h3 class="filter__title">Price</h3>
                 <form class="filter-price__form" action="#">
-                  <input class="filter-price__input" type="text" data-min="0" data-max="500" data-from="100" data-to="300" />
+                  <input
+                    class="filter-price__input"
+                    type="text"
+                    data-min="0"
+                    data-max="500"
+                    data-from="100"
+                    data-to="300" />
                   <label class="filter-price__label">
                     <span class="filter-price__from">100</span>
                     <span class="filter-price__to">500</span>
-                    <button class="filter-price__btn" type="submit">Filter</button>
+                    <button class="filter-price__btn" type="submit">
+                      Filter
+                    </button>
                   </label>
                 </form>
               </div>
@@ -145,7 +196,10 @@
                 <h3 class="filter__title">Brand</h3>
                 <form class="filter-brand__form" action="#">
                   <label class="filter-brand__label">
-                    <input class="filter-brand__input" type="checkbox" checked />
+                    <input
+                      class="filter-brand__input"
+                      type="checkbox"
+                      checked />
                     <span class="filter-brand__checkbox">
                       <span class="filter-brand__text">RFL</span>
                       <span class="filter-brand__text">(10)</span>
@@ -186,31 +240,46 @@
                 <div class="shop-recent__items">
                   <div class="shop-recent__item">
                     <a class="shop-recent__link" href="#">
-                      <img class="shop-recent__img" src="images/shop-recent/recent-1.jpg" alt="recent images" />
+                      <img
+                        class="shop-recent__img"
+                        src="images/shop-recent/recent-1.jpg"
+                        alt="recent images" />
                     </a>
                     <div class="shop-recent__content">
                       <h6 class="shop-recent__title">Pendant lamp</h6>
-                      <div class="shop-recent__star" data-rateyo-rating="4"></div>
+                      <div
+                        class="shop-recent__star"
+                        data-rateyo-rating="4"></div>
                       <p class="shop-recent__price">23$</p>
                     </div>
                   </div>
                   <div class="shop-recent__item">
                     <a class="shop-recent__link" href="#">
-                      <img class="shop-recent__img" src="images/shop-recent/recent-2.jpg" alt="recent images" />
+                      <img
+                        class="shop-recent__img"
+                        src="images/shop-recent/recent-2.jpg"
+                        alt="recent images" />
                     </a>
                     <div class="shop-recent__content">
                       <h6 class="shop-recent__title">Pendant lamp</h6>
-                      <div class="shop-recent__star" data-rateyo-rating="4"></div>
+                      <div
+                        class="shop-recent__star"
+                        data-rateyo-rating="4"></div>
                       <p class="shop-recent__price">28$</p>
                     </div>
                   </div>
                   <div class="shop-recent__item">
                     <a class="shop-recent__link" href="#">
-                      <img class="shop-recent__img" src="images/shop-recent/recent-3.jpg" alt="recent images" />
+                      <img
+                        class="shop-recent__img"
+                        src="images/shop-recent/recent-3.jpg"
+                        alt="recent images" />
                     </a>
                     <div class="shop-recent__content">
                       <h6 class="shop-recent__title">Pendant lamp</h6>
-                      <div class="shop-recent__star" data-rateyo-rating="4"></div>
+                      <div
+                        class="shop-recent__star"
+                        data-rateyo-rating="4"></div>
                       <p class="shop-recent__price">33$</p>
                     </div>
                   </div>
@@ -221,7 +290,8 @@
               <div class="shop-content__filter">
                 <div class="shop-content__filter-buttons">
                   <span>View</span>
-                  <button class="shop-content__filter-btn shop-content__filter-btn--active button-grid">
+                  <button
+                    class="shop-content__filter-btn shop-content__filter-btn--active button-grid">
                     <svg width="15px" height="15px">
                       <path
                         fill-rule="evenodd"
@@ -259,7 +329,10 @@
               <div class="shop-content__inner">
                 <div class="products-item">
                   <a class="products-item__images" href="product.html">
-                    <img class="products-item__img" src="images/products/item/1.jpg" alt="products assortment" />
+                    <img
+                      class="products-item__img"
+                      src="images/products/item/1.jpg"
+                      alt="products assortment" />
                   </a>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
@@ -270,13 +343,16 @@
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                        ad minim veniam, quis nostrud exercitation
+                        consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation
                       </p>
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a class="products-item__link products-item__link-box" href="#0">
+                  <a
+                    class="products-item__link products-item__link-box"
+                    href="#0">
                     <img src="images/icon/search.svg" alt="products search" />
                     <img src="images/icon/cart.svg" alt="products cart" />
                     <img src="images/icon/heart.svg" alt="products heart" />
@@ -284,7 +360,10 @@
                 </div>
                 <div class="products-item">
                   <a class="products-item__images" href="#">
-                    <img class="products-item__img" src="images/products/1.jpg" alt="products assortment" />
+                    <img
+                      class="products-item__img"
+                      src="images/products/1.jpg"
+                      alt="products assortment" />
                   </a>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
@@ -295,13 +374,16 @@
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                        ad minim veniam, quis nostrud exercitation
+                        consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation
                       </p>
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a class="products-item__link products-item__link-box" href="#">
+                  <a
+                    class="products-item__link products-item__link-box"
+                    href="#">
                     <img src="images/icon/search.svg" alt="products search" />
                     <img src="images/icon/cart.svg" alt="products cart" />
                     <img src="images/icon/heart.svg" alt="products heart" />
@@ -309,7 +391,10 @@
                 </div>
                 <div class="products-item">
                   <a class="products-item__images" href="#">
-                    <img class="products-item__img" src="images/products/2.jpg" alt="products assortment" />
+                    <img
+                      class="products-item__img"
+                      src="images/products/2.jpg"
+                      alt="products assortment" />
                   </a>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
@@ -320,13 +405,16 @@
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                        ad minim veniam, quis nostrud exercitation
+                        consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation
                       </p>
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a class="products-item__link products-item__link-box" href="#">
+                  <a
+                    class="products-item__link products-item__link-box"
+                    href="#">
                     <img src="images/icon/search.svg" alt="products search" />
                     <img src="images/icon/cart.svg" alt="products cart" />
                     <img src="images/icon/heart.svg" alt="products heart" />
@@ -334,7 +422,10 @@
                 </div>
                 <div class="products-item">
                   <a class="products-item__images" href="#">
-                    <img class="products-item__img" src="images/products/3.jpg" alt="products assortment" />
+                    <img
+                      class="products-item__img"
+                      src="images/products/3.jpg"
+                      alt="products assortment" />
                   </a>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
@@ -345,13 +436,16 @@
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                        ad minim veniam, quis nostrud exercitation
+                        consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation
                       </p>
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a class="products-item__link products-item__link-box" href="#">
+                  <a
+                    class="products-item__link products-item__link-box"
+                    href="#">
                     <img src="images/icon/search.svg" alt="products search" />
                     <img src="images/icon/cart.svg" alt="products cart" />
                     <img src="images/icon/heart.svg" alt="products heart" />
@@ -359,7 +453,10 @@
                 </div>
                 <div class="products-item">
                   <a class="products-item__images" href="#">
-                    <img class="products-item__img" src="images/products/4.jpg" alt="products assortment" />
+                    <img
+                      class="products-item__img"
+                      src="images/products/4.jpg"
+                      alt="products assortment" />
                   </a>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
@@ -370,13 +467,16 @@
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                        ad minim veniam, quis nostrud exercitation
+                        consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation
                       </p>
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a class="products-item__link products-item__link-box" href="#">
+                  <a
+                    class="products-item__link products-item__link-box"
+                    href="#">
                     <img src="images/icon/search.svg" alt="products search" />
                     <img src="images/icon/cart.svg" alt="products cart" />
                     <img src="images/icon/heart.svg" alt="products heart" />
@@ -384,7 +484,10 @@
                 </div>
                 <div class="products-item">
                   <a class="products-item__images" href="#">
-                    <img class="products-item__img" src="images/products/5.jpg" alt="products assortment" />
+                    <img
+                      class="products-item__img"
+                      src="images/products/5.jpg"
+                      alt="products assortment" />
                   </a>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
@@ -395,13 +498,16 @@
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                        ad minim veniam, quis nostrud exercitation
+                        consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation
                       </p>
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a class="products-item__link products-item__link-box" href="#">
+                  <a
+                    class="products-item__link products-item__link-box"
+                    href="#">
                     <img src="images/icon/search.svg" alt="products search" />
                     <img src="images/icon/cart.svg" alt="products cart" />
                     <img src="images/icon/heart.svg" alt="products heart" />
@@ -409,7 +515,10 @@
                 </div>
                 <div class="products-item">
                   <a class="products-item__images" href="#">
-                    <img class="products-item__img" src="images/products/6.jpg" alt="products assortment" />
+                    <img
+                      class="products-item__img"
+                      src="images/products/6.jpg"
+                      alt="products assortment" />
                   </a>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
@@ -420,13 +529,16 @@
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                        ad minim veniam, quis nostrud exercitation
+                        consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation
                       </p>
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a class="products-item__link products-item__link-box" href="#">
+                  <a
+                    class="products-item__link products-item__link-box"
+                    href="#">
                     <img src="images/icon/search.svg" alt="products search" />
                     <img src="images/icon/cart.svg" alt="products cart" />
                     <img src="images/icon/heart.svg" alt="products heart" />
@@ -434,7 +546,10 @@
                 </div>
                 <div class="products-item">
                   <a class="products-item__images" href="#">
-                    <img class="products-item__img" src="images/products/7.jpg" alt="products assortment" />
+                    <img
+                      class="products-item__img"
+                      src="images/products/7.jpg"
+                      alt="products assortment" />
                   </a>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
@@ -445,13 +560,16 @@
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                        ad minim veniam, quis nostrud exercitation
+                        consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation
                       </p>
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a class="products-item__link products-item__link-box" href="#">
+                  <a
+                    class="products-item__link products-item__link-box"
+                    href="#">
                     <img src="images/icon/search.svg" alt="products search" />
                     <img src="images/icon/cart.svg" alt="products cart" />
                     <img src="images/icon/heart.svg" alt="products heart" />
@@ -459,7 +577,10 @@
                 </div>
                 <div class="products-item">
                   <a class="products-item__images" href="#">
-                    <img class="products-item__img" src="images/products/8.jpg" alt="products assortment" />
+                    <img
+                      class="products-item__img"
+                      src="images/products/8.jpg"
+                      alt="products assortment" />
                   </a>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
@@ -470,13 +591,16 @@
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                        ad minim veniam, quis nostrud exercitation
+                        consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation
                       </p>
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a class="products-item__link products-item__link-box" href="#">
+                  <a
+                    class="products-item__link products-item__link-box"
+                    href="#">
                     <img src="images/icon/search.svg" alt="products search" />
                     <img src="images/icon/cart.svg" alt="products cart" />
                     <img src="images/icon/heart.svg" alt="products heart" />
@@ -484,7 +608,10 @@
                 </div>
                 <div class="products-item">
                   <a class="products-item__images" href="#">
-                    <img class="products-item__img" src="images/products/9.jpg" alt="products assortment" />
+                    <img
+                      class="products-item__img"
+                      src="images/products/9.jpg"
+                      alt="products assortment" />
                   </a>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
@@ -495,13 +622,16 @@
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                        ad minim veniam, quis nostrud exercitation
+                        consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation
                       </p>
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a class="products-item__link products-item__link-box" href="#">
+                  <a
+                    class="products-item__link products-item__link-box"
+                    href="#">
                     <img src="images/icon/search.svg" alt="products search" />
                     <img src="images/icon/cart.svg" alt="products cart" />
                     <img src="images/icon/heart.svg" alt="products heart" />
@@ -509,7 +639,10 @@
                 </div>
                 <div class="products-item">
                   <a class="products-item__images" href="#">
-                    <img class="products-item__img" src="images/products/10.jpg" alt="products assortment" />
+                    <img
+                      class="products-item__img"
+                      src="images/products/10.jpg"
+                      alt="products assortment" />
                   </a>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
@@ -520,13 +653,16 @@
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                        ad minim veniam, quis nostrud exercitation
+                        consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation
                       </p>
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a class="products-item__link products-item__link-box" href="#">
+                  <a
+                    class="products-item__link products-item__link-box"
+                    href="#">
                     <img src="images/icon/search.svg" alt="products search" />
                     <img src="images/icon/cart.svg" alt="products cart" />
                     <img src="images/icon/heart.svg" alt="products heart" />
@@ -534,7 +670,10 @@
                 </div>
                 <div class="products-item">
                   <a class="products-item__images" href="#">
-                    <img class="products-item__img" src="images/products/11.jpg" alt="products assortment" />
+                    <img
+                      class="products-item__img"
+                      src="images/products/11.jpg"
+                      alt="products assortment" />
                   </a>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
@@ -545,13 +684,16 @@
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
-                        consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                        ad minim veniam, quis nostrud exercitation
+                        consectetur adipisicing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad
+                        minim veniam, quis nostrud exercitation
                       </p>
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a class="products-item__link products-item__link-box" href="#">
+                  <a
+                    class="products-item__link products-item__link-box"
+                    href="#">
                     <img src="images/icon/search.svg" alt="products search" />
                     <img src="images/icon/cart.svg" alt="products cart" />
                     <img src="images/icon/heart.svg" alt="products heart" />
@@ -561,7 +703,11 @@
               <div class="pagination">
                 <ul class="pagination__list">
                   <li class="pagination__item">
-                    <a class="pagination__link pagination__link--active" href="#">1</a>
+                    <a
+                      class="pagination__link pagination__link--active"
+                      href="#"
+                      >1</a
+                    >
                   </li>
                   <li class="pagination__item">
                     <a class="pagination__link" href="#">2</a>
@@ -579,11 +725,26 @@
         </div>
       </section>
       <div class="parthers">
-        <img class="parhers-item" src="images/parthers/1.png.svg" alt="parthers logo" />
-        <img class="parhers-item" src="images/parthers/2.png.svg" alt="parthers logo" />
-        <img class="parhers-item" src="images/parthers/3.png.svg" alt="parthers logo" />
-        <img class="parhers-item" src="images/parthers/4.png.svg" alt="parthers logo" />
-        <img class="parhers-item" src="images/parthers/5.png.svg" alt="parthers logo" />
+        <img
+          class="parhers-item"
+          src="images/parthers/1.png.svg"
+          alt="parthers logo" />
+        <img
+          class="parhers-item"
+          src="images/parthers/2.png.svg"
+          alt="parthers logo" />
+        <img
+          class="parhers-item"
+          src="images/parthers/3.png.svg"
+          alt="parthers logo" />
+        <img
+          class="parhers-item"
+          src="images/parthers/4.png.svg"
+          alt="parthers logo" />
+        <img
+          class="parhers-item"
+          src="images/parthers/5.png.svg"
+          alt="parthers logo" />
       </div>
     </main>
 
@@ -594,14 +755,24 @@
             <a class="logo footer-top__logo" href="#">
               <img class="logo__img" src="images/logo.svg" alt="footer-logo" />
             </a>
-            <a class="footer-top__adress" href="#"> ADDRESS: 4772 Wines Lane Houston, TX 77032 </a>
-            <a class="footer-top__phone" href="tel:+832-347-5843"> Telephone: +832-347-5843 </a>
-            <a class="footer-top__email" href="mailto:contact@comfort.com">Email:contact@Comfort.com</a>
+            <a class="footer-top__adress" href="#">
+              ADDRESS: 4772 Wines Lane Houston, TX 77032
+            </a>
+            <a class="footer-top__phone" href="tel:+832-347-5843">
+              Telephone: +832-347-5843
+            </a>
+            <a class="footer-top__email" href="mailto:contact@comfort.com"
+              >Email:contact@Comfort.com</a
+            >
             <div class="footer-top__social">
               <ul class="footer-top__social-list">
                 <li class="footer-top__social-item">
                   <a class="footer-top__social-link" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 20 20">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20px"
+                      height="20px"
+                      viewBox="0 0 20 20">
                       <g>
                         <path
                           d="M 19.6875 10 C 19.6875 4.648438 15.351562 0.3125 10 0.3125 C
@@ -617,7 +788,11 @@
                 </li>
                 <li class="footer-top__social-item">
                   <a class="footer-top__social-link" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 20 22">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20px"
+                      height="20px"
+                      viewBox="0 0 20 22">
                       <g>
                         <path
                           d="M 10.003906
@@ -667,7 +842,11 @@
                 </li>
                 <li class="footer-top__social-item">
                   <a class="footer-top__social-link" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 20 20">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20px"
+                      height="20px"
+                      viewBox="0 0 20 20">
                       <g>
                         <path
                           d="M 10 0.3125 C 4.476562 0.3125 0 4.648438 0 10 C 0 15.351562 4.476562 19.6875 10 19.6875 C 15.523438 19.6875 20 15.351562 20 10 C 20 4.648438 15.523438 0.3125 10 0.3125 Z M 14.636719 6.902344 C 14.484375 8.433594 13.832031 12.148438 13.503906 13.867188 C 13.363281 14.589844 13.085938 14.835938 12.820312 14.859375 C 12.238281 14.910156 11.796875 14.488281 11.234375 14.128906 C 10.355469 13.570312 9.855469 13.222656 9.003906 12.675781 C 8.015625 12.046875 8.65625 11.699219 9.21875 11.132812 C 9.367188 10.988281 11.925781 8.730469 11.972656 8.527344 C 11.980469 8.5 11.984375 8.40625 11.925781 8.355469 C 11.867188 8.304688 11.78125 8.324219 11.71875 8.335938 C 11.632812 8.355469 10.226562 9.257812 7.503906 11.039062 C 7.101562 11.304688 6.742188 11.433594 6.417969 11.425781 C 6.0625 11.417969 5.375 11.230469 4.863281 11.070312 C 4.238281 10.871094 3.738281 10.769531 3.78125 10.433594 C 3.804688 10.257812 4.054688 10.078125 4.527344 9.898438 C 7.441406 8.667969 9.386719 7.855469 10.359375 7.464844 C 13.136719 6.34375 13.710938 6.152344 14.089844 6.144531 C 14.171875 6.144531 14.355469 6.164062 14.476562 6.257812 C 14.554688 6.324219 14.605469 6.417969 14.617188 6.519531 C 14.636719 6.644531 14.644531 6.773438 14.636719 6.902344 Z M 14.636719 6.902344 " />
@@ -677,7 +856,11 @@
                 </li>
                 <li class="footer-top__social-item">
                   <a class="footer-top__social-link" href="#">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 20 20">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20px"
+                      height="20px"
+                      viewBox="0 0 20 20">
                       <g>
                         <path
                           d="M 17.945312 5.925781 C 17.957031 6.105469 17.957031 6.28125 17.957031 6.460938 C 17.957031 11.878906 13.832031 18.121094 6.292969 18.121094 C 3.972656 18.121094 1.816406 17.449219 0 16.28125 C 0.328125 16.320312 0.648438 16.332031 0.988281 16.332031 C 2.90625 16.332031 4.671875 15.683594 6.078125 14.582031 C 4.277344 14.542969 2.765625 13.363281 2.246094 11.738281 C 2.5 11.777344 2.753906 11.800781 3.019531 11.800781 C 3.386719 11.800781 3.757812 11.75 4.097656 11.664062 C 2.222656 11.28125 0.8125 9.632812 0.8125 7.640625 L 0.8125 7.589844 C 1.359375 7.894531 1.992188 8.082031 2.664062 8.109375 C 1.5625 7.375 0.835938 6.117188 0.835938 4.695312 C 0.835938 3.933594 1.039062 3.234375 1.394531 2.625 C 3.414062 5.113281 6.445312 6.738281 9.847656 6.917969 C 9.785156 6.613281 9.746094 6.292969 9.746094 5.976562 C 9.746094 3.71875 11.574219 1.878906 13.84375 1.878906 C 15.023438 1.878906 16.089844 2.375 16.839844 3.171875 C 17.765625 2.996094 18.65625 2.652344 19.441406 2.183594 C 19.136719 3.132812 18.488281 3.933594 17.640625 4.441406 C 18.464844 4.351562 19.265625 4.125 20 3.808594 C 19.441406 4.621094 18.742188 5.34375 17.945312 5.925781 Z M 17.945312 5.925781 " />
@@ -727,15 +910,25 @@
           </div>
           <div class="footer-top__item footer-top__form">
             <h6 class="footer-top__title">Newsletter</h6>
-            <p class="footer-top__text">Subscribe by our newsletter and get update protidin.</p>
+            <p class="footer-top__text">
+              Subscribe by our newsletter and get update protidin.
+            </p>
             <form class="footer-top__form-footer" action="#">
-              <input class="footer-top__form-input" type="email" placeholder="Email address" required />
-              <button class="footer-top__form-btn" type="submit">Subscribe</button>
+              <input
+                class="footer-top__form-input"
+                type="email"
+                placeholder="Email address"
+                required />
+              <button class="footer-top__form-btn" type="submit">
+                Subscribe
+              </button>
             </form>
           </div>
         </div>
         <div class="footer-copy">
-          <p class="footer-copy__text">©2023 CopyRight Example. All rights reserved.</p>
+          <p class="footer-copy__text">
+            ©2023 CopyRight Example. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

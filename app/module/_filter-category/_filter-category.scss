@@ -1,0 +1,30 @@
+.filter-category {
+  &__form {
+    padding-top: 30px;
+  }
+
+  &__label {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__input {
+    @extend %checkbox-hidden;
+    &:checked + .filter-category__checkbox {
+      background-color: $shop;
+    }
+  }
+
+  &__checkbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1;
+    padding: 16px 13px;
+    border-radius: 10px;
+  }
+}

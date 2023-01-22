@@ -1,0 +1,65 @@
+.filter-price {
+  &__form {
+    position: relative;
+    padding-top: 30px;
+  }
+
+  &__label {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    font-size: 14px;
+  }
+
+  &__from,
+  &__to {
+    &::before {
+      content: '$';
+    }
+    &::after {
+      content: '.00';
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: -5px;
+    right: 85px;
+    padding: 5px 30px;
+    @extend %btn;
+    &::before {
+      display: none;
+    }
+  }
+
+  .irs--flat .irs-min,
+  .irs--flat .irs-max {
+    display: none;
+  }
+
+  .irs-from,
+  .irs-to,
+  .irs-single {
+    display: none;
+  }
+
+  .irs--flat .irs-line {
+    top: 20px;
+    height: 3px;
+    background-color: #dfe7ec;
+  }
+  .irs--flat .irs-handle {
+    top: 12px;
+    width: 20px;
+    height: 20px;
+    background-color: $btn;
+  }
+  .irs--flat .irs-handle > i:first-child {
+    display: none;
+  }
+  .irs--flat .irs-bar {
+    top: 20px;
+    height: 3px;
+    background-color: $btn;
+  }
+}

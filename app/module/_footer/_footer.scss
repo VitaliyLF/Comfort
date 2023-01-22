@@ -1,0 +1,110 @@
+.footer-top {
+  padding: 75px 0 55px;
+  border-bottom: 1px solid #dae4e9;
+  display: flex;
+  justify-content: space-between;
+
+  &__contact {
+    width: 211px;
+    margin-right: 100px;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  &__adress,
+  &__phone,
+  &__email {
+    display: block;
+    margin-bottom: 20px;
+    color: $subtitle;
+  }
+
+  &__social-list {
+    display: flex;
+  }
+
+  &__social-item + &__social-item {
+    margin-left: 30px;
+  }
+
+  &__social-link {
+    transition: all 0.3s ease-in;
+    path {
+      fill: $btn;
+    }
+    &:hover {
+      path {
+        fill: $default;
+      }
+    }
+  }
+
+  &__nav {
+    width: 175px;
+  }
+
+  &__title {
+    @extend %DMSans-700;
+    font-size: 16px;
+    line-height: 21px;
+    color: $title;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  &__link,
+  &__adress,
+  &__phone,
+  &__email {
+    &:hover {
+      color: $default;
+    }
+  }
+
+  &__link,
+  &__text {
+    color: $subtitle;
+  }
+
+  &__form {
+    max-width: 408px;
+    @extend %DMSans-400;
+  }
+
+  &__form-input {
+    margin-top: 40px;
+    background-color: $bg-default;
+    max-width: 238px;
+    width: 100%;
+    padding: 15px 16px;
+    border: none;
+    outline: transparent;
+    &::placeholder {
+      color: #234969;
+      font-size: 12px;
+    }
+  }
+
+  &__form-btn {
+    border: none;
+    background-color: $btn;
+    color: #fff;
+    padding: 14px 17px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.footer-copy {
+  text-align: center;
+}

@@ -1,0 +1,31 @@
+.products {
+  padding: 75px 0 190px;
+  &__filter-btn {
+    padding: 40px 0 80px;
+    text-align: center;
+    @extend %DMSans-500;
+  }
+
+  &__btn {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    color: $subtitle;
+    cursor: pointer;
+  }
+
+  &__btn + &__btn {
+    margin-left: 30px;
+  }
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-rows: repeat(2, auto);
+    gap: 40px 30px;
+  }
+
+  .mixitup-control-active {
+    color: $title;
+  }
+}
