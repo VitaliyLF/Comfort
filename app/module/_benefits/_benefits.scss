@@ -1,0 +1,62 @@
+.benefits {
+  padding-top: 250px;
+  margin: 0 75px;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  &__item {
+    background-color: #feefe2;
+    width: 870px;
+    height: 390px;
+    display: flex;
+  }
+
+  &__img {
+    max-width: 240px;
+    height: 400px;
+    object-fit: cover;
+    transform: translateY(-100px);
+    margin-left: 135px;
+    margin-right: 50px;
+  }
+
+  &__title {
+    padding-top: 100px;
+    font-size: 26px;
+    line-height: 32px;
+    @extend %DMSans-700;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    width: 335px;
+    margin-bottom: 35px;
+  }
+
+  &__link {
+    display: block;
+    padding: 24px 20px;
+    width: 200px;
+    background-color: transparent;
+    border: 1px solid $default;
+    border-radius: 10px;
+    color: $default;
+    @extend %Rubik-500;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url(../images/icon/arrow-btn-default.svg);
+      width: 20px;
+      height: 20px;
+      top: 30px;
+      right: 30px;
+    }
+    &:hover {
+      background-color: #fff;
+    }
+  }
+}

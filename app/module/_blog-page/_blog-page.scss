@@ -1,0 +1,124 @@
+.blog-page {
+  padding: 120px 0px 70px;
+  &__inner {
+    display: flex;
+  }
+
+  &__item--slider {
+    .blog-page__item-box {
+      margin-top: -10px;
+    }
+  }
+
+  &__slider {
+    .slick-prev,
+    .slick-next {
+      position: absolute;
+      top: 50%;
+      font-size: 0;
+      transform: translateY(-50%);
+      z-index: 12;
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      border: 2px solid $btn;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+  .slick-next {
+    right: 40px;
+    background-image: url(../images/icon/slider-next.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .slick-prev {
+    left: 40px;
+    background-image: url(../images/icon/slider-prev.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .slick-disabled {
+    background-color: $title;
+  }
+
+  &__content {
+    max-width: 830px;
+    margin-right: 70px;
+  }
+
+  &__item {
+    margin-bottom: 50px;
+    position: relative;
+  }
+
+  &__item-link {
+    display: block;
+  }
+
+  &__img {
+    display: block;
+    max-width: 830px;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  &__item-box {
+    padding-top: 40px;
+  }
+
+  .blog-box {
+    position: absolute;
+    bottom: 314px;
+    z-index: -1;
+    display: inline-flex;
+    background-color: $btn;
+    z-index: 3;
+    padding: 30px 30px 30px 20px;
+    line-height: 1;
+    &__date::before,
+    &__author::before {
+      top: -5px;
+    }
+
+    &__date,
+    &__author {
+      color: #fff;
+    }
+    &__date::before {
+      background-image: url(../images/icon/time-white.svg);
+    }
+
+    &__author::before {
+      background-image: url(../images/icon/admin-white.svg);
+    }
+  }
+
+  &__item-title {
+    display: block;
+    font-size: 36px;
+    @extend %Rubik-400;
+    color: $default;
+    margin-bottom: 40px;
+  }
+
+  &__item-text {
+    margin-bottom: 40px;
+  }
+
+  &__item-btn {
+    @extend %btn;
+    border: 1px solid $btn;
+    background-color: #fff;
+    color: $btn;
+    &::before {
+      background-image: url(../images/icon/arrow-btn.svg);
+    }
+  }
+
+  &__aside {
+    max-width: 270px;
+  }
+}

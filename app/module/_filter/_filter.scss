@@ -1,0 +1,21 @@
+.filter {
+  &__item {
+    margin-bottom: 50px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 18px;
+    @extend %DMSans-700;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 38px;
+      height: 3px;
+      background-color: $btn;
+      margin-left: 15px;
+      top: 14px;
+    }
+  }
+}

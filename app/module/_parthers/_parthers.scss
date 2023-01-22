@@ -1,0 +1,19 @@
+.parthers {
+  padding: 90px 0;
+  height: 200px;
+  background-color: $bg-default;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 215px;
+    background-color: $bg-default;
+    top: -215px;
+    right: 0;
+    z-index: -1;
+  }
+}

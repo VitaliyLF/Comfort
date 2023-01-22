@@ -1,0 +1,39 @@
+.terms {
+  padding: 120px 0;
+
+  &__title {
+    font-size: 24px;
+    @extend %Rubik-500;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    list-style-type: none;
+    counter-reset: item;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__item-text {
+    margin: 0 0 30px 15px;
+  }
+
+  &__item:nth-child(-n + 9)::before {
+    content: '0' counter(item);
+    counter-increment: item;
+  }
+
+  &__item:nth-child(n + 10)::before {
+    content: counter(item);
+    counter-increment: item;
+  }
+
+  &__text {
+    margin-bottom: 70px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

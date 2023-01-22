@@ -1,0 +1,25 @@
+.map {
+  margin-bottom: 135px;
+  &__inner {
+    display: flex;
+  }
+
+  &__form {
+    max-width: 620px;
+    margin-right: 50px;
+  }
+
+  .blog-form__input {
+    width: 295px;
+  }
+
+  .blog-form__textarea {
+    height: 175px;
+    margin-bottom: 30px;
+  }
+
+  #map {
+    width: 500px;
+    height: 355px;
+  }
+}
