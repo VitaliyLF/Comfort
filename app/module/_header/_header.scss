@@ -1,5 +1,4 @@
 .header {
-  position: static;
   background-color: #fff;
   &__snow {
     position: relative;
@@ -26,16 +25,20 @@
 }
 
 .header__top {
-  padding: 25px 75px;
+  padding: 50px 75px;
   position: relative;
   &-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 }
 
 .menu {
+  &__btn {
+    display: none;
+  }
   &__list {
     display: flex;
   }
@@ -63,9 +66,7 @@
 .user-nav {
   display: flex;
   .seacrh-box {
-    position: absolute;
-    top: 25px;
-    right: 350px;
+    margin-right: 20px;
     transform: translateX(-50%, -50%);
     background: $btn;
     height: 50px;
@@ -172,6 +173,130 @@
     transition: all 0.5s ease;
     &:hover {
       transform: scale(1.2);
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .header {
+    &__top {
+      padding: 50px 25px;
+    }
+  }
+  .user-nav {
+    .seacrh-box {
+      &:hover > .seacrh-box__input {
+        width: 0;
+        padding: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .menu {
+    order: 1;
+    margin-left: 30px;
+    &__list {
+      position: absolute;
+      transform: translateY(-200%);
+      top: 120px;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      z-index: 5;
+      transition: all 0.3s ease;
+      &.menu__list--active {
+        background-color: #fff;
+        transform: translateY(0);
+        transition: all 0.3s ease;
+        .menu__item-link:hover {
+          color: $accent;
+        }
+      }
+    }
+    &__list-item + &__list-item {
+      padding-left: 15px;
+    }
+    &__list-item {
+      width: 100%;
+      padding: 0 20px;
+      text-align: center;
+    }
+    &__item-link {
+      padding: 20px 0;
+      display: block;
+    }
+    &__btn {
+      width: 30px;
+      height: 25px;
+      padding: 0;
+      border: none;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      cursor: pointer;
+      span {
+        width: 100%;
+        height: 3px;
+        background-color: $btn;
+      }
+      &::after,
+      &::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: $btn;
+      }
+      &::before {
+        top: 0;
+      }
+      &::after {
+        bottom: 0;
+      }
+    }
+  }
+  .user-nav {
+    margin-left: auto;
+    .seacrh-box {
+      right: 360px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .menu {
+    order: 0;
+    &__list {
+      top: 200px;
+    }
+  }
+  .user-nav {
+    margin-top: 30px;
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 380px) {
+  .menu {
+    &__list {
+      top: 177px;
+    }
+  }
+  .header__top {
+    padding: 30px 10px;
+  }
+  .user-nav {
+    &__link--login {
+      margin-left: 10px;
+    }
+    .seacrh-box {
+      margin-right: 10px;
     }
   }
 }
