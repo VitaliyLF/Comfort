@@ -1,4 +1,12 @@
 $(function () {
+  $('.footer__hidden').on('click', function () {
+    $(this).next().slideToggle()
+    $(this).toggleClass('footer-top__title--active')
+  })
+
+  $('.menu__btn').on('click', function () {
+    $('.menu__list').toggleClass('menu__list--active')
+  })
   $('.blog-page__slider').slick({
     infinite: false,
     draggable: false,

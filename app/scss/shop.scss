@@ -7,8 +7,9 @@
 @import '../../node_modules/jquery-form-styler/dist/jquery.formstyler.theme';
 @import 'global';
 @import '../module/_header/header';
-@import '../module/_footer/footer';
 @import '../module/_top/top';
+@import '../module/_footer/footer';
+@import '../module/_parthers/parthers';
 @import '../module/_shop/shop';
 @import '../module/_filter/filter';
 @import '../module/_filter-search/filter-search';
@@ -17,5 +18,4 @@
 @import '../module/_filter-brand/filter-brand';
 @import '../module/_shop-recent/shop-recent';
 @import '../module/_shop-content/shop-content';
-@import '../module/_products-item/products-item';
-@import '../module/_parthers/parthers';
+@import '../module/_products-item-shop/products-item-shop';
