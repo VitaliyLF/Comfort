@@ -26,6 +26,7 @@
   }
 
   &__item {
+    max-width: 370px;
     background-repeat: no-repeat;
     height: 246px;
     padding: 40px 0 0 40px;
@@ -45,5 +46,41 @@
 
   .mixitup-control-active {
     color: $title;
+  }
+}
+
+@media (max-width: 1200px) {
+  .design {
+    &__item {
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .design {
+    &__filter-btn {
+      padding: 30px 0 0;
+    }
+    &__btn {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .design {
+    &__item {
+      max-width: 285px;
+    }
+  }
+}
+
+@media (max-width: 380px) {
+  .design {
+    &__item {
+      margin: 0;
+    }
   }
 }

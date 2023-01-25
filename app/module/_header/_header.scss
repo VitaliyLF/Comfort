@@ -66,6 +66,10 @@
 .user-nav {
   display: flex;
   .seacrh-box {
+    position: absolute;
+    top: 50px;
+    right: 325px;
+    z-index: 10;
     margin-right: 20px;
     transform: translateX(-50%, -50%);
     background: $btn;
@@ -185,6 +189,7 @@
   }
   .user-nav {
     .seacrh-box {
+      position: static;
       &:hover > .seacrh-box__input {
         width: 0;
         padding: 0;
@@ -262,36 +267,41 @@
   }
   .user-nav {
     margin-left: auto;
-    .seacrh-box {
-      right: 360px;
-    }
   }
 }
 
 @media (max-width: 650px) {
+  .header__top {
+    padding-top: 0;
+  }
   .menu {
     order: 0;
     &__list {
-      top: 200px;
+      top: 160px;
     }
   }
   .user-nav {
     margin-top: 30px;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: center;
   }
 }
 
 @media (max-width: 380px) {
   .menu {
     &__list {
-      top: 177px;
+      top: 140px;
     }
   }
   .header__top {
-    padding: 30px 10px;
+    padding: 0 10px 30px;
   }
   .user-nav {
+    &__link--cart,
+    &__link--heart {
+      width: 80px;
+    }
+
     &__link--login {
       margin-left: 10px;
     }
