@@ -25,10 +25,11 @@
   }
 
   &__timer {
-    padding: 40px 0;
+    padding: 40px;
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+    flex-wrap: wrap;
   }
 
   &__timer-item {
@@ -49,5 +50,28 @@
   &__link {
     @extend %btn;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .sale {
+    &__img {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .sale {
+    &__timer {
+      padding: 20px;
+    }
+    &__timer-item {
+      width: 80px;
+      height: 80px;
+      span {
+        font-size: 28px;
+      }
+    }
   }
 }
