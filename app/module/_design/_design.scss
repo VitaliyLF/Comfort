@@ -20,13 +20,14 @@
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(285px, 1fr));
     grid-template-rows: repeat(2, auto);
     gap: 35px 30px;
   }
 
   &__item {
     max-width: 370px;
+    width: 100%;
     background-repeat: no-repeat;
     height: 246px;
     padding: 40px 0 0 40px;
@@ -51,6 +52,7 @@
 
 @media (max-width: 1200px) {
   .design {
+    padding: 75px 0;
     &__item {
       margin: 0 auto;
       width: 100%;
@@ -66,21 +68,16 @@
     &__btn {
       margin-bottom: 30px;
     }
-  }
-}
-
-@media (max-width: 420px) {
-  .design {
-    &__item {
-      max-width: 285px;
+    &__btn + &__btn {
+      margin-left: 15px;
     }
   }
 }
 
 @media (max-width: 380px) {
   .design {
-    &__item {
-      margin: 0;
+    &__btn + &__btn {
+      margin-left: 10px;
     }
   }
 }

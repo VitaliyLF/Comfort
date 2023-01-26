@@ -1,11 +1,12 @@
 .parthers {
   padding: 90px 0;
-  height: 200px;
+  min-height: 200px;
   background-color: $bg-default;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   position: relative;
+  flex-wrap: wrap;
   &::after {
     content: '';
     position: absolute;
@@ -15,5 +16,19 @@
     top: -215px;
     right: 0;
     z-index: -1;
+  }
+}
+
+@media (max-width: 1200px) {
+  .parthers {
+    padding: 0;
+    justify-content: space-evenly;
+    gap: 20px 10px;
+    img {
+      padding: 20px;
+    }
+    &::after {
+      display: none;
+    }
   }
 }
