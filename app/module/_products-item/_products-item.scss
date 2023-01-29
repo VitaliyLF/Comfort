@@ -74,20 +74,7 @@
 }
 
 @media (max-width: 1100px) {
-  .products {
-    .products-item {
-      width: 100%;
-      &__link:hover {
-        opacity: 0;
-      }
-    }
-  }
-}
-
-@media (max-width: 650px) {
-  .products {
-    .products-item {
-      width: 100%;
-    }
+  .products-item {
+    width: 100%;
   }
 }

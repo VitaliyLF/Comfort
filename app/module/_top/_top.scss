@@ -17,3 +17,20 @@
     margin-bottom: 30px;
   }
 }
+
+@media (max-width: 659px) {
+  .top {
+    &__container {
+      padding: 100px 0;
+    }
+  }
+}
+
+
+@media (max-width: 380px) {
+  .top {
+    &__title {
+      font-size: 50px;
+    }
+  }
+}

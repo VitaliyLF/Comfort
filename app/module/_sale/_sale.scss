@@ -1,7 +1,7 @@
 .sale {
   display: flex;
   &__img {
-    max-width: 100%;
+    width: 1052px;
     height: 800px;
     object-fit: cover;
   }
@@ -55,31 +55,46 @@
 
 @media (max-width: 1200px) {
   .sale {
+    display: block;
     &__img {
-      display: none;
+      display: block;
+      width: 100%;
+      height: 100%;
+      margin-bottom: 50px;
     }
   }
 }
 
 @media (max-width: 650px) {
   .sale {
+    &__img {
+      height: 100%;
+      margin-bottom: 30px;
+      object-fit: contain;
+    }
     &__timer {
-      padding: 20px;
+      padding: 0;
+      justify-content: center;
     }
     &__timer-item {
-      width: 80px;
-      height: 80px;
-      span {
-        font-size: 28px;
-      }
+      margin: 20px 51px;
     }
     &__link {
+      margin-top: 20px;
       padding: 15px;
       max-width: 130px;
       &::before {
         top: 21px;
         right: 10px;
       }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .sale {
+    &__timer-item {
+      margin: 15px 20px;
     }
   }
 }

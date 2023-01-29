@@ -21,14 +21,27 @@
 
 @media (max-width: 1200px) {
   .parthers {
-    padding: 0;
-    justify-content: space-evenly;
-    gap: 20px 10px;
-    img {
-      padding: 20px;
-    }
+    padding: 45px 0;
     &::after {
       display: none;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .parthers {
+    justify-content: center;
+    &__item {
+      margin: 20px 40px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .parthers {
+    justify-content: space-around;
+    &__item {
+      margin: 20px 10px;
     }
   }
 }
