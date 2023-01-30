@@ -24,6 +24,11 @@
   .products-item {
     max-width: 270px;
     margin-right: 50px;
+    &:hover {
+      .products-item__link {
+        transform: translateY(-130px);
+      }
+    }
   }
 
   .slick-arrow {

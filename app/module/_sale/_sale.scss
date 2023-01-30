@@ -1,9 +1,17 @@
 .sale {
   display: flex;
+  &__box-link {
+    overflow: hidden;
+  }
   &__img {
     width: 1052px;
     height: 800px;
     object-fit: cover;
+    transition: all 0.9s ease;
+    &:hover {
+      transform: scale(1.1);
+      transition: all 0.9s ease;
+    }
   }
 
   &__content {

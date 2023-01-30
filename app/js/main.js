@@ -45,6 +45,10 @@ $(function () {
     fade: true,
   })
 
+  $('.shop__filters-btn').on('click', function () {
+    $('.shop__filters').slideToggle()
+  })
+
   $('.shop-content__filter-btn').on('click', function () {
     $('.shop-content__filter-btn').removeClass(
       'shop-content__filter-btn--active'
@@ -54,10 +58,12 @@ $(function () {
 
   $('.button-list').on('click', function () {
     $('.products-item').addClass('products-item--list')
+    $('.shop-content__inner').addClass('shop-content__nogrid')
   })
 
   $('.button-grid').on('click', function () {
     $('.products-item').removeClass('products-item--list')
+    $('.shop-content__inner').removeClass('shop-content__nogrid')
   })
 
   $('.select-style,.product-info__num').styler({
