@@ -17,6 +17,24 @@ $(function () {
     draggable: false,
     slidesToShow: 3,
     adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 1101,
+        settings: {
+          slidesToShow: 2,
+          draggable: true,
+          autoplay: true,
+          autoplaySpeed: 750,
+        },
+      },
+      {
+        breakpoint: 651,
+        settings: {
+          slidesToShow: 1,
+          draggable: true,
+        },
+      },
+    ],
   })
 
   $('.product-tabs__top-item').on('click', function (e) {
@@ -43,6 +61,16 @@ $(function () {
     draggable: false,
     arrows: false,
     fade: true,
+    responsive: [
+      {
+        breakpoint: 1101,
+        settings: {
+          draggable: true,
+          autoplay: true,
+          autoplaySpeed: 750,
+        },
+      },
+    ],
   })
 
   $('.shop__filters-btn').on('click', function () {

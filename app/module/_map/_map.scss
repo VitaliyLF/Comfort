@@ -23,3 +23,28 @@
     height: 355px;
   }
 }
+
+@media (max-width: 1200px) {
+  .map {
+    margin-bottom: 0;
+    &__inner {
+      display: block;
+    }
+    &__form {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+    .blog-form__name,
+    .blog-form__email {
+      width: 100%;
+    }
+    .blog-form__input {
+      width: 100%;
+    }
+
+    #map {
+      width: 100%;
+    }
+  }
+}
