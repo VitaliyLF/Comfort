@@ -29,3 +29,19 @@
     background-image: url(../images/icon/admin.svg);
   }
 }
+
+@media (max-width: 420px) {
+  .blog {
+    .blog-box {
+      justify-content: space-between;
+      &__date {
+        padding-right: 8px;
+        padding-left: 25px;
+      }
+      &__author {
+        padding-right: 8px;
+        padding-left: 25px;
+      }
+    }
+  }
+}

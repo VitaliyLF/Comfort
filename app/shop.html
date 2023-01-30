@@ -11,7 +11,7 @@
       type="image/x-icon" />
     <link rel="stylesheet" href="css/shop.min.css" />
   </head>
-  <body>
+  <body id="shop">
     <header class="header">
       <div class="header__top">
         <div class="header__top-inner">
@@ -105,6 +105,9 @@
       <section class="shop">
         <div class="container">
           <div class="shop__inner">
+            <a class="shop__filters-btn" href="#shop">
+              <img src="images/icon/filter.svg" alt="filter image" />
+            </a>
             <div class="shop__filters filter">
               <div class="filter-search filter__item">
                 <h3 class="filter__title">Search</h3>
@@ -290,6 +293,17 @@
               </div>
             </div>
             <div class="shop-content">
+              <div class="shop-content__top">
+                <button
+                  class="shop-content__top-btn shop-content__top-btn--active">
+                  Trending
+                </button>
+                <button class="shop-content__top-btn">Deal Zone</button>
+                <button class="shop-content__top-btn">Living</button>
+                <button class="shop-content__top-btn">Bedroom</button>
+                <button class="shop-content__top-btn">Study</button>
+                <button class="shop-content__top-btn">Decor</button>
+              </div>
               <div class="shop-content__filter">
                 <div class="shop-content__filter-buttons">
                   <span>View</span>
@@ -331,12 +345,12 @@
               </div>
               <div class="shop-content__inner">
                 <div class="products-item">
-                  <a class="products-item__images" href="product.html">
+                  <div class="products-item__images">
                     <img
                       class="products-item__img"
                       src="images/products/item/1.jpg"
                       alt="products assortment" />
-                  </a>
+                  </div>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
@@ -353,21 +367,25 @@
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a
-                    class="products-item__link products-item__link-box"
-                    href="#0">
-                    <img src="images/icon/search.svg" alt="products search" />
-                    <img src="images/icon/cart.svg" alt="products cart" />
-                    <img src="images/icon/heart.svg" alt="products heart" />
-                  </a>
+                  <div class="products-item__link products-item__link-box">
+                    <a class="products-item__link-item" href="product.html">
+                      <img src="images/icon/search.svg" alt="products search" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/cart.svg" alt="products cart" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/heart.svg" alt="products heart" />
+                    </a>
+                  </div>
                 </div>
                 <div class="products-item">
-                  <a class="products-item__images" href="#">
+                  <div class="products-item__images">
                     <img
                       class="products-item__img"
                       src="images/products/1.jpg"
                       alt="products assortment" />
-                  </a>
+                  </div>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
@@ -384,21 +402,25 @@
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a
-                    class="products-item__link products-item__link-box"
-                    href="#">
-                    <img src="images/icon/search.svg" alt="products search" />
-                    <img src="images/icon/cart.svg" alt="products cart" />
-                    <img src="images/icon/heart.svg" alt="products heart" />
-                  </a>
+                  <div class="products-item__link products-item__link-box">
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/search.svg" alt="products search" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/cart.svg" alt="products cart" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/heart.svg" alt="products heart" />
+                    </a>
+                  </div>
                 </div>
                 <div class="products-item">
-                  <a class="products-item__images" href="#">
+                  <div class="products-item__images">
                     <img
                       class="products-item__img"
                       src="images/products/2.jpg"
                       alt="products assortment" />
-                  </a>
+                  </div>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
@@ -415,21 +437,25 @@
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a
-                    class="products-item__link products-item__link-box"
-                    href="#">
-                    <img src="images/icon/search.svg" alt="products search" />
-                    <img src="images/icon/cart.svg" alt="products cart" />
-                    <img src="images/icon/heart.svg" alt="products heart" />
-                  </a>
+                  <div class="products-item__link products-item__link-box">
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/search.svg" alt="products search" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/cart.svg" alt="products cart" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/heart.svg" alt="products heart" />
+                    </a>
+                  </div>
                 </div>
                 <div class="products-item">
-                  <a class="products-item__images" href="#">
+                  <div class="products-item__images">
                     <img
                       class="products-item__img"
                       src="images/products/3.jpg"
                       alt="products assortment" />
-                  </a>
+                  </div>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
@@ -446,21 +472,25 @@
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a
-                    class="products-item__link products-item__link-box"
-                    href="#">
-                    <img src="images/icon/search.svg" alt="products search" />
-                    <img src="images/icon/cart.svg" alt="products cart" />
-                    <img src="images/icon/heart.svg" alt="products heart" />
-                  </a>
+                  <div class="products-item__link products-item__link-box">
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/search.svg" alt="products search" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/cart.svg" alt="products cart" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/heart.svg" alt="products heart" />
+                    </a>
+                  </div>
                 </div>
                 <div class="products-item">
-                  <a class="products-item__images" href="#">
+                  <div class="products-item__images">
                     <img
                       class="products-item__img"
                       src="images/products/4.jpg"
                       alt="products assortment" />
-                  </a>
+                  </div>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
@@ -477,21 +507,25 @@
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a
-                    class="products-item__link products-item__link-box"
-                    href="#">
-                    <img src="images/icon/search.svg" alt="products search" />
-                    <img src="images/icon/cart.svg" alt="products cart" />
-                    <img src="images/icon/heart.svg" alt="products heart" />
-                  </a>
+                  <div class="products-item__link products-item__link-box">
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/search.svg" alt="products search" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/cart.svg" alt="products cart" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/heart.svg" alt="products heart" />
+                    </a>
+                  </div>
                 </div>
                 <div class="products-item">
-                  <a class="products-item__images" href="#">
+                  <div class="products-item__images">
                     <img
                       class="products-item__img"
                       src="images/products/5.jpg"
                       alt="products assortment" />
-                  </a>
+                  </div>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
@@ -508,21 +542,25 @@
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a
-                    class="products-item__link products-item__link-box"
-                    href="#">
-                    <img src="images/icon/search.svg" alt="products search" />
-                    <img src="images/icon/cart.svg" alt="products cart" />
-                    <img src="images/icon/heart.svg" alt="products heart" />
-                  </a>
+                  <div class="products-item__link products-item__link-box">
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/search.svg" alt="products search" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/cart.svg" alt="products cart" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/heart.svg" alt="products heart" />
+                    </a>
+                  </div>
                 </div>
                 <div class="products-item">
-                  <a class="products-item__images" href="#">
+                  <div class="products-item__images">
                     <img
                       class="products-item__img"
                       src="images/products/6.jpg"
                       alt="products assortment" />
-                  </a>
+                  </div>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
@@ -539,21 +577,25 @@
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a
-                    class="products-item__link products-item__link-box"
-                    href="#">
-                    <img src="images/icon/search.svg" alt="products search" />
-                    <img src="images/icon/cart.svg" alt="products cart" />
-                    <img src="images/icon/heart.svg" alt="products heart" />
-                  </a>
+                  <div class="products-item__link products-item__link-box">
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/search.svg" alt="products search" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/cart.svg" alt="products cart" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/heart.svg" alt="products heart" />
+                    </a>
+                  </div>
                 </div>
                 <div class="products-item">
-                  <a class="products-item__images" href="#">
+                  <div class="products-item__images">
                     <img
                       class="products-item__img"
                       src="images/products/7.jpg"
                       alt="products assortment" />
-                  </a>
+                  </div>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
@@ -570,21 +612,25 @@
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a
-                    class="products-item__link products-item__link-box"
-                    href="#">
-                    <img src="images/icon/search.svg" alt="products search" />
-                    <img src="images/icon/cart.svg" alt="products cart" />
-                    <img src="images/icon/heart.svg" alt="products heart" />
-                  </a>
+                  <div class="products-item__link products-item__link-box">
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/search.svg" alt="products search" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/cart.svg" alt="products cart" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/heart.svg" alt="products heart" />
+                    </a>
+                  </div>
                 </div>
                 <div class="products-item">
-                  <a class="products-item__images" href="#">
+                  <div class="products-item__images">
                     <img
                       class="products-item__img"
                       src="images/products/8.jpg"
                       alt="products assortment" />
-                  </a>
+                  </div>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
@@ -601,21 +647,25 @@
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a
-                    class="products-item__link products-item__link-box"
-                    href="#">
-                    <img src="images/icon/search.svg" alt="products search" />
-                    <img src="images/icon/cart.svg" alt="products cart" />
-                    <img src="images/icon/heart.svg" alt="products heart" />
-                  </a>
+                  <div class="products-item__link products-item__link-box">
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/search.svg" alt="products search" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/cart.svg" alt="products cart" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/heart.svg" alt="products heart" />
+                    </a>
+                  </div>
                 </div>
                 <div class="products-item">
-                  <a class="products-item__images" href="#">
+                  <div class="products-item__images">
                     <img
                       class="products-item__img"
                       src="images/products/9.jpg"
                       alt="products assortment" />
-                  </a>
+                  </div>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
@@ -632,21 +682,25 @@
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a
-                    class="products-item__link products-item__link-box"
-                    href="#">
-                    <img src="images/icon/search.svg" alt="products search" />
-                    <img src="images/icon/cart.svg" alt="products cart" />
-                    <img src="images/icon/heart.svg" alt="products heart" />
-                  </a>
+                  <div class="products-item__link products-item__link-box">
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/search.svg" alt="products search" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/cart.svg" alt="products cart" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/heart.svg" alt="products heart" />
+                    </a>
+                  </div>
                 </div>
                 <div class="products-item">
-                  <a class="products-item__images" href="#">
+                  <div class="products-item__images">
                     <img
                       class="products-item__img"
                       src="images/products/10.jpg"
                       alt="products assortment" />
-                  </a>
+                  </div>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
@@ -663,21 +717,25 @@
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a
-                    class="products-item__link products-item__link-box"
-                    href="#">
-                    <img src="images/icon/search.svg" alt="products search" />
-                    <img src="images/icon/cart.svg" alt="products cart" />
-                    <img src="images/icon/heart.svg" alt="products heart" />
-                  </a>
+                  <div class="products-item__link products-item__link-box">
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/search.svg" alt="products search" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/cart.svg" alt="products cart" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/heart.svg" alt="products heart" />
+                    </a>
+                  </div>
                 </div>
                 <div class="products-item">
-                  <a class="products-item__images" href="#">
+                  <div class="products-item__images">
                     <img
                       class="products-item__img"
                       src="images/products/11.jpg"
                       alt="products assortment" />
-                  </a>
+                  </div>
                   <div class="products-item__wrapper-box">
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
@@ -694,13 +752,17 @@
                       <button class="products-item__btn">Add to cart</button>
                     </div>
                   </div>
-                  <a
-                    class="products-item__link products-item__link-box"
-                    href="#">
-                    <img src="images/icon/search.svg" alt="products search" />
-                    <img src="images/icon/cart.svg" alt="products cart" />
-                    <img src="images/icon/heart.svg" alt="products heart" />
-                  </a>
+                  <div class="products-item__link products-item__link-box">
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/search.svg" alt="products search" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/cart.svg" alt="products cart" />
+                    </a>
+                    <a class="products-item__link-item" href="#0">
+                      <img src="images/icon/heart.svg" alt="products heart" />
+                    </a>
+                  </div>
                 </div>
               </div>
               <div class="pagination">
@@ -729,28 +791,27 @@
       </section>
       <div class="parthers">
         <img
-          class="parhers-item"
+          class="parthers__item"
           src="images/parthers/1.png.svg"
           alt="parthers logo" />
         <img
-          class="parhers-item"
+          class="parthers__item"
           src="images/parthers/2.png.svg"
           alt="parthers logo" />
         <img
-          class="parhers-item"
+          class="parthers__item"
           src="images/parthers/3.png.svg"
           alt="parthers logo" />
         <img
-          class="parhers-item"
+          class="parthers__item"
           src="images/parthers/4.png.svg"
           alt="parthers logo" />
         <img
-          class="parhers-item"
+          class="parthers__item"
           src="images/parthers/5.png.svg"
           alt="parthers logo" />
       </div>
     </main>
-
     <footer class="footer">
       <div class="container">
         <div class="footer-top">

@@ -136,7 +136,6 @@
 @media (max-width: 1600px) {
   .top-info {
     &__item {
-      height: 140px;
       padding: 30px 100px;
       &::before {
         top: 30px;
@@ -176,9 +175,6 @@
   }
   .top-info {
     margin: 0;
-    &__items {
-      flex-wrap: wrap;
-    }
     &__item {
       width: 100%;
       border-bottom: none;
@@ -187,10 +183,29 @@
         left: 25px;
       }
     }
-    &__item--support,
-    &__item--delivery {
-      border-right: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .top-info {
+    &__item {
+      height: 130px;
+      padding: 15px 10px 15px 90px;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .top-info {
+    &__items {
+      display: block;
+    }
+    &__item {
+      height: 100px;
       margin-bottom: 20px;
+      &::before {
+        top: 10px;
+      }
     }
   }
 }
@@ -206,6 +221,14 @@
     &__title {
       font-size: 45px;
       line-height: 48px;
+    }
+    &__link {
+      padding: 15px;
+      max-width: 130px;
+      &::before {
+        top: 21px;
+        right: 10px;
+      }
     }
   }
 }

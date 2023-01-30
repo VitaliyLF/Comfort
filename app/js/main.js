@@ -17,6 +17,24 @@ $(function () {
     draggable: false,
     slidesToShow: 3,
     adaptiveHeight: true,
+    responsive: [
+      {
+        breakpoint: 1101,
+        settings: {
+          slidesToShow: 2,
+          draggable: true,
+          autoplay: true,
+          autoplaySpeed: 750,
+        },
+      },
+      {
+        breakpoint: 651,
+        settings: {
+          slidesToShow: 1,
+          draggable: true,
+        },
+      },
+    ],
   })
 
   $('.product-tabs__top-item').on('click', function (e) {
@@ -43,6 +61,20 @@ $(function () {
     draggable: false,
     arrows: false,
     fade: true,
+    responsive: [
+      {
+        breakpoint: 1101,
+        settings: {
+          draggable: true,
+          autoplay: true,
+          autoplaySpeed: 750,
+        },
+      },
+    ],
+  })
+
+  $('.shop__filters-btn').on('click', function () {
+    $('.shop__filters').slideToggle()
   })
 
   $('.shop-content__filter-btn').on('click', function () {
@@ -54,10 +86,12 @@ $(function () {
 
   $('.button-list').on('click', function () {
     $('.products-item').addClass('products-item--list')
+    $('.shop-content__inner').addClass('shop-content__nogrid')
   })
 
   $('.button-grid').on('click', function () {
     $('.products-item').removeClass('products-item--list')
+    $('.shop-content__inner').removeClass('shop-content__nogrid')
   })
 
   $('.select-style,.product-info__num').styler({
