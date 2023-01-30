@@ -1,4 +1,4 @@
-#[МАГАЗИН МЕБЕЛИ](https://vetosy.github.io/Surf-School-LP/)
+ [МАГАЗИН МЕБЕЛИ](https://vetosy.github.io/Surf-School-LP/)
 - Волатильная верстка
 - Адаптивная верстка 
 - Кроссбраузерная верстка
