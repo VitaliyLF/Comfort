@@ -65,17 +65,10 @@
     object-fit: cover;
   }
 
-  &__item-box {
-    padding-top: 40px;
-  }
-
   .blog-box {
-    position: absolute;
-    bottom: 314px;
-    z-index: -1;
+    transform: translateY(-72px);
     display: inline-flex;
     background-color: $btn;
-    z-index: 3;
     padding: 30px 30px 30px 20px;
     line-height: 1;
     &__date::before,
@@ -120,5 +113,86 @@
 
   &__aside {
     max-width: 270px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .blog-page {
+    padding: 75px 0;
+    &__inner {
+      flex-direction: column;
+    }
+    &__content {
+      margin-right: 0;
+      max-width: 100%;
+    }
+    &__img {
+      max-width: 100%;
+      width: 100%;
+    }
+    &__aside {
+      order: -1;
+      max-width: 100%;
+      .filter-search {
+        &__input {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .blog-page {
+    &__item-title {
+      margin-bottom: 20px;
+    }
+    &__item-text {
+      margin-bottom: 20px;
+    }
+    &__item-btn {
+      padding: 15px 20px;
+      &::before {
+        top: 21px;
+      }
+    }
+    &__img {
+      height: 300px;
+    }
+    .blog-box {
+      padding: 20px 10px;
+      transform: translateY(-52px);
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .blog-page {
+    &__item-title {
+      font-size: 28px;
+    }
+    &__img {
+      height: 220px;
+    }
+    .slick-next {
+      right: 15px;
+    }
+    .slick-prev {
+      left: 15px;
+    }
+    .blog-box {
+      justify-content: space-between;
+      width: 100%;
+      padding: 10px 0 10px 5px;
+      transform: translateY(-29px);
+      &__date {
+        padding-right: 25px;
+        padding-left: 25px;
+      }
+      &__author {
+        padding-right: 10px;
+        padding-left: 30px;
+      }
+    }
   }
 }

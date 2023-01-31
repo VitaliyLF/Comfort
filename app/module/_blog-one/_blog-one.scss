@@ -8,15 +8,10 @@
     margin-bottom: 70px;
   }
 
-  .blog-box {
-    bottom: -164px;
-  }
-
   h2 {
     font-size: 36px;
     @extend %Rubik-400;
     color: $default;
-    padding-top: 40px;
     margin-bottom: 30px;
   }
 
@@ -203,6 +198,103 @@
       height: 20px;
       background-image: url(../images/icon/arrow-comments.svg);
       top: 0;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .blog-one {
+    padding: 75px 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .blog-one {
+    &__text {
+      margin-bottom: 30px;
+    }
+    blockquote {
+      margin: 30px 0;
+      padding: 25px;
+      span {
+        padding-top: 15px;
+        &::before {
+          top: 28px;
+        }
+      }
+    }
+    &__box--left,
+    &__box--right {
+      display: block;
+    }
+    &__left-img {
+      margin-right: 0;
+      max-width: 100%;
+      width: 100%;
+    }
+    &__right-img {
+      margin-left: 0;
+      max-width: 100%;
+      width: 100%;
+    }
+    &__box-text {
+      max-width: 100%;
+    }
+    h5 {
+      padding-top: 10px;
+      margin-bottom: 10px;
+    }
+    &__author {
+      padding: 15px 0;
+      display: block;
+      margin-bottom: 30px;
+    }
+    &__author-info {
+      margin-bottom: 20px;
+    }
+    &__comments-title {
+      margin-bottom: 20px;
+    }
+    &__comments-item {
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 50px;
+      }
+    }
+    .blog-one__comments-item--reply {
+      margin-left: 50px;
+      padding: 15px 0;
+    }
+    &__comments-top {
+      display: block;
+    }
+    &__comments-img {
+      display: none;
+    }
+    .blog-form {
+      &__title,
+      &__textarea {
+        margin-bottom: 20px;
+      }
+      &__name,
+      &__email {
+        display: block;
+        margin-right: 0;
+      }
+      &__input {
+        width: 100%;
+      }
+      &__btn {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .blog-one {
+    blockquote {
+      padding: 10px 15px;
     }
   }
 }

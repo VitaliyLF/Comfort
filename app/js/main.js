@@ -17,6 +17,8 @@ $(function () {
     draggable: false,
     slidesToShow: 3,
     adaptiveHeight: true,
+    autoplay: true,
+    autoplaySpeed: 1500,
     responsive: [
       {
         breakpoint: 1101,
