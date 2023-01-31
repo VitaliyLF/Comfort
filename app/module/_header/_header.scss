@@ -25,7 +25,7 @@
 }
 
 .header__top {
-  padding: 50px 75px;
+  padding: 25px 75px;
   position: relative;
   &-inner {
     display: flex;
@@ -67,7 +67,7 @@
   display: flex;
   .seacrh-box {
     position: absolute;
-    top: 50px;
+    top: 25px;
     right: 325px;
     z-index: 10;
     margin-right: 20px;
@@ -184,7 +184,7 @@
 @media (max-width: 1600px) {
   .header {
     &__top {
-      padding: 50px 25px;
+      padding: 25px;
     }
   }
   .user-nav {
