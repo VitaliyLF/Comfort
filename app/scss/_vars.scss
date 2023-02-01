@@ -1,9 +1,10 @@
 $default: #243f4d;
-$accent: #fcd7b6;
+$accent: #ffaaa6;
+$btn: #eeeeee;
+$bg-default: #fad4d4;
+$nav: #eae0da;
 $title: #1a1a1a;
-$bg-default: #fef7f0;
 $subtitle: #7b7b7b;
-$btn: #a3bbc8;
 $shop: #edf1f4;
 
 %DMSans-700 {
@@ -51,8 +52,8 @@ $shop: #edf1f4;
 %btn {
   display: block;
   border: none;
-  background-color: $btn;
-  color: #fff;
+  background-color: $bg-default;
+  color: $title;
   padding: 21px 30px;
   font-size: 15px;
   cursor: pointer;
@@ -61,7 +62,7 @@ $shop: #edf1f4;
   &::before {
     content: '';
     position: absolute;
-    background-image: url(../images/icon/arrow-btn-white.svg);
+    background-image: url(../images/icon/arrow-btn-default.svg);
     background-color: transparent;
     background-repeat: no-repeat;
     width: 20px;

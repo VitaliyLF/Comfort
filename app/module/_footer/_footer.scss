@@ -33,11 +33,11 @@
   &__social-link {
     transition: all 0.3s ease-in;
     path {
-      fill: $btn;
+      fill: #7b7b7b;
     }
     &:hover {
       path {
-        fill: $default;
+        fill: $accent;
       }
     }
   }
@@ -95,7 +95,7 @@
 
   &__form-input {
     margin-top: 40px;
-    background-color: $bg-default;
+    background-color: $btn;
     width: 238px;
     padding: 15px 16px;
     border: none;
@@ -108,8 +108,8 @@
 
   &__form-btn {
     border: none;
-    background-color: $btn;
-    color: #fff;
+    background-color: $accent;
+    color: $title;
     padding: 14px 17px;
     cursor: pointer;
     transition: all 0.5s ease;
