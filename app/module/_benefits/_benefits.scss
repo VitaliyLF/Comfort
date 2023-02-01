@@ -8,7 +8,7 @@
   }
 
   &__item {
-    background-color: #feefe2;
+    background-color: $bg-default;
     width: 870px;
     height: 390px;
     display: flex;
@@ -18,7 +18,7 @@
 
   &__img {
     display: inline-block;
-    max-width: 240px;
+    max-width: 250px;
     height: 390px;
     object-fit: cover;
     transform: translateY(-120px);

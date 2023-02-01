@@ -3,7 +3,7 @@
   &__filter-btn {
     padding: 40px 0 80px;
     text-align: center;
-    @extend %DMSans-500;
+    @extend %DMSans-700;
   }
 
   &__btn {
@@ -26,7 +26,7 @@
   }
 
   .mixitup-control-active {
-    color: $title;
+    color: $accent;
   }
 }
 

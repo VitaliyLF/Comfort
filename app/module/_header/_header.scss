@@ -25,7 +25,7 @@
 }
 
 .header__top {
-  padding: 25px 75px;
+  margin: 25px 75px;
   position: relative;
   &-inner {
     display: flex;
@@ -67,12 +67,12 @@
   display: flex;
   .seacrh-box {
     position: absolute;
-    top: 25px;
-    right: 325px;
+    top: 0;
+    right: 250px;
     z-index: 10;
     margin-right: 20px;
     transform: translateX(-50%, -50%);
-    background: $btn;
+    background: $accent;
     height: 50px;
     border-radius: 50px;
 
@@ -82,7 +82,7 @@
     }
 
     &:hover > .seacrh-box__link {
-      background: $accent;
+      background: #fff;
     }
 
     .seacrh-box__link:hover {
@@ -98,9 +98,9 @@
       font-size: 18px;
       transition: 0.5s ease;
       line-height: 50px;
-      color: $title;
+      color: #fff;
       &::placeholder {
-        color: #fff;
+        color: $title;
         @extend %Rubik-400;
         font-size: 16px;
       }
@@ -112,7 +112,7 @@
       height: 50px;
       font-size: 18px;
       border-radius: 50%;
-      background-color: $shop;
+      background-color: $btn;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -184,7 +184,7 @@
 @media (max-width: 1600px) {
   .header {
     &__top {
-      padding: 25px;
+      margin: 25px;
     }
   }
   .user-nav {
@@ -205,7 +205,7 @@
     &__list {
       position: absolute;
       transform: translateY(-200%);
-      top: 120px;
+      top: 75px;
       left: 0;
       width: 100%;
       flex-direction: column;
@@ -247,7 +247,7 @@
       span {
         width: 100%;
         height: 3px;
-        background-color: $btn;
+        background-color: $accent;
       }
       &::after,
       &::before {
@@ -255,7 +255,7 @@
         position: absolute;
         width: 100%;
         height: 3px;
-        background-color: $btn;
+        background-color: $accent;
       }
       &::before {
         top: 0;
@@ -288,6 +288,11 @@
 }
 
 @media (max-width: 380px) {
+  .header {
+    &__top {
+      margin: 0;
+    }
+  }
   .menu {
     &__list {
       top: 140px;
