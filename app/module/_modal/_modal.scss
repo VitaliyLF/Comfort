@@ -63,7 +63,7 @@
     width: 100%;
     border: none;
     color: #fff;
-    @extend %Rubik-500;
+    @extend %CeraPro-500;
     font-size: 18px;
     background-color: $btn;
     padding: 23px 0 20px;
@@ -82,7 +82,7 @@
     border: 2px solid #a3bbc8;
     background-color: #fff;
     padding: 23px 0 20px;
-    @extend %Rubik-500;
+    @extend %CeraPro-500;
     font-size: 18px;
     color: $default;
     &:hover {

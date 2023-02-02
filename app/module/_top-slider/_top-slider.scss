@@ -1,6 +1,5 @@
 .top-slider {
   &__img {
-    margin-top: 110px;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -46,6 +45,7 @@
     height: 400px;
     padding: 60px 30px;
     border-radius: 20px;
+    text-align: center;
     background-color: $bg-default;
     box-shadow: 20px 0px 60px 0px rgb(202 202 202 / 35%);
     position: relative;
@@ -95,22 +95,22 @@
 
 @media (max-width: 650px) {
   .top-info {
-    margin: 0;
+    margin: 30px 0 0;
     &__item {
       padding: 30px 15px;
       height: 350px;
     }
   }
   .top-slider {
-    .slick-dots {
-      display: none;
-    }
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .top-info {
     &__item {
-      margin-bottom: 30px;
-    }
-    &__img {
-      margin-top: 190px;
-      object-fit: contain;
+      padding: 15px;
+      height: 350px;
     }
   }
 }

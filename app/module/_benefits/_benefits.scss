@@ -11,6 +11,7 @@
     background-color: $bg-default;
     width: 870px;
     height: 390px;
+    border-radius: 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -33,6 +34,7 @@
     line-height: 32px;
     @extend %DMSans-700;
     margin-bottom: 30px;
+    color: $title;
   }
 
   &__text {
@@ -48,7 +50,7 @@
     border: 1px solid $default;
     border-radius: 10px;
     color: $default;
-    @extend %Rubik-500;
+    @extend %CeraPro-500;
     position: relative;
     &::before {
       content: '';
@@ -121,7 +123,7 @@
   .benefits {
     &__link {
       padding: 15px;
-      max-width: 130px;
+      max-width: 180px;
       &::before {
         top: 21px;
         right: 10px;

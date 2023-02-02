@@ -22,24 +22,19 @@ $shop: #edf1f4;
   font-weight: 400;
 }
 
-%Rubik-700 {
-  font-family: 'Rubik-bold', sans-serif;
+%CeraPro-700 {
+  font-family: 'CeraPro-Bold', sans-serif;
   font-weight: 700;
 }
 
-%Rubik-500 {
-  font-family: 'Rubik-Medium', sans-serif;
+%CeraPro-500 {
+  font-family: 'CeraPro-Medium', sans-serif;
   font-weight: 500;
 }
 
-%Rubik-400 {
-  font-family: 'Rubik-Regular', sans-serif;
+%CeraPro-400 {
+  font-family: 'CeraPro-Regular', sans-serif;
   font-weight: 400;
-}
-
-%Rubik-300 {
-  font-family: 'Rubik-Light', sans-serif;
-  font-weight: 300;
 }
 
 %flex-column-center {
@@ -55,7 +50,7 @@ $shop: #edf1f4;
   background-color: $bg-default;
   color: $title;
   padding: 21px 30px;
-  font-size: 15px;
+  font-size: 18px;
   cursor: pointer;
   max-width: 200px;
   position: relative;

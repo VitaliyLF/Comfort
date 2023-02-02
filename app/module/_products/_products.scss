@@ -12,6 +12,7 @@
     padding: 0;
     color: $subtitle;
     cursor: pointer;
+    @extend %CeraPro-500;
   }
 
   &__btn + &__btn {
@@ -55,14 +56,6 @@
       margin-bottom: 30px;
     }
 
-    &__btn + &__btn {
-      margin-left: 15px;
-    }
-  }
-}
-
-@media (max-width: 380px) {
-  .product {
     &__btn + &__btn {
       margin-left: 10px;
     }
