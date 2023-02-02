@@ -47,10 +47,10 @@
   }
 
   &__item-link {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 12px;
     padding: 0 5px 5px;
-    @extend %Rubik-500;
+    @extend %CeraPro-500;
     color: #436372;
     &:hover {
       border-bottom: 2px solid $accent;
@@ -58,7 +58,7 @@
   }
 
   &__item-link--active {
-    @extend %Rubik-700;
+    @extend %CeraPro-700;
     color: $accent;
   }
 }
@@ -101,7 +101,7 @@
       color: #fff;
       &::placeholder {
         color: $title;
-        @extend %Rubik-400;
+        @extend %CeraPro-400;
         font-size: 16px;
       }
     }

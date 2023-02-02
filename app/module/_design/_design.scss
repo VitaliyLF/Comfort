@@ -3,15 +3,16 @@
   &__filter-btn {
     padding: 40px 0 80px;
     text-align: center;
-    @extend %DMSans-500;
+    @extend %DMSans-700;
   }
 
   &__btn {
     border: none;
     background-color: transparent;
     padding: 0;
-    color: $subtitle;
+    color: #7b7b7b;
     cursor: pointer;
+    @extend %CeraPro-500;
   }
 
   &__btn + &__btn {
@@ -28,25 +29,26 @@
   &__item {
     max-width: 370px;
     width: 100%;
+    background-position: bottom;
     background-repeat: no-repeat;
     height: 246px;
-    padding: 40px 0 0 40px;
+    padding-top: 20px;
   }
 
   &__item-title {
     max-width: 175px;
     color: $title;
     font-size: 20px;
-    @extend %DMSans-700;
+    @extend %CeraPro-700;
   }
 
   &__item-subtitle {
     color: #a3bbc8;
-    @extend %DMSans-700;
+    @extend %CeraPro-700;
   }
 
   .mixitup-control-active {
-    color: $title;
+    color: $accent;
   }
 }
 

@@ -1,5 +1,5 @@
 .parthers {
-  padding: 90px 0;
+  padding: 30px 0;
   min-height: 200px;
   background-color: $bg-default;
   display: flex;
@@ -41,7 +41,7 @@
   .parthers {
     justify-content: space-around;
     &__item {
-      margin: 20px 10px;
+      margin: 20px 8px;
     }
   }
 }
