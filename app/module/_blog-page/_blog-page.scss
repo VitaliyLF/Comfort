@@ -21,7 +21,7 @@
       width: 40px;
       height: 40px;
       background-color: #fff;
-      border: 2px solid $btn;
+      border: 2px solid $accent;
       border-radius: 5px;
       cursor: pointer;
     }
@@ -68,7 +68,7 @@
   .blog-box {
     transform: translateY(-72px);
     display: inline-flex;
-    background-color: $btn;
+    background-color: $accent;
     padding: 30px 30px 30px 20px;
     line-height: 1;
     &__date::before,
@@ -103,11 +103,12 @@
 
   &__item-btn {
     @extend %btn;
-    border: 1px solid $btn;
+    border: 1px solid $accent;
     background-color: #fff;
-    color: $btn;
+    color: $accent;
     &::before {
       background-image: url(../images/icon/arrow-btn.svg);
+      right: 12px;
     }
   }
 
@@ -146,6 +147,7 @@
   .blog-page {
     &__item-title {
       margin-bottom: 20px;
+      line-height: 40px;
     }
     &__item-text {
       margin-bottom: 20px;
@@ -196,3 +198,5 @@
     }
   }
 }
+
+

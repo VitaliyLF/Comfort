@@ -22,6 +22,12 @@ body {
   padding: 0 15px;
 }
 
+.container-products {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .title {
   @extend %CeraPro-700;
   font-size: 36px;
@@ -69,7 +75,7 @@ a {
       right: 10px;
     }
     &:last-child {
-      color: $btn;
+      color: $accent;
       padding-right: 0;
       &::after {
         display: none;
@@ -105,15 +111,15 @@ a {
     border: 1px solid $btn;
     background-color: #fff;
     &:hover {
-      background-color: $accent;
+      background-color: $btn;
     }
   }
 
   &__link--active {
-    background-color: $btn;
+    background-color: $accent;
     color: #fff;
     &:hover {
-      background: $btn;
+      background: $accent;
       color: #fff;
     }
   }
@@ -128,6 +134,13 @@ a {
     padding: 35px 22px 35px 0;
     &__link {
       padding: 15px 20px;
+    }
+  }
+  .blog-page {
+    .pagination {
+      &__link {
+        padding: 15px;
+      }
     }
   }
 }

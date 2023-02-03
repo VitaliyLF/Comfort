@@ -7,7 +7,8 @@
       position: relative;
       min-width: 10px;
       height: 10px;
-      background-color: #fff;
+      background-color: rgb(247, 236, 236);
+      z-index: 1000;
       border-radius: 50%;
       margin: 0 auto;
       animation: animationSnow 10s linear infinite;

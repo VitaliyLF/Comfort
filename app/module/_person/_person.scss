@@ -18,8 +18,8 @@
   }
 
   &__position {
-    color: $btn;
-    @extend %DMSans-500;
+    color: $accent;
+    @extend %CeraPro-700;
     margin-bottom: 20px;
   }
 
@@ -35,7 +35,7 @@
     }
     &:hover {
       path {
-        fill: $btn;
+        fill: $accent;
       }
     }
   }

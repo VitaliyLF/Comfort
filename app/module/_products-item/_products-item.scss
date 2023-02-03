@@ -16,6 +16,38 @@
     }
   }
 
+  &--sale {
+    .products-item__images::before {
+      content: 'Скидка';
+      position: absolute;
+      font-size: 10px;
+      line-height: 1;
+      top: 10px;
+      right: 30px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+      background-color: $accent;
+      color: #fff;
+      border-radius: 50%;
+    }
+  }
+
+  &--tags {
+    .products-item__images::after {
+      content: 'Хит продаж';
+      position: absolute;
+      color: #ff2400;
+      @extend %CeraPro-700;
+      top: 10px;
+      right: 20px;
+      z-index: 10;
+    }
+  }
+
   &__img {
     max-width: 270px;
     height: 270px;
@@ -39,8 +71,24 @@
   }
 
   &__price {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__price-new {
     font-size: 18px;
+    padding: 0 12px;
     color: $title;
+    &::before {
+      content: '₽';
+    }
+  }
+
+  .products-item__price-old {
+    font-size: 16px;
+    padding: 0 12px;
+    color: #8d8d8d;
+    text-decoration: line-through;
     &::before {
       content: '₽';
     }
@@ -82,4 +130,3 @@
     width: 100%;
   }
 }
-
