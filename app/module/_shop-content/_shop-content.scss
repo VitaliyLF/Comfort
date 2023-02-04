@@ -11,9 +11,9 @@
 
   &__top-btn {
     border: none;
-    background-color: $btn;
+    background-color: $bg-default;
     padding: 15px 30px;
-    color: #fff;
+    color: $title;
     cursor: pointer;
     border-radius: 10px;
     height: 100%;
@@ -45,7 +45,7 @@
     cursor: pointer;
     &.shop-content__filter-btn--active {
       path {
-        fill: $btn;
+        fill: $accent;
       }
     }
   }
@@ -89,12 +89,12 @@
   }
 
   .jq-selectbox li:hover {
-    background-color: $btn;
+    background-color: $bg-default;
   }
 
   .jq-selectbox li.selected {
     background-color: $accent;
-    color: $subtitle;
+    color: $title;
   }
 
   .jq-selectbox__dropdown {
@@ -107,6 +107,73 @@
     justify-content: space-between;
     & .products-item {
       margin-bottom: 40px;
+    }
+  }
+  .products-item {
+    &__price::before,
+    &__price::after {
+      display: none;
+    }
+
+    .star {
+      margin: 0 auto;
+    }
+
+    &--tags {
+      .products-item__images::after {
+        content: 'Хит продаж';
+        position: absolute;
+        color: #f63;
+        @extend %CeraPro-700;
+        top: 10px;
+        right: 20px;
+        z-index: 10;
+        font-style: italic;
+        font-size: 12px;
+      }
+    }
+
+    &--sale {
+      .products-item__images::before {
+        content: 'Скидка';
+        position: absolute;
+        font-size: 10px;
+        line-height: 1;
+        top: 10px;
+        left: 10px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        background-color: $accent;
+        color: #fff;
+        border-radius: 50%;
+      }
+    }
+    &__price {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__price-new {
+      font-size: 18px;
+      padding: 0 12px;
+      color: $title;
+      &::before {
+        content: '₽';
+      }
+    }
+
+    .products-item__price-old {
+      font-size: 16px;
+      padding: 0 12px;
+      color: #8d8d8d;
+      text-decoration: line-through;
+      &::before {
+        content: '₽';
+      }
     }
   }
 }
@@ -123,9 +190,32 @@
     }
     .products-item {
       width: 100%;
+      position: relative;
       &__img {
         max-width: 100%;
         height: auto;
+      }
+      &--sale {
+        .products-item__images::before {
+          display: none;
+        }
+        .products-item__images::after {
+          content: 'Скидка';
+          position: absolute;
+          font-size: 10px;
+          line-height: 1;
+          top: 10px;
+          right: 0;
+          width: 40px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 10;
+          background-color: $accent;
+          color: #fff;
+          border-radius: 50%;
+        }
       }
     }
   }

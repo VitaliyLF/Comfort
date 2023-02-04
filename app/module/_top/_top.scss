@@ -34,3 +34,11 @@
     }
   }
 }
+
+@media (max-width: 420px) {
+  .top {
+    &__title {
+      font-size: 36px;
+    }
+  }
+}

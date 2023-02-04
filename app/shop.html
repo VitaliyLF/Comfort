@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -24,24 +24,26 @@
             </button>
             <ul class="menu__list">
               <li class="menu__list-item">
-                <a class="menu__item-link" href="index.html">Home + </a>
+                <a class="menu__item-link" href="index.html">Главная </a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__item-link" href="about.html">About</a>
+                <a class="menu__item-link" href="about.html">О нас</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__item-link menu__item-link--active" href="#0"
-                  >Shop</a
+                <a
+                  class="menu__item-link menu__item-link--active"
+                  href="shop.html"
+                  >Каталог</a
                 >
               </li>
               <li class="menu__list-item">
-                <a class="menu__item-link" href="terms.html">Terms</a>
+                <a class="menu__item-link" href="terms.html">Условия</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__item-link" href="blog-page.html">News</a>
+                <a class="menu__item-link" href="blog-page.html">Новости</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__item-link" href="contacts.html">Contact</a>
+                <a class="menu__item-link" href="contacts.html">Контакты</a>
               </li>
             </ul>
           </nav>
@@ -50,7 +52,7 @@
               <input
                 class="seacrh-box__input"
                 type="text"
-                placeholder="Search..." />
+                placeholder="Поиск..." />
               <a class="seacrh-box__link" href="#">
                 <img
                   class="seacrh-box__img"
@@ -88,14 +90,14 @@
           class="top__container"
           style="background-image: url(images/top-bg-login.jpg)">
           <div class="container">
-            <h2 class="top__title">Shop page</h2>
+            <h2 class="top__title">Каталог</h2>
             <div class="breadcrumbs">
               <ul class="breadcrumbs__list">
                 <li class="breadcrumbs__item">
-                  <a class="breadcrumbs__link" href="index.html">Home</a>
+                  <a class="breadcrumbs__link" href="index.html">Главная</a>
                 </li>
                 <li class="breadcrumbs__item">
-                  <a class="breadcrumbs__link" href="#">Shop page</a>
+                  <a class="breadcrumbs__link" href="#">Каталог</a>
                 </li>
               </ul>
             </div>
@@ -110,19 +112,19 @@
             </a>
             <div class="shop__filters filter">
               <div class="filter-search filter__item">
-                <h3 class="filter__title">Search</h3>
+                <h3 class="filter__title">Поиск</h3>
                 <form class="filter-search__form" action="#" autocomplete="on">
                   <input
                     class="filter-search__input"
                     type="search"
-                    placeholder="Search your keyword...." />
+                    placeholder="Поиск ключевых слов...." />
                   <button class="filter-search__btn" type="submit">
                     <img src="images/icon/search-white.svg" alt="search shop" />
                   </button>
                 </form>
               </div>
               <div class="filter-category filter__item">
-                <h3 class="filter__title">CATEGORY</h3>
+                <h3 class="filter__title">Категории</h3>
                 <form class="filter-category__form" action="#">
                   <label class="filter-category__label">
                     <input
@@ -130,7 +132,7 @@
                       type="checkbox"
                       checked />
                     <span class="filter-category__checkbox">
-                      <span class="filter-category__text">Chair</span>
+                      <span class="filter-category__text">Кресло</span>
                       <img
                         class="filter-category__img"
                         src="images/icon/arrow.svg"
@@ -140,7 +142,7 @@
                   <label class="filter-category__label">
                     <input class="filter-category__input" type="checkbox" />
                     <span class="filter-category__checkbox">
-                      <span class="filter-category__text">Table</span>
+                      <span class="filter-category__text">Стол</span>
                       <img
                         class="filter-category__img"
                         src="images/icon/arrow.svg"
@@ -150,7 +152,7 @@
                   <label class="filter-category__label">
                     <input class="filter-category__input" type="checkbox" />
                     <span class="filter-category__checkbox">
-                      <span class="filter-category__text">Lamp</span>
+                      <span class="filter-category__text">Лампа</span>
                       <img
                         class="filter-category__img"
                         src="images/icon/arrow.svg"
@@ -160,7 +162,7 @@
                   <label class="filter-category__label">
                     <input class="filter-category__input" type="checkbox" />
                     <span class="filter-category__checkbox">
-                      <span class="filter-category__text">Watch</span>
+                      <span class="filter-category__text">Кровать</span>
                       <img
                         class="filter-category__img"
                         src="images/icon/arrow.svg"
@@ -170,7 +172,7 @@
                   <label class="filter-category__label">
                     <input class="filter-category__input" type="checkbox" />
                     <span class="filter-category__checkbox">
-                      <span class="filter-category__text">Clock</span>
+                      <span class="filter-category__text">Часы</span>
                       <img
                         class="filter-category__img"
                         src="images/icon/arrow.svg"
@@ -180,26 +182,26 @@
                 </form>
               </div>
               <div class="filter-price filter__item">
-                <h3 class="filter__title">Price</h3>
+                <h3 class="filter__title">Цена</h3>
                 <form class="filter-price__form" action="#">
                   <input
                     class="filter-price__input"
                     type="text"
                     data-min="0"
-                    data-max="500"
-                    data-from="100"
-                    data-to="300" />
+                    data-max="50000"
+                    data-from="10000"
+                    data-to="40000" />
                   <label class="filter-price__label">
-                    <span class="filter-price__from">100</span>
-                    <span class="filter-price__to">500</span>
+                    <span class="filter-price__from">10000</span>
+                    <span class="filter-price__to">40000</span>
                     <button class="filter-price__btn" type="submit">
-                      Filter
+                      Фильтр
                     </button>
                   </label>
                 </form>
               </div>
               <div class="filter-brand filter__item">
-                <h3 class="filter__title">Brand</h3>
+                <h3 class="filter__title">Бренд</h3>
                 <form class="filter-brand__form" action="#">
                   <label class="filter-brand__label">
                     <input
@@ -207,42 +209,42 @@
                       type="checkbox"
                       checked />
                     <span class="filter-brand__checkbox">
-                      <span class="filter-brand__text">RFL</span>
+                      <span class="filter-brand__text">Шатура</span>
                       <span class="filter-brand__text">(10)</span>
                     </span>
                   </label>
                   <label class="filter-brand__label">
                     <input class="filter-brand__input" type="checkbox" />
                     <span class="filter-brand__checkbox">
-                      <span class="filter-brand__text">Brothers</span>
+                      <span class="filter-brand__text">Наш дом</span>
                       <span class="filter-brand__text">(21)</span>
                     </span>
                   </label>
                   <label class="filter-brand__label">
                     <input class="filter-brand__input" type="checkbox" />
                     <span class="filter-brand__checkbox">
-                      <span class="filter-brand__text">Regal</span>
+                      <span class="filter-brand__text">ТриЯ</span>
                       <span class="filter-brand__text">(3)</span>
                     </span>
                   </label>
                   <label class="filter-brand__label">
                     <input class="filter-brand__input" type="checkbox" />
                     <span class="filter-brand__checkbox">
-                      <span class="filter-brand__text">Nadia</span>
+                      <span class="filter-brand__text">Лазурит</span>
                       <span class="filter-brand__text">(14)</span>
                     </span>
                   </label>
                   <label class="filter-brand__label">
                     <input class="filter-brand__input" type="checkbox" />
                     <span class="filter-brand__checkbox">
-                      <span class="filter-brand__text">Otobi</span>
+                      <span class="filter-brand__text">ИКЕЯ</span>
                       <span class="filter-brand__text">(6)</span>
                     </span>
                   </label>
                 </form>
               </div>
               <div class="shop-recent filter__item">
-                <h3 class="filter__title">RECENT PRODUCTS</h3>
+                <h3 class="filter__title">Рекомендуем</h3>
                 <div class="shop-recent__items">
                   <div class="shop-recent__item">
                     <a class="shop-recent__link" href="#0">
@@ -252,11 +254,11 @@
                         alt="recent images" />
                     </a>
                     <div class="shop-recent__content">
-                      <h6 class="shop-recent__title">Pendant lamp</h6>
+                      <h6 class="shop-recent__title">Лампа BOSS</h6>
                       <div
                         class="shop-recent__star"
                         data-rateyo-rating="4"></div>
-                      <p class="shop-recent__price">23$</p>
+                      <p class="shop-recent__price">5100₽</p>
                     </div>
                   </div>
                   <div class="shop-recent__item">
@@ -267,11 +269,11 @@
                         alt="recent images" />
                     </a>
                     <div class="shop-recent__content">
-                      <h6 class="shop-recent__title">Pendant lamp</h6>
+                      <h6 class="shop-recent__title">Лампа Fix</h6>
                       <div
                         class="shop-recent__star"
                         data-rateyo-rating="4"></div>
-                      <p class="shop-recent__price">28$</p>
+                      <p class="shop-recent__price">4100₽</p>
                     </div>
                   </div>
                   <div class="shop-recent__item">
@@ -282,11 +284,11 @@
                         alt="recent images" />
                     </a>
                     <div class="shop-recent__content">
-                      <h6 class="shop-recent__title">Pendant lamp</h6>
+                      <h6 class="shop-recent__title">Лапма Shi</h6>
                       <div
                         class="shop-recent__star"
                         data-rateyo-rating="4"></div>
-                      <p class="shop-recent__price">33$</p>
+                      <p class="shop-recent__price">2500₽</p>
                     </div>
                   </div>
                 </div>
@@ -296,17 +298,17 @@
               <div class="shop-content__top">
                 <button
                   class="shop-content__top-btn shop-content__top-btn--active">
-                  Trending
+                  Тренды
                 </button>
-                <button class="shop-content__top-btn">Deal Zone</button>
-                <button class="shop-content__top-btn">Living</button>
-                <button class="shop-content__top-btn">Bedroom</button>
-                <button class="shop-content__top-btn">Study</button>
-                <button class="shop-content__top-btn">Decor</button>
+                <button class="shop-content__top-btn">Стулья</button>
+                <button class="shop-content__top-btn">Гостиная</button>
+                <button class="shop-content__top-btn">Спальня</button>
+                <button class="shop-content__top-btn">Лампа</button>
+                <button class="shop-content__top-btn">Декор</button>
               </div>
               <div class="shop-content__filter">
                 <div class="shop-content__filter-buttons">
-                  <span>View</span>
+                  <span>Вид</span>
                   <button
                     class="shop-content__filter-btn shop-content__filter-btn--active button-grid">
                     <svg width="15px" height="15px">
@@ -328,23 +330,23 @@
                 <div class="shop-content__filter-selects">
                   <form class="shop-content__filter-form" action="#">
                     <select class="shop-content__filter-sort select-style">
-                      <option value="">Sort By Default</option>
-                      <option value="">Sort By Price</option>
-                      <option value="">Sort By Category</option>
-                      <option value="">Sort By Brand</option>
+                      <option value="">По умолчанию</option>
+                      <option value="">По цене</option>
+                      <option value="">По категории</option>
+                      <option value="">По бренду</option>
                     </select>
                     <select class="shop-content__filter-snow select-style">
-                      <option value="">Snow 12</option>
-                      <option value="">Snow 10</option>
-                      <option value="">Snow 8</option>
-                      <option value="">Snow 6</option>
-                      <option value="">Snow 4</option>
+                      <option value="">Показать 12</option>
+                      <option value="">Показать 10</option>
+                      <option value="">Показать 8</option>
+                      <option value="">Показать 6</option>
+                      <option value="">Показать 4</option>
                     </select>
                   </form>
                 </div>
               </div>
               <div class="shop-content__inner">
-                <div class="products-item">
+                <div class="products-item products-item--sale">
                   <div class="products-item__images">
                     <img
                       class="products-item__img"
@@ -355,16 +357,26 @@
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
                       <div class="star-shop" data-rateyo-rating="4"></div>
-                      <h5 class="products-item__title">Vintage Сhair</h5>
-                      <a class="products-item__price" href="product.html">23</a>
+                      <h5 class="products-item__title">
+                        Кресло в винтажном стиле
+                      </h5>
+                      <div class="products-item__price">
+                        <a class="products-item__price-new" href="product.html"
+                          >12500</a
+                        >
+                        <a class="products-item__price-old" href="#0">17500</a>
+                      </div>
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
-                        consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation
+                        Кресло в винтажном стиле Batik. Нотка элегантности в
+                        ретро-стиле в вашем жилом пространстве, удачное
+                        сочетание материалов, настоящий комфорт каждый день и
+                        модный берберский стиль!
                       </p>
-                      <button class="products-item__btn">Add to cart</button>
+                      <button class="products-item__btn">
+                        Добавить в корзину
+                      </button>
                     </div>
                   </div>
                   <div class="products-item__link products-item__link-box">
@@ -390,16 +402,20 @@
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
                       <div class="star-shop" data-rateyo-rating="4"></div>
-                      <h5 class="products-item__title">Wooden radio</h5>
-                      <a class="products-item__price" href="#0">54</a>
+                      <h5 class="products-item__title">Кресло Шали</h5>
+                      <a class="products-item__price-new" href="#0">14300</a>
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
-                        consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation
+                        Кресло Karlo с мягкой обивкой подходит для частных
+                        интерьеров и интерьеров ресторанов, кафе, отелей и
+                        гостиниц. Спинка и подлокотники выполнена в технике
+                        «капитоне». Обивочный материал: велюр Imperia brilliant,
+                        ножки из массива березы, покраска: черный
                       </p>
-                      <button class="products-item__btn">Add to cart</button>
+                      <button class="products-item__btn">
+                        Добавить в корзину
+                      </button>
                     </div>
                   </div>
                   <div class="products-item__link products-item__link-box">
@@ -414,7 +430,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="products-item">
+                <div class="products-item products-item--sale">
                   <div class="products-item__images">
                     <img
                       class="products-item__img"
@@ -425,16 +441,25 @@
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
                       <div class="star-shop" data-rateyo-rating="4"></div>
-                      <h5 class="products-item__title">Wooden radio</h5>
-                      <a class="products-item__price" href="#0">54</a>
+                      <h5 class="products-item__title">
+                        Настольный светильник
+                      </h5>
+                      <div class="products-item__price">
+                        <a class="products-item__price-new" href="#0">6500</a>
+                        <a class="products-item__price-old" href="#0">10500</a>
+                      </div>
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
-                        consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation
+                        Подчеркнет стиль помещения. Высота 44 cm. Диаметр 23 cm
+                        Параметры пылевлагозащиты IP — 20. Плафон текстильный
+                        белого цвета, а материал/цвет арматуры металл/белый.
+                        Использует лампу с цоколем E14. Площадь освещения
+                        охватывает 1 m².
                       </p>
-                      <button class="products-item__btn">Add to cart</button>
+                      <button class="products-item__btn">
+                        Добавить в корзину
+                      </button>
                     </div>
                   </div>
                   <div class="products-item__link products-item__link-box">
@@ -449,7 +474,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="products-item">
+                <div class="products-item products-item--tags">
                   <div class="products-item__images">
                     <img
                       class="products-item__img"
@@ -460,16 +485,19 @@
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
                       <div class="star-shop" data-rateyo-rating="4"></div>
-                      <h5 class="products-item__title">Wooden radio</h5>
-                      <a class="products-item__price" href="#0">54</a>
+                      <h5 class="products-item__title">Кресло-кровать Фуго</h5>
+                      <a class="products-item__price-new" href="#0">21000</a>
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
-                        consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation
+                        Стильное и комфортабельное кресло средней жесткости.
+                        Раскладной механизм «Французская раскладушка» позволяет
+                        превратить кресло в удобное спальное место размером
+                        65х187 сантиметров.
                       </p>
-                      <button class="products-item__btn">Add to cart</button>
+                      <button class="products-item__btn">
+                        Добавить в корзину
+                      </button>
                     </div>
                   </div>
                   <div class="products-item__link products-item__link-box">
@@ -495,16 +523,17 @@
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
                       <div class="star-shop" data-rateyo-rating="4"></div>
-                      <h5 class="products-item__title">Wooden radio</h5>
-                      <a class="products-item__price" href="#0">54</a>
+                      <h5 class="products-item__title">Часы настенные Ora</h5>
+                      <a class="products-item__price-new" href="#0">3200</a>
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
-                        consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation
+                        Изысканные линии, современный дизайн. Вы будете смотреть
+                        время только для удовольствия
                       </p>
-                      <button class="products-item__btn">Add to cart</button>
+                      <button class="products-item__btn">
+                        Добавить в корзину
+                      </button>
                     </div>
                   </div>
                   <div class="products-item__link products-item__link-box">
@@ -530,16 +559,21 @@
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
                       <div class="star-shop" data-rateyo-rating="4"></div>
-                      <h5 class="products-item__title">Wooden radio</h5>
-                      <a class="products-item__price" href="#0">54</a>
+                      <h5 class="products-item__title">
+                        Настольная лампа Leah
+                      </h5>
+                      <a class="products-item__price-new" href="#0">3400</a>
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
-                        consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation
+                        Бренд: Lumion; Коллекция: Leah; Количество ламп: 1;
+                        Мощность лампы, W: 40; Общая мощность, W: 40; Тип
+                        цоколя: E14; Тип лампочки (основной): Накаливания;
+                        Напряжение, V: 220; Степень защиты, IP: 20.
                       </p>
-                      <button class="products-item__btn">Add to cart</button>
+                      <button class="products-item__btn">
+                        Добавить в корзину
+                      </button>
                     </div>
                   </div>
                   <div class="products-item__link products-item__link-box">
@@ -554,7 +588,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="products-item">
+                <div class="products-item products-item--tags">
                   <div class="products-item__images">
                     <img
                       class="products-item__img"
@@ -565,16 +599,20 @@
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
                       <div class="star-shop" data-rateyo-rating="4"></div>
-                      <h5 class="products-item__title">Wooden radio</h5>
-                      <a class="products-item__price" href="#0">54</a>
+                      <h5 class="products-item__title">
+                        Светильник настольный Диксон
+                      </h5>
+                      <a class="products-item__price-new" href="#0">4200</a>
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
-                        consectetur adipisicing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad
-                        minim veniam, quis nostrud exercitation
+                        Светильник с керамическим рельефным основанием. Идеально
+                        впишется в интерьер дома, а мягкий рассеянный свет
+                        создаст атмосферу уюта и комфорта.
                       </p>
-                      <button class="products-item__btn">Add to cart</button>
+                      <button class="products-item__btn">
+                        Добавить в корзину
+                      </button>
                     </div>
                   </div>
                   <div class="products-item__link products-item__link-box">
@@ -600,8 +638,10 @@
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
                       <div class="star-shop" data-rateyo-rating="4"></div>
-                      <h5 class="products-item__title">Wooden radio</h5>
-                      <a class="products-item__price" href="#0">54</a>
+                      <h5 class="products-item__title">
+                        Кресло Хилтон Сканди Грей
+                      </h5>
+                      <a class="products-item__price-new" href="#0">5400</a>
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
@@ -624,7 +664,7 @@
                     </a>
                   </div>
                 </div>
-                <div class="products-item">
+                <div class="products-item products-item--sale">
                   <div class="products-item__images">
                     <img
                       class="products-item__img"
@@ -635,8 +675,11 @@
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
                       <div class="star-shop" data-rateyo-rating="4"></div>
-                      <h5 class="products-item__title">Wooden radio</h5>
-                      <a class="products-item__price" href="#0">54</a>
+                      <h5 class="products-item__title">Кресло Lobby</h5>
+                      <div class="products-item__price">
+                        <a class="products-item__price-new" href="#0">9500</a>
+                        <a class="products-item__price-old" href="#0">17500</a>
+                      </div>
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
@@ -670,8 +713,10 @@
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
                       <div class="star-shop" data-rateyo-rating="4"></div>
-                      <h5 class="products-item__title">Wooden radio</h5>
-                      <a class="products-item__price" href="#0">54</a>
+                      <h5 class="products-item__title">
+                        Кресло ротанговое Malu
+                      </h5>
+                      <a class="products-item__price-new" href="#0">3400</a>
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
@@ -705,8 +750,8 @@
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
                       <div class="star-shop" data-rateyo-rating="4"></div>
-                      <h5 class="products-item__title">Wooden radio</h5>
-                      <a class="products-item__price" href="#0">54</a>
+                      <h5 class="products-item__title">Кресло Шафран</h5>
+                      <a class="products-item__price-new" href="#0">11400</a>
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
@@ -740,8 +785,8 @@
                     <div class="products-item__box">
                       <div class="star" data-rateyo-rating="4"></div>
                       <div class="star-shop" data-rateyo-rating="4"></div>
-                      <h5 class="products-item__title">Wooden radio</h5>
-                      <a class="products-item__price" href="#0">54</a>
+                      <h5 class="products-item__title">Кресло Batik</h5>
+                      <a class="products-item__price-new" href="#0">12500</a>
                     </div>
                     <div class="products-item__content-box">
                       <p class="products-item__text">
@@ -781,7 +826,7 @@
                     <a class="pagination__link" href="#0">3</a>
                   </li>
                   <li class="pagination__item">
-                    <a class="pagination__link" href="#0">Next</a>
+                    <a class="pagination__link" href="#0">Следующая</a>
                   </li>
                 </ul>
               </div>
@@ -820,10 +865,10 @@
               <img class="logo__img" src="images/logo.svg" alt="footer-logo" />
             </a>
             <a class="footer-top__adress" href="#0">
-              ADDRESS: 4772 Wines Lane Houston, TX 77032
+              АДРЕС: г.Москва ул. Ленинская Слобода, 26
             </a>
             <a class="footer-top__phone" href="tel:+832-347-5843">
-              Telephone: +832-347-5843
+              Телефон: +832-347-5843
             </a>
             <a class="footer-top__email" href="mailto:contact@comfort.com"
               >Email:contact@Comfort.com</a
@@ -936,64 +981,64 @@
             </div>
           </div>
           <div class="footer-top__item footer-top__nav">
-            <h6 class="footer-top__title footer__hidden">Services</h6>
+            <h6 class="footer-top__title footer__hidden">Сервис</h6>
             <ul class="footer-top__list">
               <li class="footer-top__item">
-                <a class="footer-top__link" href="about.html">About us</a>
+                <a class="footer-top__link" href="about.html">О нас</a>
               </li>
               <li class="footer-top__item">
-                <a class="footer-top__link" href="#0">Return Policy</a>
+                <a class="footer-top__link" href="#0">Политика возврата</a>
               </li>
               <li class="footer-top__item">
-                <a class="footer-top__link" href="blog-page.html">Our Blog</a>
+                <a class="footer-top__link" href="blog-page.html">Наш Блог</a>
               </li>
               <li class="footer-top__item">
-                <a class="footer-top__link" href="contacts.html">Contact Us</a>
+                <a class="footer-top__link" href="contacts.html">Контакты</a>
               </li>
               <li class="footer-top__item">
-                <a class="footer-top__link" href="terms.html"
-                  >Terms & Condition</a
-                >
+                <a class="footer-top__link" href="terms.html">Условия</a>
               </li>
             </ul>
           </div>
           <div class="footer-top__item footer-top__nav">
-            <h6 class="footer-top__title footer__hidden">Account</h6>
+            <h6 class="footer-top__title footer__hidden">Аккаунт</h6>
             <ul class="footer-top__list">
               <li class="footer-top__item">
-                <a class="footer-top__link" href="#0">Your Account</a>
+                <a class="footer-top__link" href="#0">Ваш аккаунт</a>
               </li>
               <li class="footer-top__item">
-                <a class="footer-top__link" href="#0">Checkout</a>
+                <a class="footer-top__link" href="#0">Оформить заказ</a>
               </li>
               <li class="footer-top__item">
-                <a class="footer-top__link" href="login.html">Login</a>
+                <a class="footer-top__link" href="login.html">Логин</a>
               </li>
               <li class="footer-top__item">
-                <a class="footer-top__link" href="register.html">Register</a>
+                <a class="footer-top__link" href="register.html">Регистрация</a>
               </li>
             </ul>
           </div>
           <div class="footer-top__item footer-top__form">
-            <h6 class="footer-top__title">Newsletter</h6>
+            <h6 class="footer-top__title">Новости</h6>
             <p class="footer-top__text">
-              Subscribe by our newsletter and get update protidin.
+              Подпишитесь на нашу рассылку и получайте свежие новости о наших
+              предложениях.
             </p>
             <form class="footer-top__form-footer" action="#">
               <input
                 class="footer-top__form-input"
                 type="email"
-                placeholder="Email address"
+                placeholder="Ваш Email "
                 required />
               <button class="footer-top__form-btn" type="submit">
-                Subscribe
+                Подписаться
               </button>
             </form>
           </div>
         </div>
         <div class="footer-copy">
           <p class="footer-copy__text">
-            ©2023 CopyRight Example. All rights reserved.
+            ©2023 Предоставленная на сайте информация несёт справочный характер.
+            Все права защищены.
           </p>
         </div>
       </div>

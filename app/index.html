@@ -51,7 +51,7 @@
                 <a class="menu__item-link" href="about.html">О нас</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__item-link" href="shop.html">Магазин</a>
+                <a class="menu__item-link" href="shop.html">Каталог</a>
               </li>
               <li class="menu__list-item">
                 <a class="menu__item-link" href="terms.html">Условия</a>
@@ -122,7 +122,7 @@
             <li class="category-nav__item">
               <a class="category-nav__link" href="#">Домашний офис</a>
             </li>
-            <li class="category-nav__item">
+            <li class="category-nav__item category-nav__item--active">
               <a class="category-nav__link" href="#">Акции</a>
             </li>
           </ul>
@@ -166,41 +166,56 @@
       </div>
     </div>
     <div class="top-info">
+      <h2 class="title">Почему очень многие покупают у нас?</h2>
       <div class="top-info__items">
         <div class="top-info__item">
-          <img class="top-info__item-img" src="images/icon/price.svg" alt="" />
-          <h4 class="top-info__title">Самые лучшие цены</h4>
+          <h4 class="top-info__title">Мы - ПЕРВЫЕ!</h4>
+          <img
+            class="top-info__item-img"
+            src="images/icon/num-1.svg"
+            alt="number images" />
           <p class="top-info__text">
-            Цены производителей и дистрибьюторов. Постоянные акции и распродажи.
+            Наша цель - быть первыми в предоставлении мебели и товаров для дома
+            при рациональном отношении к бюджету
           </p>
         </div>
         <div class="top-info__item">
+          <h4 class="top-info__title">Мы - целая сеть</h4>
           <img
             class="top-info__item-img"
-            src="images/icon/service.svg"
-            alt="" />
-          <h4 class="top-info__title">Великолепный сервис</h4>
+            src="images/icon/sofa.svg"
+            alt="sofa images" />
           <p class="top-info__text">
-            Компетентный сервис, отлаженные годами процессы и довольные клиенты.
-            1 окно коммуникаций.
+            Мы - это сеть, которая работает для удовлетворения потребностей
+            наших покупателей в ассортименте мебели
           </p>
         </div>
         <div class="top-info__item">
+          <h4 class="top-info__title">Мы продаем дешево</h4>
           <img
             class="top-info__item-img"
-            src="images/icon/product.svg"
-            alt="" />
-          <h4 class="top-info__title">Только красивые товары</h4>
+            src="images/icon/price-top.svg"
+            alt="price images" />
           <p class="top-info__text">
-            Мы вручную выбираем самые красивые товары. А наши эксперты помогают
-            в этом.
+            Мы продаем много. Это позволяет нам работать с низкой наценкой
+          </p>
+        </div>
+        <div class="top-info__item">
+          <h4 class="top-info__title">Мы это качество</h4>
+          <img
+            class="top-info__item-img"
+            src="images/icon/quality.svg"
+            alt="quality images" />
+          <p class="top-info__text">
+            Мы отвечаем за качество и постоянно контролируем всех наших
+            производителей
           </p>
         </div>
       </div>
     </div>
     <main class="main">
       <section class="products">
-        <div class="container">
+        <div class="container container-products">
           <h2 class="title">Популярные товары</h2>
           <div class="products__filter-btn">
             <button class="products__btn" data-filter="all">Все</button>
@@ -218,7 +233,7 @@
             </button>
           </div>
           <div class="products__content">
-            <div class="products-item mix category-b">
+            <div class="products-item products-item--sale mix category-b">
               <div class="products-item__images">
                 <img
                   class="products-item__img"
@@ -230,7 +245,12 @@
                   <div class="star" data-rateyo-rating="4"></div>
                   <div class="star-shop" data-rateyo-rating="4"></div>
                   <h5 class="products-item__title">Кресло в винтажном стиле</h5>
-                  <a class="products-item__price" href="product.html">12500</a>
+                  <div class="products-item__price">
+                    <a class="products-item__price-new" href="product.html"
+                      >12500</a
+                    >
+                    <a class="products-item__price-old" href="#0">17500</a>
+                  </div>
                 </div>
                 <div class="products-item__content-box">
                   <p class="products-item__text">
@@ -266,7 +286,7 @@
                   <div class="star" data-rateyo-rating="4"></div>
                   <div class="star-shop" data-rateyo-rating="4"></div>
                   <h5 class="products-item__title">Кресло Шали</h5>
-                  <a class="products-item__price" href="#0">14300</a>
+                  <a class="products-item__price-new" href="#0">14300</a>
                 </div>
                 <div class="products-item__content-box">
                   <p class="products-item__text">
@@ -291,7 +311,7 @@
                 </a>
               </div>
             </div>
-            <div class="products-item mix category-c">
+            <div class="products-item products-item--sale mix category-c">
               <div class="products-item__images">
                 <img
                   class="products-item__img"
@@ -303,7 +323,10 @@
                   <div class="star" data-rateyo-rating="4"></div>
                   <div class="star-shop" data-rateyo-rating="4"></div>
                   <h5 class="products-item__title">Настольный светильник</h5>
-                  <a class="products-item__price" href="#0">7200</a>
+                  <div class="products-item__price">
+                    <a class="products-item__price-new" href="#0">6500</a>
+                    <a class="products-item__price-old" href="#0">10500</a>
+                  </div>
                 </div>
                 <div class="products-item__content-box">
                   <p class="products-item__text">
@@ -327,7 +350,7 @@
                 </a>
               </div>
             </div>
-            <div class="products-item mix category-a">
+            <div class="products-item products-item--tags mix category-a">
               <div class="products-item__images">
                 <img
                   class="products-item__img"
@@ -339,7 +362,7 @@
                   <div class="star" data-rateyo-rating="4"></div>
                   <div class="star-shop" data-rateyo-rating="4"></div>
                   <h5 class="products-item__title">Кресло-кровать Фуго</h5>
-                  <a class="products-item__price" href="#0">21000</a>
+                  <a class="products-item__price-new" href="#0">21000</a>
                 </div>
                 <div class="products-item__content-box">
                   <p class="products-item__text">
@@ -375,7 +398,7 @@
                   <div class="star" data-rateyo-rating="4"></div>
                   <div class="star-shop" data-rateyo-rating="4"></div>
                   <h5 class="products-item__title">Часы настенные Ora</h5>
-                  <a class="products-item__price" href="#0">3200</a>
+                  <a class="products-item__price-new" href="#0">3200</a>
                 </div>
                 <div class="products-item__content-box">
                   <p class="products-item__text">
@@ -409,7 +432,7 @@
                   <div class="star" data-rateyo-rating="4"></div>
                   <div class="star-shop" data-rateyo-rating="4"></div>
                   <h5 class="products-item__title">Настольная лампа Leah</h5>
-                  <a class="products-item__price" href="#0">3400</a>
+                  <a class="products-item__price-new" href="#0">3400</a>
                 </div>
                 <div class="products-item__content-box">
                   <p class="products-item__text">
@@ -433,7 +456,7 @@
                 </a>
               </div>
             </div>
-            <div class="products-item mix category-c">
+            <div class="products-item products-item--tags mix category-c">
               <div class="products-item__images">
                 <img
                   class="products-item__img"
@@ -447,7 +470,7 @@
                   <h5 class="products-item__title">
                     Светильник настольный Диксон
                   </h5>
-                  <a class="products-item__price" href="#0">4200</a>
+                  <a class="products-item__price-new" href="#0">4200</a>
                 </div>
                 <div class="products-item__content-box">
                   <p class="products-item__text">
@@ -484,7 +507,262 @@
                   <h5 class="products-item__title">
                     Кресло Хилтон Сканди Грей
                   </h5>
-                  <a class="products-item__price" href="#0">5400</a>
+                  <a class="products-item__price-new" href="#0">5400</a>
+                </div>
+                <div class="products-item__content-box">
+                  <p class="products-item__text">
+                    consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation
+                  </p>
+                  <button class="products-item__btn">Add to cart</button>
+                </div>
+              </div>
+              <div class="products-item__link products-item__link-box">
+                <a class="products-item__link-item" href="#0">
+                  <img src="images/icon/search.svg" alt="products search" />
+                </a>
+                <a class="products-item__link-item" href="#0">
+                  <img src="images/icon/cart.svg" alt="products cart" />
+                </a>
+                <a class="products-item__link-item" href="#0">
+                  <img src="images/icon/heart.svg" alt="products heart" />
+                </a>
+              </div>
+            </div>
+            <div class="products-item mix products-item--sale category-a">
+              <div class="products-item__images">
+                <img
+                  class="products-item__img"
+                  src="images/products/8.jpg"
+                  alt="products assortment" />
+              </div>
+              <div class="products-item__wrapper-box">
+                <div class="products-item__box">
+                  <div class="star" data-rateyo-rating="4"></div>
+                  <div class="star-shop" data-rateyo-rating="4"></div>
+                  <h5 class="products-item__title">Кресло Lobby</h5>
+                  <div class="products-item__price">
+                    <a class="products-item__price-new" href="#0">9500</a>
+                    <a class="products-item__price-old" href="#0">17500</a>
+                  </div>
+                </div>
+                <div class="products-item__content-box">
+                  <p class="products-item__text">
+                    consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation
+                  </p>
+                  <button class="products-item__btn">Add to cart</button>
+                </div>
+              </div>
+              <div class="products-item__link products-item__link-box">
+                <a class="products-item__link-item" href="#0">
+                  <img src="images/icon/search.svg" alt="products search" />
+                </a>
+                <a class="products-item__link-item" href="#0">
+                  <img src="images/icon/cart.svg" alt="products cart" />
+                </a>
+                <a class="products-item__link-item" href="#0">
+                  <img src="images/icon/heart.svg" alt="products heart" />
+                </a>
+              </div>
+            </div>
+            <div class="products-item mix category-b">
+              <div class="products-item__images">
+                <img
+                  class="products-item__img"
+                  src="images/products/9.jpg"
+                  alt="products assortment" />
+              </div>
+              <div class="products-item__wrapper-box">
+                <div class="products-item__box">
+                  <div class="star" data-rateyo-rating="4"></div>
+                  <div class="star-shop" data-rateyo-rating="4"></div>
+                  <h5 class="products-item__title">Кресло ротанговое Malu</h5>
+                  <a class="products-item__price-new" href="#0">3400</a>
+                </div>
+                <div class="products-item__content-box">
+                  <p class="products-item__text">
+                    consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation
+                  </p>
+                  <button class="products-item__btn">Add to cart</button>
+                </div>
+              </div>
+              <div class="products-item__link products-item__link-box">
+                <a class="products-item__link-item" href="#0">
+                  <img src="images/icon/search.svg" alt="products search" />
+                </a>
+                <a class="products-item__link-item" href="#0">
+                  <img src="images/icon/cart.svg" alt="products cart" />
+                </a>
+                <a class="products-item__link-item" href="#0">
+                  <img src="images/icon/heart.svg" alt="products heart" />
+                </a>
+              </div>
+            </div>
+            <div class="products-item mix category-b">
+              <div class="products-item__images">
+                <img
+                  class="products-item__img"
+                  src="images/products/10.jpg"
+                  alt="products assortment" />
+              </div>
+              <div class="products-item__wrapper-box">
+                <div class="products-item__box">
+                  <div class="star" data-rateyo-rating="4"></div>
+                  <div class="star-shop" data-rateyo-rating="4"></div>
+                  <h5 class="products-item__title">Кресло Шафран</h5>
+                  <a class="products-item__price-new" href="#0">11400</a>
+                </div>
+                <div class="products-item__content-box">
+                  <p class="products-item__text">
+                    consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation
+                  </p>
+                  <button class="products-item__btn">Add to cart</button>
+                </div>
+              </div>
+              <div class="products-item__link products-item__link-box">
+                <a class="products-item__link-item" href="#0">
+                  <img src="images/icon/search.svg" alt="products search" />
+                </a>
+                <a class="products-item__link-item" href="#0">
+                  <img src="images/icon/cart.svg" alt="products cart" />
+                </a>
+                <a class="products-item__link-item" href="#0">
+                  <img src="images/icon/heart.svg" alt="products heart" />
+                </a>
+              </div>
+            </div>
+            <div class="products-item mix category-b">
+              <div class="products-item__images">
+                <img
+                  class="products-item__img"
+                  src="images/products/11.jpg"
+                  alt="products assortment" />
+              </div>
+              <div class="products-item__wrapper-box">
+                <div class="products-item__box">
+                  <div class="star" data-rateyo-rating="4"></div>
+                  <div class="star-shop" data-rateyo-rating="4"></div>
+                  <h5 class="products-item__title">Кресло Batik</h5>
+                  <a class="products-item__price-new" href="#0">12500</a>
+                </div>
+                <div class="products-item__content-box">
+                  <p class="products-item__text">
+                    consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation
+                  </p>
+                  <button class="products-item__btn">Add to cart</button>
+                </div>
+              </div>
+              <div class="products-item__link products-item__link-box">
+                <a class="products-item__link-item" href="#0">
+                  <img src="images/icon/search.svg" alt="products search" />
+                </a>
+                <a class="products-item__link-item" href="#0">
+                  <img src="images/icon/cart.svg" alt="products cart" />
+                </a>
+                <a class="products-item__link-item" href="#0">
+                  <img src="images/icon/heart.svg" alt="products heart" />
+                </a>
+              </div>
+            </div>
+            <div class="products-item products-item--sale mix category-d">
+              <div class="products-item__images">
+                <img
+                  class="products-item__img"
+                  src="images/products/13.jpg"
+                  alt="products assortment" />
+              </div>
+              <div class="products-item__wrapper-box">
+                <div class="products-item__box">
+                  <div class="star" data-rateyo-rating="4"></div>
+                  <div class="star-shop" data-rateyo-rating="4"></div>
+                  <h5 class="products-item__title">
+                    Полотно из льна с принтом Azul
+                  </h5>
+                  <div class="products-item__price">
+                    <a class="products-item__price-new" href="#0">5400</a>
+                    <a class="products-item__price-old" href="#0">17500</a>
+                  </div>
+                </div>
+                <div class="products-item__content-box">
+                  <p class="products-item__text">
+                    consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation
+                  </p>
+                  <button class="products-item__btn">Add to cart</button>
+                </div>
+              </div>
+              <div class="products-item__link products-item__link-box">
+                <a class="products-item__link-item" href="#0">
+                  <img src="images/icon/search.svg" alt="products search" />
+                </a>
+                <a class="products-item__link-item" href="#0">
+                  <img src="images/icon/cart.svg" alt="products cart" />
+                </a>
+                <a class="products-item__link-item" href="#0">
+                  <img src="images/icon/heart.svg" alt="products heart" />
+                </a>
+              </div>
+            </div>
+            <div class="products-item mix category-d">
+              <div class="products-item__images">
+                <img
+                  class="products-item__img"
+                  src="images/products/14.jpg"
+                  alt="products assortment" />
+              </div>
+              <div class="products-item__wrapper-box">
+                <div class="products-item__box">
+                  <div class="star" data-rateyo-rating="4"></div>
+                  <div class="star-shop" data-rateyo-rating="4"></div>
+                  <h5 class="products-item__title">
+                    Настенный веер из трав Jutlo
+                  </h5>
+                  <a class="products-item__price-new" href="#0">9500</a>
+                </div>
+                <div class="products-item__content-box">
+                  <p class="products-item__text">
+                    consectetur adipisicing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad
+                    minim veniam, quis nostrud exercitation
+                  </p>
+                  <button class="products-item__btn">Add to cart</button>
+                </div>
+              </div>
+              <div class="products-item__link products-item__link-box">
+                <a class="products-item__link-item" href="#0">
+                  <img src="images/icon/search.svg" alt="products search" />
+                </a>
+                <a class="products-item__link-item" href="#0">
+                  <img src="images/icon/cart.svg" alt="products cart" />
+                </a>
+                <a class="products-item__link-item" href="#0">
+                  <img src="images/icon/heart.svg" alt="products heart" />
+                </a>
+              </div>
+            </div>
+            <div class="products-item mix category-d">
+              <div class="products-item__images">
+                <img
+                  class="products-item__img"
+                  src="images/products/15.jpg"
+                  alt="products assortment" />
+              </div>
+              <div class="products-item__wrapper-box">
+                <div class="products-item__box">
+                  <div class="star" data-rateyo-rating="4"></div>
+                  <div class="star-shop" data-rateyo-rating="4"></div>
+                  <h5 class="products-item__title">Карандашница Lomopi</h5>
+                  <a class="products-item__price-new" href="#0">3500</a>
                 </div>
                 <div class="products-item__content-box">
                   <p class="products-item__text">
@@ -539,35 +817,43 @@
         </div>
       </div>
       <div class="benefits">
-        <div class="benefits__inner">
-          <div class="benefits__item">
-            <img
-              class="benefits__img"
-              src="images/benefits/benefits-img-1.png"
-              alt="benefits products" />
-            <div class="benefits__descr">
-              <h2 class="benefits__title">Настольная лампа Eglo</h2>
-              <p class="benefits__text">
-                Светильник с керамическим рельефным основанием. Идеально
-                впишется в интерьер дома, а мягкий рассеянный свет создаст
-                атмосферу уюта и комфорта.
-              </p>
-              <a class="benefits__link" href="#0">Узнать больше</a>
-            </div>
+        <h2 class="title">Наше достижения</h2>
+        <div class="benefits__item--left">
+          <img
+            class="benefits__img"
+            src="images/benefits/benefits-img-1.jpg"
+            alt="benefits products" />
+          <div class="benefits__descr">
+            <h2 class="benefits__title">
+              Кровать BOSS.XO велюр Alkantara пепел
+            </h2>
+            <p class="benefits__text">
+              Самая долгожданная новинка 2023 года: кровать BOSS.XO – первая
+              кровать в мире, улучшающая экологию! Кровать разработана
+              специально для комфорта, красоты и здорового сна. ХО Выпуская
+              кровать мы сажаем дерево, которое через 10 лет вернёт природе в 10
+              раз больше использованного.
+            </p>
+            <a class="benefits__link" href="#0">Узнать больше</a>
           </div>
-          <div class="benefits__item">
-            <img
-              class="benefits__img"
-              src="images/benefits/benefits-img-2.png"
-              alt="benefits products" />
-            <div class="benefits__descr">
-              <h2 class="benefits__title">Настольная лампа Богемия</h2>
-              <p class="benefits__text">
-                Высочайшее качество. Изделие выполнено лучшими специалистами
-                компании BOGACHO вручную из натурального мрамора.
-              </p>
-              <a class="benefits__link" href="#0">Узнать больше</a>
-            </div>
+        </div>
+        <div class="benefits__item--right">
+          <img
+            class="benefits__img"
+            src="images/benefits/benefits-img-2.jpg"
+            alt="benefits products" />
+          <div class="benefits__descr">
+            <h2 class="benefits__title">
+              Кровать BOSS DREAM велюр Monolit аква
+            </h2>
+            <p class="benefits__text">
+              Дизайнерская кровать BOSS DREAM станет центром самой изысканной
+              спальни. Рельефное мягкое изголовье и четкие линии каркаса в
+              сочетании дают эффект легкости и комфорта. Простая и надёжная,
+              продуманная до мелочей конструкция BOSS DREAM порадует долгим
+              сроком службы и лёгкостью в эксплуатации.
+            </p>
+            <a class="benefits__link" href="#0">Узнать больше</a>
           </div>
         </div>
       </div>

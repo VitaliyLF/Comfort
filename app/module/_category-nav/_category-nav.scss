@@ -9,6 +9,11 @@
     color: $title;
     padding: 10px;
     text-align: center;
+    &--active {
+      .category-nav__link {
+        color: #ff2400;
+      }
+    }
   }
 
   &__item + &__item {
