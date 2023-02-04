@@ -181,7 +181,7 @@
   &__content-name {
     font-size: 22px;
     @extend %DMSans-700;
-    color: $btn;
+    color: #fff;
   }
 
   &__content-links {
@@ -299,6 +299,9 @@
 
 @media (max-width: 420px) {
   .experience {
+    &__box-number {
+      margin-right: 15px;
+    }
     &__items {
       display: block;
     }

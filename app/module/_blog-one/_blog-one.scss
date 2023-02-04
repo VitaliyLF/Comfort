@@ -30,7 +30,7 @@
 
   blockquote {
     background-color: $shop;
-    border-left: 6px solid $btn;
+    border-left: 6px solid $accent;
     padding: 25px 110px 25px 35px;
     margin: 50px 0;
     span {
@@ -42,7 +42,7 @@
         position: absolute;
         width: 20px;
         height: 4px;
-        background-color: $btn;
+        background-color: $accent;
         top: 14px;
         left: 0;
       }
@@ -93,6 +93,9 @@
 
   &__author-img {
     margin-right: 25px;
+    width: 76px;
+    height: 76px;
+    object-fit: cover;
   }
 
   &__author-name {
@@ -133,7 +136,7 @@
     svg {
       &:hover {
         path {
-          fill: $btn;
+          fill: $accent;
         }
       }
     }
@@ -197,7 +200,7 @@
       width: 20px;
       height: 20px;
       background-image: url(../images/icon/arrow-comments.svg);
-      top: 0;
+      top: 2px;
     }
   }
 }
@@ -295,6 +298,11 @@
   .blog-one {
     blockquote {
       padding: 10px 15px;
+    }
+    &__author-share {
+      a {
+        margin-right: 10px;
+      }
     }
   }
 }
