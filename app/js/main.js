@@ -65,7 +65,7 @@ $(function () {
     fade: true,
     responsive: [
       {
-        breakpoint: 1101,
+        breakpoint: 1201,
         settings: {
           draggable: true,
           autoplay: true,

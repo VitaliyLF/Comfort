@@ -1,11 +1,11 @@
 .filter-price {
   &__form {
-    position: relative;
     padding-top: 30px;
   }
 
   &__label {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding-top: 20px;
     font-size: 14px;
@@ -19,9 +19,6 @@
   }
 
   &__btn {
-    position: absolute;
-    bottom: -5px;
-    right: 70px;
     padding: 5px 30px;
     @extend %btn;
     &::before {
