@@ -12,6 +12,55 @@
     <link rel="stylesheet" href="css/contacts.min.css" />
   </head>
   <body>
+    <div id="popup" class="popup">
+      <a class="popup-area" href="#popup-close"></a>
+      <div class="popup__body">
+        <div class="popup__content">
+          <a class="popup__close" href="#popup-close">
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 24 24"
+              fill="#000"
+              xmlns="http://www.w3.org/2000/svg">
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+                  fill="#0F1729"></path>
+              </g>
+            </svg>
+          </a>
+          <img class="popup__logo" src="images/logo.svg" alt="" />
+          <h2 id="popup-close" class="popup__title">Мы рады вам на Comfort.</h2>
+          <p class="popup__subtitle">
+            Самый удобный способ найти идеи интерьера, заказать услуги ремонта и
+            дизайна и купить красивую мебель.
+          </p>
+          <form class="popup__form" action="#">
+            <label class="popup__label">
+              Имя пользователя или email адрес *
+              <input class="popup__input" type="text" />
+            </label>
+            <label class="popup__label">
+              Ваш Пароль *
+              <input
+                class="popup__input popup__input-password"
+                type="password" />
+              <button class="popup__btn" type="submit">Вход</button>
+            </label>
+          </form>
+          <a class="popup__register" href="register.html">Регистрация</a>
+          <a class="popup__forgot" href="#">Забыли пароль?</a>
+        </div>
+      </div>
+    </div>
     <header class="header">
       <div class="header__top">
         <div class="header__top-inner">
@@ -30,7 +79,7 @@
                 <a class="menu__item-link" href="about.html">О нас</a>
               </li>
               <li class="menu__list-item">
-                <a class="menu__item-link" href="shop.html">Магазин</a>
+                <a class="menu__item-link" href="shop.html">Каталог</a>
               </li>
               <li class="menu__list-item">
                 <a class="menu__item-link" href="terms.html">Условия</a>
@@ -74,7 +123,7 @@
                 alt="cart btn" />
               <span class="user-nav__num">0</span>
             </a>
-            <a class="user-nav__link user-nav__link--login" href="#">
+            <a class="user-nav__link user-nav__link--login" href="#popup">
               <img
                 class="user-nav__link-img"
                 src="images/icon/login.svg"

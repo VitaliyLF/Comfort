@@ -13,7 +13,27 @@
   }
 
   &__content {
-    width: 250px;
+    width: 320px;
+    &--sale {
+      position: relative;
+      .product-info__title::after {
+        content: 'Скидка';
+        position: absolute;
+        font-size: 10px;
+        line-height: 1;
+        top: 80px;
+        right: 10px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        background-color: $accent;
+        color: #fff;
+        border-radius: 50%;
+      }
+    }
   }
 
   &__title {
@@ -27,12 +47,20 @@
     padding: 20px 0;
   }
 
-  &__price {
+  &__price-new {
     display: inline-block;
     color: $title;
     font-size: 30px;
     @extend %CeraPro-400;
     margin-bottom: 20px;
+  }
+
+  .product-info__price-old {
+    display: inline-block;
+    color: #8d8d8d;
+    font-size: 16px;
+    @extend %CeraPro-400;
+    text-decoration: line-through;
   }
 
   &__descr {
@@ -208,7 +236,7 @@
     }
 
     &__link {
-      color: $btn;
+      color: $accent;
       text-decoration: underline;
     }
   }
@@ -237,7 +265,6 @@
   &__big {
     width: 700px;
     height: 700px;
-    margin-left: 50px;
     img {
       width: 700px;
       height: 700px;
@@ -505,6 +532,11 @@
 }
 
 @media (max-width: 870px) {
+  .top {
+    &__title {
+      line-height: 56px;
+    }
+  }
   .product-tabs {
     &__top-item {
       padding: 20px 20px;

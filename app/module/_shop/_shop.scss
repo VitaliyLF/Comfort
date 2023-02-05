@@ -18,6 +18,7 @@
 
 @media (max-width: 1200px) {
   .shop {
+    padding: 75px 0;
     &__inner {
       display: block;
     }
@@ -52,6 +53,9 @@
       &__input {
         width: 100%;
       }
+    }
+    .filter-price__label {
+      font-size: 16px;
     }
     .shop-recent {
       .filter__title {

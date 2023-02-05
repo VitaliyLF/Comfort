@@ -36,6 +36,11 @@
     &:nth-child(n + 5) {
       display: none;
     }
+    &.products-item--sale {
+      .products-item__images::before {
+        z-index: 0;
+      }
+    }
     .products-item__images {
       max-width: 405px;
       height: 505px;
