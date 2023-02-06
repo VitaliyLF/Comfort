@@ -73,9 +73,10 @@
     &__item--right {
       display: block;
       width: 100%;
+    
     }
     &__img {
-      margin: 0 auto;
+      margin: 0 auto 30px;
     }
   }
 }
@@ -87,9 +88,10 @@
     &__item--right {
       min-height: auto;
     }
-    // &__img {
-    //   display: none;
-    // }
+
+    &__img {
+      height: auto;
+    }
   }
 }
 
@@ -98,6 +100,10 @@
     margin: 0 30px;
     .title {
       margin-bottom: 50px;
+    }
+
+    &__img {
+      max-height: 280px;
     }
 
     &__descr {

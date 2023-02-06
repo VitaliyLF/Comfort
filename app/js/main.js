@@ -1,4 +1,31 @@
 $(function () {
+  function backToTop() {
+    let button = $('.back-top')
+
+    $(window).on('scroll', () => {
+      if ($(this).scrollTop() >= 50) {
+        button.fadeIn()
+      } else {
+        button.fadeOut()
+      }
+    })
+
+    button.on('click', (e) => {
+      e.preventDefault()
+      $('html').animate({ scrollTop: 0 }, 1000)
+    })
+  }
+
+  backToTop()
+
+  $('.question__title').on('click', function () {
+    if ($('.question').hasClass('one-open')) {
+      $('.question__title').not($(this)).removeClass('active')
+      $('.question__text').not($(this).next()).slideUp(300)
+    }
+    $(this).toggleClass('active').next().slideToggle(300)
+  })
+
   $('.footer__hidden').on('click', function () {
     $(this).next().slideToggle()
     $(this).toggleClass('footer-top__title--active')
@@ -7,6 +34,7 @@ $(function () {
   $('.menu__btn').on('click', function () {
     $('.menu__list').toggleClass('menu__list--active')
   })
+
   $('.blog-page__slider').slick({
     infinite: false,
     draggable: false,
@@ -145,8 +173,8 @@ $(function () {
     dots: true,
     arrows: false,
     fade: true,
-    autoplay: true,
-    autoplaySpeed: 1000,
+    // autoplay: true,
+    // autoplaySpeed: 1000,
   })
 
   var containerEl = document.querySelector('.products')
