@@ -9,9 +9,16 @@
     color: $title;
     padding: 10px;
     text-align: center;
+    position: relative;
     &--active {
       .category-nav__link {
         color: #ff2400;
+      }
+    }
+    &:hover {
+      .subcategory__inner {
+        display: flex;
+        justify-content: space-evenly;
       }
     }
   }
@@ -24,6 +31,45 @@
     font-size: 20px;
     &:hover {
       color: #ff2400;
+    }
+  }
+
+  .subcategory {
+    &__inner {
+      padding: 30px 20px;
+      text-align: left;
+      position: absolute;
+      max-width: 100%;
+      left: 0;
+      right: 0;
+      top: 45px;
+      z-index: 100;
+      background-color: #fff;
+      display: none;
+    }
+
+    &__column {
+      max-width: 210px;
+    }
+    &__item {
+      margin-bottom: 15px;
+    }
+    &__item-title {
+      font-size: 15px;
+      &:hover {
+        color: #ff2400;
+      }
+    }
+    &__item-subitem {
+      font-size: 14px;
+      @extend %CeraPro-500;
+      color: #4a565e;
+      &:hover {
+        color: #ff2400;
+      }
+      a {
+        text-decoration: none;
+      }
     }
   }
 }

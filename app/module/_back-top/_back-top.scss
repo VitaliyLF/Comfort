@@ -1,0 +1,22 @@
+.back-top {
+  position: fixed;
+  z-index: 100;
+  right: 50px;
+  bottom: 100px;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ffaaa6;
+  border-radius: 5px;
+  background-color: #fff;
+  transform: rotate(180deg);
+  display: none;
+  img {
+    margin: 10px auto 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .back-top {
+    right: 15px;
+  }
+}
