@@ -2,14 +2,15 @@
   &__list {
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin: 30px 0;
   }
+
   &__item {
+    display: inline-flex;
     @extend %CeraPro-700;
     color: $title;
     padding: 10px;
     text-align: center;
-    position: relative;
     &--active {
       .category-nav__link {
         color: #ff2400;
@@ -17,8 +18,10 @@
     }
     &:hover {
       .subcategory__inner {
-        display: flex;
-        justify-content: space-evenly;
+        opacity: 1;
+        overflow: visible;
+        visibility: visible;
+        transition: all 0.3s ease;
       }
     }
   }
@@ -28,29 +31,45 @@
   }
 
   &__link {
+    display: inline-block;
     font-size: 20px;
+    text-align: left;
     &:hover {
       color: #ff2400;
     }
   }
 
+  &__arrow {
+
+  }
+
+  .arrow {
+    
+  }
+
   .subcategory {
     &__inner {
-      padding: 30px 20px;
-      text-align: left;
       position: absolute;
-      max-width: 100%;
       left: 0;
       right: 0;
-      top: 45px;
+      top: calc(100% - 0px);
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      min-height: 650px;
       z-index: 100;
+      padding: 20px;
       background-color: #fff;
-      display: none;
+      overflow: hidden;
+      visibility: hidden;
+      opacity: 0;
+      text-align-last: left;
     }
 
     &__column {
-      max-width: 210px;
+      width: 200px;
     }
+
     &__item {
       margin-bottom: 15px;
     }
@@ -71,6 +90,12 @@
         text-decoration: none;
       }
     }
+
+    &__promo-img {
+      max-width: 234px;
+      height: 314px;
+      object-fit: cover;
+    }
   }
 }
 
@@ -86,6 +111,16 @@
   }
 }
 
+@media (max-width: 870px) {
+  .category-nav {
+    .subcategory {
+      &__promo-img {
+        display: none;
+      }
+    }
+  }
+}
+
 @media (max-width: 720px) {
   .category-nav {
     &__list {
@@ -94,6 +129,11 @@
     &__link {
       font-size: 18px;
     }
+  }
+}
+
+@media (max-width: 650px) {
+  .category-nav {
   }
 }
 
