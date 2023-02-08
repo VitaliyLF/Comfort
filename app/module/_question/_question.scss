@@ -13,7 +13,7 @@
   }
 
   &__title {
-    display: inline-block;
+    display: block;
     font-size: 26px;
     line-height: 32px;
     margin-bottom: 20px;
@@ -26,7 +26,7 @@
       position: absolute;
       width: 25px;
       height: 25px;
-      background-image: url(../../images/icon/arrow-down.svg);
+      background-image: url(../../images/icon/arrow-down2.svg);
       right: 0;
       top: 5px;
     }

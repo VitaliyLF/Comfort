@@ -177,8 +177,8 @@ $(function () {
     dots: true,
     arrows: false,
     fade: true,
-    // autoplay: true,
-    // autoplaySpeed: 1000,
+    autoplay: true,
+    autoplaySpeed: 1000,
   })
 
   var containerEl = document.querySelector('.products')

@@ -6,7 +6,6 @@
   }
 
   &__item {
-    display: inline-flex;
     @extend %CeraPro-700;
     color: $title;
     padding: 10px;
