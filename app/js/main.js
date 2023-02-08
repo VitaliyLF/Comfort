@@ -1,4 +1,8 @@
 $(function () {
+  $('.category-nav__arrow-btn').on('click', function () {
+    $(this).next('.subcategory').toggleClass('subcategory--active')
+  })
+
   function backToTop() {
     let button = $('.back-top')
 
