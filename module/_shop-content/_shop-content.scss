@@ -1,0 +1,238 @@
+.shop-content {
+  width: 100%;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  &__top-btn {
+    border: none;
+    background-color: $bg-default;
+    padding: 15px 30px;
+    color: $title;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 100%;
+  }
+
+  &__top-btn--active {
+    background-color: $accent;
+    color: $default;
+  }
+
+  &__filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  &__filter-buttons {
+    display: flex;
+    align-items: center;
+    line-height: 0;
+  }
+
+  &__filter-btn {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    margin-left: 15px;
+    cursor: pointer;
+    &.shop-content__filter-btn--active {
+      path {
+        fill: $accent;
+      }
+    }
+  }
+
+  .jq-selectbox__select {
+    height: 30px;
+    padding: 0 45px 0 10px;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    @extend %CeraPro-400;
+    color: $default;
+    text-shadow: none;
+    outline: none;
+    &:hover {
+      background: transparent;
+    }
+  }
+
+  .jq-selectbox__trigger {
+    border-left: none;
+  }
+
+  .jq-selectbox__trigger-arrow {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    width: 7px;
+    height: 12px;
+    border: none;
+    background-image: url(../images/icon/arrow.svg);
+    transform: rotate(90deg);
+  }
+
+  .jq-selectbox.focused .jq-selectbox__select {
+    border: none;
+  }
+
+  .jq-selectbox li {
+    width: 100%;
+  }
+
+  .jq-selectbox li:hover {
+    background-color: $bg-default;
+  }
+
+  .jq-selectbox li.selected {
+    background-color: $accent;
+    color: $title;
+  }
+
+  .jq-selectbox__dropdown {
+    width: auto;
+  }
+
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & .products-item {
+      margin-bottom: 40px;
+    }
+  }
+  .products-item {
+    &__price::before,
+    &__price::after {
+      display: none;
+    }
+
+    .star {
+      margin: 0 auto;
+    }
+
+    &--tags {
+      .products-item__images::after {
+        content: 'Хит продаж';
+        position: absolute;
+        color: #f63;
+        @extend %CeraPro-700;
+        top: 10px;
+        right: 20px;
+        z-index: 0;
+        font-style: italic;
+        font-size: 12px;
+      }
+    }
+
+    &--sale {
+      .products-item__images::before {
+        content: 'Скидка';
+        position: absolute;
+        font-size: 10px;
+        line-height: 1;
+        top: 10px;
+        right: 30px;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 0;
+        background-color: $accent;
+        color: #fff;
+        border-radius: 50%;
+      }
+    }
+    &__price {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__price-new {
+      font-size: 18px;
+      padding: 0 12px;
+      color: $title;
+      &::before {
+        content: '₽';
+      }
+    }
+
+    .products-item__price-old {
+      font-size: 16px;
+      padding: 0 12px;
+      color: #8d8d8d;
+      text-decoration: line-through;
+      &::before {
+        content: '₽';
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .shop-content {
+    &__inner {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 30px;
+    }
+    &__nogrid {
+      display: flex;
+    }
+    .products-item {
+      width: 100%;
+      position: relative;
+      &__img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 870px) {
+  .shop-content {
+    &__inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__filter {
+      padding: 0;
+    }
+    &__filter-buttons {
+      display: none;
+    }
+    &__top {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+    &__top-btn {
+      line-height: 20px;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .shop-content {
+    &__top {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .shop-content {
+    &__inner {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

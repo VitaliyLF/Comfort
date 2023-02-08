@@ -1,0 +1,308 @@
+.blog-one {
+  padding: 120px 0;
+  .blog-page__img {
+    position: relative;
+  }
+
+  &__text {
+    margin-bottom: 70px;
+  }
+
+  h2 {
+    font-size: 36px;
+    @extend %CeraPro-400;
+    color: $default;
+    margin-bottom: 30px;
+  }
+
+  h5 {
+    padding-top: 30px;
+    font-size: 18px;
+    @extend %CeraPro-500;
+    margin-bottom: 30px;
+  }
+
+  h6 {
+    font-size: 16px;
+    @extend %CeraPro-500;
+    margin-bottom: 30px;
+  }
+
+  blockquote {
+    background-color: $shop;
+    border-left: 6px solid $accent;
+    padding: 25px 110px 25px 35px;
+    margin: 50px 0;
+    span {
+      display: block;
+      padding-left: 42px;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 4px;
+        background-color: $accent;
+        top: 14px;
+        left: 0;
+      }
+    }
+  }
+
+  &__box--left {
+    display: flex;
+  }
+
+  &__box--right {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__box-text {
+    max-width: 480px;
+  }
+
+  &__left-img {
+    max-width: 320px;
+    height: 210px;
+    object-fit: cover;
+    margin-right: 30px;
+    margin-bottom: 15px;
+  }
+
+  &__right-img {
+    max-width: 320px;
+    height: 210px;
+    object-fit: cover;
+    margin-left: 30px;
+    margin-bottom: 15px;
+  }
+
+  &__author {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    border-top: 2px solid #ebebeb;
+    border-bottom: 2px solid #ebebeb;
+    margin-bottom: 60px;
+  }
+
+  &__author-info {
+    display: flex;
+  }
+
+  &__author-img {
+    margin-right: 25px;
+    width: 76px;
+    height: 76px;
+    object-fit: cover;
+  }
+
+  &__author-name {
+    font-size: 18px;
+    color: $title;
+    @extend %CeraPro-500;
+  }
+
+  &__author-position {
+    color: $subtitle;
+  }
+
+  &__author-tags {
+    color: $subtitle;
+    margin-bottom: 5px;
+    span {
+      color: $title;
+      margin-right: 30px;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__author-share {
+    span {
+      color: $title;
+      margin-right: 20px;
+    }
+    a {
+      text-decoration: none;
+      margin-right: 20px;
+      vertical-align: sub;
+    }
+    path {
+      fill: $subtitle;
+    }
+    svg {
+      &:hover {
+        path {
+          fill: $accent;
+        }
+      }
+    }
+  }
+
+  &__comments-title {
+    font-size: 24px;
+    @extend %CeraPro-700;
+    color: #436372;
+    margin-bottom: 50px;
+  }
+
+  &__comments-item {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  .blog-one__comments-item--reply {
+    margin-left: 130px;
+    padding: 30px 0;
+    border-top: 2px solid #ebebeb;
+    border-bottom: 2px solid #ebebeb;
+  }
+
+  &__comments-img {
+    margin-right: 30px;
+    max-width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  &__comments-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__comments-name {
+    @extend %CeraPro-700;
+    color: #436372;
+  }
+
+  &__comments-date {
+    font-size: 14px;
+    color: $subtitle;
+  }
+
+  &__comments-text {
+    color: #65677e;
+    margin-bottom: 20px;
+  }
+
+  &__comments-link {
+    @extend %CeraPro-500;
+    color: #65677e;
+    padding-right: 20px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-image: url(../images/icon/arrow-comments.svg);
+      top: 2px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .blog-one {
+    padding: 75px 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .blog-one {
+    &__text {
+      margin-bottom: 30px;
+    }
+    blockquote {
+      margin: 30px 0;
+      padding: 25px;
+      span {
+        padding-top: 15px;
+        &::before {
+          top: 28px;
+        }
+      }
+    }
+    &__box--left,
+    &__box--right {
+      display: block;
+    }
+    &__left-img {
+      margin-right: 0;
+      max-width: 100%;
+      width: 100%;
+    }
+    &__right-img {
+      margin-left: 0;
+      max-width: 100%;
+      width: 100%;
+    }
+    &__box-text {
+      max-width: 100%;
+    }
+    h5 {
+      padding-top: 10px;
+      margin-bottom: 10px;
+    }
+    &__author {
+      padding: 15px 0;
+      display: block;
+      margin-bottom: 30px;
+    }
+    &__author-info {
+      margin-bottom: 20px;
+    }
+    &__comments-title {
+      margin-bottom: 20px;
+    }
+    &__comments-item {
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 50px;
+      }
+    }
+    .blog-one__comments-item--reply {
+      margin-left: 50px;
+      padding: 15px 0;
+    }
+    &__comments-top {
+      display: block;
+    }
+    &__comments-img {
+      display: none;
+    }
+    .blog-form {
+      &__title,
+      &__textarea {
+        margin-bottom: 20px;
+      }
+      &__name,
+      &__email {
+        display: block;
+        margin-right: 0;
+      }
+      &__input {
+        width: 100%;
+      }
+      &__btn {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .blog-one {
+    blockquote {
+      padding: 10px 15px;
+    }
+    &__author-share {
+      a {
+        margin-right: 10px;
+      }
+    }
+  }
+}

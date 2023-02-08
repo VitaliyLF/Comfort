@@ -1,0 +1,69 @@
+.shop {
+  padding: 120px 0;
+
+  &__inner {
+    display: flex;
+  }
+
+  &__filters {
+    max-width: 270px;
+    max-width: 100%;
+    margin-right: 30px;
+  }
+
+  &__filters-btn {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .shop {
+    padding: 75px 0;
+    &__inner {
+      display: block;
+    }
+    &__filters-btn {
+      display: block;
+      border: none;
+      background-color: $accent;
+      padding: 0;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      right: 0;
+      bottom: 50px;
+      z-index: 101;
+    }
+    &__filters {
+      width: 100%;
+      margin-right: 0;
+      padding: 20px;
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 100;
+      background-color: #fff;
+    }
+    .filter-search {
+      &__input {
+        width: 100%;
+      }
+    }
+    .filter-price__label {
+      font-size: 16px;
+    }
+    .shop-recent {
+      .filter__title {
+        display: none;
+      }
+      &__items {
+        display: none;
+      }
+    }
+  }
+}

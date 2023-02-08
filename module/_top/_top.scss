@@ -1,0 +1,44 @@
+.top {
+  &__container {
+    padding: 155px 0;
+    margin: 0 auto;
+    background-color: #edf1f4;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    color: $title;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 64px;
+    @extend %DMSans-700;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 720px) {
+  .top {
+    &__title {
+      font-size: 50px;
+      line-height: 45px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .top {
+    &__container {
+      padding: 100px 0;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .top {
+    &__title {
+      font-size: 36px;
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.benefits {
+  padding: 120px 0 0;
+  margin: 0 75px;
+
+  .title {
+    margin-bottom: 100px;
+  }
+
+  &__item--left {
+    width: 100%;
+    min-height: 500px;
+    margin-bottom: 150px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    display: flex;
+  }
+
+  &__item--right {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  &__img {
+    width: 1200px;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  &__title {
+    font-size: 26px;
+    line-height: 32px;
+    @extend %DMSans-700;
+    margin-bottom: 30px;
+    color: $title;
+  }
+
+  &__text {
+    max-width: 335px;
+    margin-bottom: 35px;
+  }
+
+  &__link {
+    display: block;
+    padding: 24px 20px;
+    width: 200px;
+    background-color: transparent;
+    border: 1px solid $default;
+    border-radius: 10px;
+    color: $default;
+    @extend %CeraPro-500;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url(../images/icon/arrow-btn-default.svg);
+      width: 20px;
+      height: 20px;
+      top: 30px;
+      right: 30px;
+    }
+    &:hover {
+      background-color: $bg-default;
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .benefits {
+    &__item--left,
+    &__item--right {
+      display: block;
+      width: 100%;
+    
+    }
+    &__img {
+      margin: 0 auto 30px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .benefits {
+    padding: 75px 0;
+    &__item--left,
+    &__item--right {
+      min-height: auto;
+    }
+
+    &__img {
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .benefits {
+    margin: 0 30px;
+    .title {
+      margin-bottom: 50px;
+    }
+
+    &__img {
+      max-height: 280px;
+    }
+
+    &__descr {
+      text-align: left;
+    }
+    &__text {
+      max-width: 100%;
+      margin: 0 0 30px 0;
+    }
+    &__link {
+      margin: 0;
+      text-align: left;
+      &::before {
+        right: 15px;
+      }
+    }
+  }
+}

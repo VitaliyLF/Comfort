@@ -1,0 +1,30 @@
+.shop-recent {
+  &__items {
+    padding-top: 35px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 25px;
+  }
+
+  &__img {
+    width: 70px;
+    height: 70px;
+    padding: 5px;
+    object-fit: contain;
+    border: 1px solid $shop;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    line-height: 1;
+  }
+
+  .jq-ry-container {
+    padding: 0;
+  }
+}

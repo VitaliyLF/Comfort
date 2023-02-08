@@ -1,0 +1,149 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-size: 16px;
+  line-height: 30px;
+  color: $default;
+  @extend %CeraPro-400;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-products {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  @extend %CeraPro-700;
+  font-size: 36px;
+  color: $title;
+  text-align: center;
+}
+
+a {
+  color: inherit;
+}
+
+.breadcrumbs {
+  display: inline-flex;
+  padding-left: 30px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/icon/house.svg);
+    width: 20px;
+    height: 20px;
+    top: 4px;
+    left: 6px;
+  }
+
+  &__list {
+    display: inline-flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    @extend %CeraPro-400;
+    color: $title;
+    text-transform: capitalize;
+    font-size: 18px;
+    padding-right: 40px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url(../images/icon/arrows.svg);
+      width: 20px;
+      height: 20px;
+      top: 5px;
+      right: 10px;
+    }
+    &:last-child {
+      color: $accent;
+      padding-right: 0;
+      &::after {
+        display: none;
+      }
+    }
+  }
+}
+
+.main--login,
+.main--register,
+.main--shop,
+.main--blog {
+  .parthers {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.pagination {
+  display: flex;
+  padding: 35px 0;
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    line-height: 1;
+  }
+
+  &__link {
+    padding: 19px 22px;
+    border: 1px solid $btn;
+    background-color: #fff;
+    &:hover {
+      background-color: $btn;
+    }
+  }
+
+  &__link--active {
+    background-color: $accent;
+    color: #fff;
+    &:hover {
+      background: $accent;
+      color: #fff;
+    }
+  }
+
+  &__item + &__item {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 380px) {
+  .pagination {
+    padding: 35px 22px 35px 0;
+    &__link {
+      padding: 15px 20px;
+    }
+  }
+  .blog-page,
+  .shop {
+    .pagination {
+      &__link {
+        padding: 15px;
+      }
+    }
+  }
+}

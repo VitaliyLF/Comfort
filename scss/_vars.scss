@@ -1,0 +1,77 @@
+$default: #243f4d;
+$accent: #ffaaa6;
+$btn: #eeeeee;
+$bg-default: #fad4d4;
+$nav: #eae0da;
+$title: #1a1a1a;
+$subtitle: #7b7b7b;
+$shop: #edf1f4;
+
+%DMSans-700 {
+  font-family: 'DMSans-bold', sans-serif;
+  font-weight: 700;
+}
+
+%DMSans-500 {
+  font-family: 'DMSans-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%DMSans-400 {
+  font-family: 'DMSans-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%CeraPro-700 {
+  font-family: 'CeraPro-Bold', sans-serif;
+  font-weight: 700;
+}
+
+%CeraPro-500 {
+  font-family: 'CeraPro-Medium', sans-serif;
+  font-weight: 500;
+}
+
+%CeraPro-400 {
+  font-family: 'CeraPro-Regular', sans-serif;
+  font-weight: 400;
+}
+
+%flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+%btn {
+  display: block;
+  border: none;
+  background-color: $bg-default;
+  color: $title;
+  padding: 21px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  max-width: 200px;
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/icon/arrow-btn-default.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    top: 27px;
+    right: 30px;
+  }
+}
+
+%checkbox-hidden,
+%checkbox-radio {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}

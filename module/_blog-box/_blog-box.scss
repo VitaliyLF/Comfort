@@ -1,0 +1,31 @@
+.blog-box {
+  display: flex;
+
+  &__date,
+  &__author {
+    position: relative;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 12px;
+    @extend %CeraPro-400;
+    color: $title;
+  }
+
+  &__date::before,
+  &__author::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    left: 0;
+  }
+
+  &__date::before {
+    background-image: url(../images/icon/time.svg);
+  }
+
+  &__author::before {
+    background-image: url(../images/icon/admin.svg);
+  }
+}

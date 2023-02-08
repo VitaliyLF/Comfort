@@ -1,0 +1,50 @@
+.person {
+  padding: 40px 30px;
+  border: 1px solid $shop;
+  margin-bottom: 50px;
+  text-align: center;
+
+  &__img {
+    margin: 0 auto 20px;
+    max-width: 160px;
+    height: 160px;
+    object-fit: cover;
+  }
+
+  &__name {
+    font-size: 18px;
+    @extend %CeraPro-700;
+    margin-bottom: 10px;
+  }
+
+  &__position {
+    color: $accent;
+    @extend %CeraPro-700;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+
+  &__social {
+    display: inline-block;
+    margin: 0 8px;
+    path {
+      fill: $subtitle;
+    }
+    &:hover {
+      path {
+        fill: $accent;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .blog-page {
+    .person {
+      display: none;
+    }
+  }
+}
