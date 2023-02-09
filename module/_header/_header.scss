@@ -37,7 +37,7 @@
 }
 
 .menu {
-  &__btn {
+  &__button {
     display: none;
   }
   &__list {
@@ -234,7 +234,7 @@
       padding: 20px 0;
       display: block;
     }
-    &__btn {
+    &__button {
       width: 30px;
       height: 25px;
       padding: 0;
@@ -274,11 +274,12 @@
 @media (max-width: 650px) {
   .header__top {
     padding-top: 0;
+    padding-bottom: 0;
   }
   .menu {
     order: 0;
     &__list {
-      top: 160px;
+      top: 134px;
     }
   }
   .user-nav {
@@ -295,8 +296,8 @@
     }
   }
   .menu {
-    &__list {
-      top: 140px;
+    &__item-link {
+      padding: 15px 0;
     }
   }
   .header__top {

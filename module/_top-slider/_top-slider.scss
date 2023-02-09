@@ -50,11 +50,13 @@
   }
 
   &__item-img {
+    width: 208px;
+    height: 150px;
     margin: 30px auto 0;
   }
 
   &__title {
-    margin-top: 20px;
+    padding-top: 20px;
     display: block;
     @extend %DMSans-700;
     font-size: 22px;
@@ -62,8 +64,8 @@
   }
 
   &__text {
-    @extend %DMSans-400;
-    color: $subtitle;
+    @extend %CeraPro-500;
+    color: $default;
     padding: 10px;
   }
 }
@@ -92,10 +94,15 @@
 
 @media (max-width: 650px) {
   .top-info {
-    margin: 75px 0 0;
+    margin: 40px 0 0;
+    .title {
+      line-height: 40px;
+    }
+    &__title {
+      margin-bottom: 10px;
+    }
     &__item {
-      padding: 30px 15px;
-      height: 350px;
+      height: auto;
     }
     &__item-img {
       margin: 0 auto;
@@ -103,21 +110,5 @@
   }
   .top-slider {
     display: none;
-  }
-}
-
-@media (max-width: 420px) {
-  .top-info {
-    &__item {
-      padding: 5px 15px 10px;
-    }
-  }
-}
-
-@media (max-width: 380px) {
-  .top-info {
-    &__title {
-      margin-top: 10px;
-    }
   }
 }
