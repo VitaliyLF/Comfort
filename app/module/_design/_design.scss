@@ -15,7 +15,7 @@
     border-radius: 10px;
     width: 200px;
     width: 100%;
-    color: #fff;
+    color: $title;
     cursor: pointer;
     @extend %CeraPro-500;
   }
@@ -43,7 +43,7 @@
   &__item-title {
     max-width: 175px;
     color: $title;
-    font-size: 20px;
+    font-size: 22px;
     @extend %CeraPro-700;
   }
 
@@ -53,7 +53,7 @@
   }
 
   .mixitup-control-active {
-    color: $title;
+    background-color: #a3bbc8;
   }
 }
 
