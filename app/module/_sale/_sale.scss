@@ -24,7 +24,7 @@
     text-align: center;
     margin-bottom: 20px;
     text-transform: uppercase;
-    color: #a3bbc8;
+    color: #ff2400;
     @extend %DMSans-700;
   }
 
@@ -56,9 +56,24 @@
   }
 
   &__link {
-    @extend %btn;
-    border-radius: 10px;
+    display: block;
     margin: 0 auto;
+    padding: 24px 20px;
+    width: 200px;
+    background-color: $bg-default;
+    border-radius: 10px;
+    color: $default;
+    @extend %CeraPro-500;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url(../images/icon/arrow-btn-default.svg);
+      width: 20px;
+      height: 20px;
+      top: 30px;
+      right: 30px;
+    }
   }
 }
 
@@ -87,18 +102,10 @@
     &__timer {
       padding: 0;
       justify-content: center;
+      margin-bottom: 20px;
     }
     &__timer-item {
       margin: 20px 51px;
-    }
-    &__link {
-      margin-top: 20px;
-      padding: 15px;
-      max-width: 130px;
-      &::before {
-        top: 21px;
-        right: 10px;
-      }
     }
   }
 }
