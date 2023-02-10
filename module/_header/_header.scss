@@ -52,7 +52,7 @@
     line-height: 12px;
     padding: 0 5px 5px;
     @extend %CeraPro-500;
-    color: #436372;
+    color: $title;
     &:hover {
       border-bottom: 2px solid $accent;
     }

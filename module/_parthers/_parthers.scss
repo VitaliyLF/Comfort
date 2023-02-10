@@ -39,9 +39,14 @@
 
 @media (max-width: 650px) {
   .parthers {
-    justify-content: space-around;
-    &__item {
-      margin: 20px 8px;
-    }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 420px) {
+  .parthers {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }

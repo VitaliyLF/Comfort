@@ -19,7 +19,7 @@
   &__email {
     display: block;
     margin-bottom: 20px;
-    color: $subtitle;
+    color: $title;
   }
 
   &__social-list {
@@ -75,17 +75,8 @@
   }
 
   &__link,
-  &__adress,
-  &__phone,
-  &__email {
-    &:hover {
-      color: $default;
-    }
-  }
-
-  &__link,
   &__text {
-    color: $subtitle;
+    color: $title;
   }
 
   &__form {
@@ -112,10 +103,6 @@
     color: $title;
     padding: 14px 17px;
     cursor: pointer;
-    transition: all 0.5s ease;
-    &:hover {
-      transform: scale(1.1);
-    }
   }
 }
 
@@ -185,9 +172,6 @@
     }
     &__form-btn {
       width: 100%;
-      &:hover {
-        transform: none;
-      }
     }
   }
   .footer-copy {

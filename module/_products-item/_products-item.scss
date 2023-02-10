@@ -67,7 +67,7 @@
 
   &__title {
     @extend %DMSans-700;
-    color: #436372;
+    color: $title;
     font-size: 16px;
     line-height: 40px;
   }
@@ -89,7 +89,7 @@
   .products-item__price-old {
     font-size: 16px;
     padding: 0 12px;
-    color: #8d8d8d;
+    color: $title;
     text-decoration: line-through;
     &::before {
       content: '₽';
