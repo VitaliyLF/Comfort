@@ -98,7 +98,12 @@
 @media (max-width: 650px) {
   .benefits {
     margin: 0 30px;
+    padding: 75px 0 20px;
     .title {
+      margin-bottom: 50px;
+    }
+
+    &__item--left {
       margin-bottom: 50px;
     }
 
