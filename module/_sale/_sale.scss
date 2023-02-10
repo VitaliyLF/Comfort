@@ -24,8 +24,8 @@
     text-align: center;
     margin-bottom: 20px;
     text-transform: uppercase;
-    color: #ff2400;
-    @extend %DMSans-700;
+    color: $title;
+    @extend %CeraPro-700;
   }
 
   .title {
