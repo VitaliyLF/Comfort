@@ -59,7 +59,7 @@
     display: inline-block;
     background-color: $accent;
     padding: 2px 32px;
-    color: #fff;
+    color: $title;
     font-size: 14px;
     @extend %CeraPro-700;
     text-transform: uppercase;

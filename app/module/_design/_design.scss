@@ -15,7 +15,7 @@
     border-radius: 10px;
     width: 200px;
     width: 100%;
-    color: #fff;
+    color: $title;
     cursor: pointer;
     @extend %CeraPro-500;
   }
@@ -53,7 +53,7 @@
   }
 
   .mixitup-control-active {
-    color: $title;
+    color: #fff;
   }
 }
 
