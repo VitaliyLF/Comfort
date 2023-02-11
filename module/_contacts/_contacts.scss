@@ -88,3 +88,11 @@
     }
   }
 }
+
+@media (max-width: 650px) {
+  .contacts {
+    &__title {
+      margin-bottom: 30px;
+    }
+  }
+}
