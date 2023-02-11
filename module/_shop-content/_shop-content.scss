@@ -11,7 +11,7 @@
 
   &__top-btn {
     border: none;
-    background-color: $bg-default;
+    background-color: $accent;
     padding: 15px 30px;
     color: $title;
     cursor: pointer;
@@ -20,8 +20,8 @@
   }
 
   &__top-btn--active {
-    background-color: $accent;
-    color: $default;
+    background-color: #a3bbc8;
+    color: $title;
   }
 
   &__filter {
@@ -169,7 +169,7 @@
     .products-item__price-old {
       font-size: 16px;
       padding: 0 12px;
-      color: #8d8d8d;
+      color: $title;
       text-decoration: line-through;
       &::before {
         content: '₽';
