@@ -113,6 +113,7 @@
 
     .products-item__price-old {
       padding: 0;
+      color: $title;
     }
 
     .products-item__content-box {
@@ -126,7 +127,7 @@
 
     .products-item__btn {
       border: none;
-      background-color: $bg-default;
+      background-color: $accent;
       color: $title;
       line-height: 1;
       text-transform: uppercase;
@@ -135,8 +136,8 @@
       font-size: 15px;
       cursor: pointer;
       &:hover {
-        background-color: $accent;
-        color: $default;
+        background-color: #a3bbc8;
+        color: #fff;
       }
     }
 
@@ -151,7 +152,7 @@
 
   &__title {
     @extend %DMSans-700;
-    color: #436372;
+    color: $title;
     font-size: 16px;
     line-height: 40px;
   }
@@ -165,6 +166,8 @@
       content: '$';
     }
   }
+
+
 
   &__link {
     display: flex;

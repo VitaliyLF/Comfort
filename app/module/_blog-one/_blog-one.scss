@@ -15,15 +15,15 @@
     margin-bottom: 30px;
   }
 
-  h5 {
+  h3 {
     padding-top: 30px;
     font-size: 18px;
     @extend %CeraPro-500;
     margin-bottom: 30px;
   }
 
-  h6 {
-    font-size: 16px;
+  h5 {
+    font-size: 28px;
     @extend %CeraPro-500;
     margin-bottom: 30px;
   }
@@ -105,11 +105,11 @@
   }
 
   &__author-position {
-    color: $subtitle;
+    color: $title;
   }
 
   &__author-tags {
-    color: $subtitle;
+    color: $title;
     margin-bottom: 5px;
     span {
       color: $title;
@@ -181,7 +181,7 @@
 
   &__comments-date {
     font-size: 14px;
-    color: $subtitle;
+    color: $title;
   }
 
   &__comments-text {
