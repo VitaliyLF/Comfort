@@ -71,7 +71,7 @@
             <img class="logo__img" src="images/logo.svg" alt="header-logo" />
           </a>
           <nav class="menu">
-            <button class="menu__btn">
+            <button class="menu__btn" aria-label="Меню">
               <span></span>
             </button>
             <ul class="menu__list">
@@ -228,7 +228,8 @@
                     <input
                       class="product-info__input"
                       type="radio"
-                      name="color" />
+                      name="color"
+                      aria-label="цвет" />
                     <span class="product-info__radio">
                       <span style="background-color: #541b21"></span>
                     </span>
@@ -238,6 +239,7 @@
                       class="product-info__input"
                       type="radio"
                       name="color"
+                      aria-label="цвет"
                       checked />
                     <span class="product-info__radio">
                       <span style="background-color: #deb887"></span>
@@ -247,7 +249,8 @@
                     <input
                       class="product-info__input"
                       type="radio"
-                      name="color" />
+                      name="color"
+                      aria-label="цвет" />
                     <span class="product-info__radio">
                       <span style="background-color: #b02e61"></span>
                     </span>
@@ -256,7 +259,8 @@
                     <input
                       class="product-info__input"
                       type="radio"
-                      name="color" />
+                      name="color"
+                      aria-label="цвет" />
                     <span class="product-info__radio">
                       <span style="background-color: #4b5320"></span>
                     </span>
@@ -266,7 +270,8 @@
                       class="product-info__num"
                       type="number"
                       value="1"
-                      min="1" />
+                      min="1"
+                      aria-label="добавить товар" />
                     <button class="product-info__btn" type="submit">
                       Добавить в корзину
                     </button>
@@ -543,7 +548,7 @@
                 <div class="products-item__box">
                   <div class="star" data-rateyo-rating="4"></div>
                   <div class="star-shop" data-rateyo-rating="4"></div>
-                  <h5 class="products-item__title">Кресло-кровать Фуго</h5>
+                  <h3 class="products-item__title">Кресло-кровать Фуго</h3>
                   <a class="products-item__price-new" href="#0">21000</a>
                 </div>
                 <div class="products-item__content-box">
@@ -579,7 +584,7 @@
                 <div class="products-item__box">
                   <div class="star" data-rateyo-rating="4"></div>
                   <div class="star-shop" data-rateyo-rating="4"></div>
-                  <h5 class="products-item__title">Кресло Lobby</h5>
+                  <h3 class="products-item__title">Кресло Lobby</h3>
                   <div class="products-item__price">
                     <a class="products-item__price-new" href="#0">9500</a>
                     <a class="products-item__price-old" href="#0">17500</a>
@@ -617,9 +622,9 @@
                 <div class="products-item__box">
                   <div class="star" data-rateyo-rating="4"></div>
                   <div class="star-shop" data-rateyo-rating="4"></div>
-                  <h5 class="products-item__title">
+                  <h3 class="products-item__title">
                     Настенный веер из трав Jutlo
-                  </h5>
+                  </h3>
                   <a class="products-item__price-new" href="#0">9500</a>
                 </div>
                 <div class="products-item__content-box">
@@ -654,7 +659,7 @@
                 <div class="products-item__box">
                   <div class="star" data-rateyo-rating="4"></div>
                   <div class="star-shop" data-rateyo-rating="4"></div>
-                  <h5 class="products-item__title">Настольный светильник</h5>
+                  <h3 class="products-item__title">Настольный светильник</h3>
                   <div class="products-item__price">
                     <a class="products-item__price-new" href="#0">6500</a>
                     <a class="products-item__price-old" href="#0">10500</a>
@@ -699,7 +704,7 @@
                 <img src="images/blog/blog-item-1.webp" alt="blog-images" />
               </a>
               <div class="blog__item-info">
-                <h5 class="blog__item-subtitle">News</h5>
+                <h3 class="blog__item-subtitle">News</h3>
                 <a class="blog__item-text" href="blog-one.html">
                   Прикроватные тумбочки, которые преобразят вашу спальню
                 </a>
@@ -716,7 +721,7 @@
                 <img src="images/blog/blog-item-2.webp" alt="blog-images" />
               </a>
               <div class="blog__item-info">
-                <h5 class="blog__item-subtitle">News</h5>
+                <h3 class="blog__item-subtitle">News</h3>
                 <a class="blog__item-text" href="#0">
                   Как выбрать лучшую кровать на свете?
                 </a>
@@ -731,7 +736,7 @@
                 <img src="images/blog/blog-item-3.webp" alt="blog-images" />
               </a>
               <div class="blog__item-info">
-                <h5 class="blog__item-subtitle">News</h5>
+                <h3 class="blog__item-subtitle">News</h3>
                 <a class="blog__item-text" href="#0">
                   Журнальный стол – как грамотно выбрать и комфортно разместить
                 </a>
@@ -790,7 +795,10 @@
             <div class="footer-top__social">
               <ul class="footer-top__social-list">
                 <li class="footer-top__social-item">
-                  <a class="footer-top__social-link" href="#0">
+                  <a
+                    class="footer-top__social-link"
+                    href="#0"
+                    aria-label="facebook">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20px"
@@ -810,7 +818,10 @@
                   </a>
                 </li>
                 <li class="footer-top__social-item">
-                  <a class="footer-top__social-link" href="#0">
+                  <a
+                    class="footer-top__social-link"
+                    href="#0"
+                    aria-label="instagram">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20px"
@@ -864,7 +875,10 @@
                   </a>
                 </li>
                 <li class="footer-top__social-item">
-                  <a class="footer-top__social-link" href="#0">
+                  <a
+                    class="footer-top__social-link"
+                    href="#0"
+                    aria-label="telegram">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20px"
@@ -878,7 +892,10 @@
                   </a>
                 </li>
                 <li class="footer-top__social-item">
-                  <a class="footer-top__social-link" href="#0">
+                  <a
+                    class="footer-top__social-link"
+                    href="#0"
+                    aria-label="twitter">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20px"
@@ -895,7 +912,7 @@
             </div>
           </div>
           <div class="footer-top__item footer-top__nav">
-            <h6 class="footer-top__title footer__hidden">Сервис</h6>
+            <h4 class="footer-top__title footer__hidden">Сервис</h4>
             <ul class="footer-top__list">
               <li class="footer-top__item">
                 <a class="footer-top__link" href="about.html">О нас</a>
@@ -915,7 +932,7 @@
             </ul>
           </div>
           <div class="footer-top__item footer-top__nav">
-            <h6 class="footer-top__title footer__hidden">Аккаунт</h6>
+            <h4 class="footer-top__title footer__hidden">Аккаунт</h4>
             <ul class="footer-top__list">
               <li class="footer-top__item">
                 <a class="footer-top__link" href="#0">Ваш аккаунт</a>
@@ -932,7 +949,7 @@
             </ul>
           </div>
           <div class="footer-top__item footer-top__form">
-            <h6 class="footer-top__title">Новости</h6>
+            <h4 class="footer-top__title">Новости</h4>
             <p class="footer-top__text">
               Подпишитесь на нашу рассылку и получайте свежие новости о наших
               предложениях.
