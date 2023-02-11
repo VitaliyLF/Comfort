@@ -233,9 +233,6 @@
     &__text {
       margin-bottom: 30px;
     }
-    &__items {
-      flex-wrap: wrap;
-    }
     &__item {
       &::after,
       &::before {
@@ -246,10 +243,9 @@
   .info {
     margin-bottom: 75px;
     &__items {
-      justify-content: space-around;
-    }
-    &__item {
-      margin: 20px 40px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px 30px;
     }
   }
   .team {
@@ -292,11 +288,14 @@
 @media (max-width: 650px) {
   .info {
     padding: 40px 0;
-    &__items {
-      justify-content: center;
-    }
     &__item {
       margin: 15px 15px;
+    }
+  }
+  .experience {
+    &__items {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
   .team {
@@ -307,6 +306,11 @@
 }
 
 @media (max-width: 420px) {
+  .info {
+    &__items {
+      grid-gap: 20px 0;
+    }
+  }
   .experience {
     &__box-number {
       margin-right: 15px;

@@ -102,13 +102,23 @@
   }
 
   &__item-btn {
-    @extend %btn;
-    border: 1px solid $accent;
-    background-color: #fff;
-    color: $accent;
+    display: block;
+    padding: 24px 20px;
+    width: 200px;
+    background-color: transparent;
+    border: 1px solid $default;
+    border-radius: 10px;
+    color: $default;
+    @extend %CeraPro-500;
+    position: relative;
     &::before {
-      background-image: url(../images/icon/arrow-btn.svg);
-      right: 12px;
+      content: '';
+      position: absolute;
+      background-image: url(../images/icon/arrow-btn-default.svg);
+      width: 20px;
+      height: 20px;
+      top: 30px;
+      right: 30px;
     }
   }
 
