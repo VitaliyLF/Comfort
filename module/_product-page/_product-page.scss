@@ -57,7 +57,7 @@
 
   .product-info__price-old {
     display: inline-block;
-    color: #8d8d8d;
+    color: $title;
     font-size: 16px;
     @extend %CeraPro-400;
     text-decoration: line-through;
@@ -195,8 +195,8 @@
   &__btn {
     width: 100%;
     border: none;
-    background-color: #a3bbc8;
-    color: #fff;
+    background-color: $accent;
+    color: $title;
     line-height: 1;
     text-transform: uppercase;
     border-radius: 5px;
@@ -205,8 +205,8 @@
     cursor: pointer;
     margin-top: 15px;
     &:hover {
-      background-color: $accent;
-      color: $default;
+      background-color: #a3bbc8;
+      color: #fff;
     }
   }
 
@@ -236,7 +236,7 @@
     }
 
     &__link {
-      color: $accent;
+      color: #ff2400;
       text-decoration: underline;
     }
   }
@@ -293,8 +293,8 @@
     cursor: pointer;
     margin-bottom: 35px;
     &.product-tabs__top-item--active {
-      background-color: #a3bbc8;
-      color: #fff;
+      background-color: $accent;
+      color: $title;
     }
     & + .product-tabs__top-item {
       margin-left: 15px;
