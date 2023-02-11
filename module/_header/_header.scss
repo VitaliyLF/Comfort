@@ -273,6 +273,9 @@
 
 @media (max-width: 650px) {
   .header__top {
+    &-inner {
+      margin-top: 15px;
+    }
     padding-top: 0;
     padding-bottom: 0;
   }
